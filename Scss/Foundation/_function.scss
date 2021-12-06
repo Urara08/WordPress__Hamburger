@@ -1,0 +1,13 @@
+/*検索BOXの虫眼鏡 */
+.js-search-form__icon.is-active{/*アクティブになったら消える */
+display: none !important;
+}
+.js-overlay.is-show{
+display: block !important;
+}
+.js-sidebar.is-show{
+  right: 0;
+}
+.js-sidebar__menu__close-btn.is-show{
+  display: block;
+}

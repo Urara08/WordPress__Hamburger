@@ -1,0 +1,134 @@
+/* スマホ */
+/* contents */
+.p-contents__archive{/*archiveページのcontents共通*/
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: visible;
+  background-color:$color--base-WH;
+  font-family: $font-family--M-plus;
+
+&__inner--top{/* 導入記事の埋め込み先 */
+  margin-bottom: 70px;
+  font-family:$font-family--M-plus;
+  overflow-y: hidden !important;
+}
+}
+
+/* introduction(導入記事) */
+.p-contents__archive__introduction{
+&__inner{/* 外枠 */
+  margin: 30px 5.33%  19px 5.33% !important;
+}
+
+&__title{/* 見出し */
+  margin-bottom: 30px;
+  font-size: 7.46vw;
+  font-family:$font-family--M-plus;
+  color: #3C2A10;
+  font-weight: bold;
+  line-height: 1.43;
+}
+
+&__text{/* 文章 */
+  display: inline-block;
+  font-size: 4.26vw;
+  color:#3C2A10;
+  font-family:$font-family--M-plus;
+  line-height: 1.43;
+  word-wrap:break-word;
+}
+}
+.p-contents__archive{
+&__inner--middle{/* cardの埋め込み先 */
+  max-width: 100%;
+  display: flex;
+  justify-content: center !important;
+  flex-direction: column;/*cardは縦並びに（全ビューポイント）*/
+  margin-bottom: 0;
+}
+
+&__cards{/* cardグループの外側の余白 */
+  width:89.62%;
+  margin: 0 5.33% 113px 5.33%  !important;
+}
+}
+/* タブレット */
+@media screen and (min-width: 600px){
+.p-contents__archive__inner--top{/* 導入記事の埋め込み先 */
+  width:100% !important;
+  margin-bottom: 0px;/*無し*/
+  box-sizing: border-box;
+}
+
+.p-contents__archive__introduction{/* introduction(導入記事) */
+&__inner{/* 外枠 */
+  max-width: 100%;
+  margin: 36px 4.68% 37px 4.68% !important;
+  width:90.76%;
+  box-sizing: border-box;
+}
+
+&__title{/* 見出し */
+  display: inline-block;
+  margin-bottom: 25px !important;
+  font-size: 4.31vw !important;
+  font-family:$font-family--M-plus;
+  line-height: 1.5;
+}
+
+&__text{/* 文章 */
+  display: inline-block;
+  font-size: 1.91vw;
+  color:#3C2A10;
+  font-family:$font-family--M-plus;
+  line-height: 1.43;
+  word-wrap:break-word;
+}
+}
+.p-contents__archive__cards{/*cardグループの外側の余白*/
+  width:90.76%;
+  min-height: 52.75%;
+  margin: 0 4.68% 129px 4.68%  !important;
+}
+}
+
+/* PC */
+@media screen and (min-width: 1250px){
+/* contents */
+.p-contents__archive__inner--top{/* 導入記事の埋め込み先 */
+  max-width:100% !important;
+  margin-bottom: 0px;/*無し*/
+  box-sizing: border-box;
+}
+
+/* introduction(導入記事) */
+.p-contents__archive__introduction__inner{/* 外枠 */
+  margin: 60px 6.43% 70px 6.43% !important;
+  width:87.12%;
+  box-sizing: border-box;
+}
+.p-contents__archive__introduction{
+&__title{/* 見出し */
+  display: inline-block;
+  margin-bottom: 30px !important;
+  font-size: 2.31vw !important;
+  font-family:$font-family--M-plus;
+  line-height: 1.5;
+}
+&__text{/* 文章 */
+  display: inline-block;
+  font-size: 1.03vw !important;
+  font-family:$font-family--M-plus;
+  line-height: 1.43;
+  word-wrap:break-word;
+}
+}
+/* card の集まり*/
+.p-contents__archive__cards{/*cardグループの外側の余白*/
+  display: inline-block !important;
+  width:87.12% !important;
+  margin: 0 6.43% 150px 6.43% !important;
+  box-sizing: border-box;
+}
+}

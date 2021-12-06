@@ -1,0 +1,27 @@
+
+html{
+  text-decoration: none;/*リテキストの装飾を行わない*/
+  box-sizing: border-box;/*padding・borderを含めてサイズを指定する*/
+  list-style: none;/*リストの装飾は表示しない*/
+}
+body {
+  min-width: 375px;
+  min-height: 100vh;/*ブラウザの高さいっぱいに要素を広げる*/
+  max-width: 100%;/*最大幅*/
+  font-family:$font-family--M-plus;
+  box-sizing: border-box;
+}
+
+img, background {
+  max-width: 100%;/*最大幅*/
+}
+
+ul, li{
+  list-style: none;/*リストの装飾をしない*/
+  text-decoration: none;/*文字の装飾をしない*/
+}
+
+a{
+  text-decoration: none;
+  color: $color--char-GY !important;
+}

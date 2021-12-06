@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=375,initial-scale=1">
+  <title>Document</title>
+  <link rel="stylesheet" href="Scss/style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+  <script src="jquery/jquery-3.6.0.min.js"></script>
+  <script src="jquery/script_sidebar.js"></script>
+  <script src="jquery/script_search-form.js"></script>
+</head>
+<body>
+  <div class="l-body js-body">
+    <header  class="l-header">
+      <div class="p-header">
+        <div class="p-header__wrapper">
+          <div class="c-wrapper__logo">
+            <h1 class="c-logo--title--hamburger">Hamburger</h1>
+          </div>
+            <form class="p-search-form">
+            <input   placeholder=""  class="p-search-form__input" type="search" >
+            <a class="js-search-form__icon"><img class="p-search-form__icon" src="img/search-icon.png"></a>
+            <button class= "p-search-form__button" ><a class= "p-search-form__button__label">検索</a></button>
+          </form>
+        </div>
+      </div>
+      <div class="c-btn--menu__wrapper">
+        <div class="toggle_btn c-btn--menu ">
+          <p class="c-btn--menu__label">Menu</p></div>
+      </div>
+    </header>
+      <main class="l-main">
+        <div class="l-hero">
+          <section class="p-hero">
+            <div class="p-hero__png--pc" alt="ハンバーガーの画像"></div>
+            <div class="p-hero__png--sp"  alt="ハンバーガーの画像"></div>
+            <h2 class="p-hero__label">ダミーサイト</h2>
+          </section>
+        </div>
+　　　　<div class="p-contents__wrapper">
+        <article class="p-contents">
+          <ul class="p-contents__inner">
+            <li class="p-contents__branch-menu take-out">
+              <ul class="p-contents__branch-menu__inner">
+              <li><h2 class="p-contents__branch-menu__label">Take Out</h2></li>
+              <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Take Out</dt><dd class="p-contents__branch-menu__box__text">商品を掲載しています。商品を掲載しています。</dd></ｄl></li>
+              <li><dl class="p-contents__branch-menu__box--bottom"><dt class="p-contents__branch-menu__box__title">Take Out</dt><dd class="p-contents__branch-menu__box__text">商品を掲載しています。商品を掲載しています。</dd></dl></li>
+            </ul>
+          </li>
+          <li class="p-contents__branch-menu eat-in">
+              <ul class="p-contents__branch-menu__inner">
+              <li><h2 class="p-contents__branch-menu__label">Eat In</h2>
+              <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text">商品を掲載しています。商品を掲載しています。</dd></dl></li>
+              <li><dl class="p-contents__branch-menu__box--bottom"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text">商品を掲載しています。商品を掲載しています。</dd></dl></li>
+            </ul>
+            </li>
+          </ul>
+        </article>
+      </div>
+      <div class="p-access-map__wrapper">
+        <section class="p-access-map">
+          <figure class="p-access-map__png-pc" alt="地図"></figure>
+          <figure class="p-access-map__png-tab" alt="地図"></figure>
+          <figure class="p-access-map__png-sp" alt="地図"></figure>
+          <div class="p-access-map__text-group">
+          <h3  class="p-access-map__text-group__index"><em">見出しが入ります</em></h3>
+          <p class="p-access-map__text-group__body">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。 </p>
+        </div>
+        <div class="p-access-map__mask"></div>
+        <div class="p-access-map__mask-sp"></div>
+      </section>
+    </div>
+  </main>
+      <footer class="l-footer">
+        <div class="p-footer">
+          <div class="p-footer__wrapper">
+            <ul class="p-footer__menu">
+              <li class="p-footer__menu__info">ショップ情報 | ヒストリー</li>
+            　<li class="p-footer__menu__copy">Copyright: RaiseTech</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </article>
+  <aside class="l-sidebar">
+    <div class="p-sidebar js-sidebar">
+      <a class=" p-sidebar__menu__close-btn">
+        <i class=" fal fa-times fa-3x js-sidebar__menu__close-btn"></i>
+      </a>
+      <ul class="p-sidebar__nav"><a class="p-sidebar__nav__label">Menu</a>
+        <li><strong class="p-sidebar__nav__title">バーガー</strong>
+          <ul class="p-sidebar__nav__list">
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ハンバーガー</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">チーズバーガー</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">テリヤキバーガー</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">アボガドバーガー</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">フィッシュバーガー</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ベーコンバーガー</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">チキンバーガー</a></li>
+          </ul>
+        </li>
+        <li><strong class="p-sidebar__nav__title">サイド</strong>
+          <ul class="p-sidebar__nav__list">
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ポテト</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">サラダ</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ナゲット</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">コーン</a></li>
+          </ul>
+        </li>
+        <li><strong class="p-sidebar__nav__title">ドリンク</strong>
+          <ul class="p-sidebar__nav__list">
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">コーラ</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ファンタ</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">オレンジ</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">アップル</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">紅茶（Ice/Hot)</a></li>
+            <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">コーヒー（Ice/Hot)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <div class="c-overlay js-overlay"></div>
+</body>
+</html>

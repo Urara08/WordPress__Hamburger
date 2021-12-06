@@ -1,0 +1,30 @@
+/** 色の変数 ------------ **/
+
+/* 背景色(ベタ塗り) */
+$color--base-li-OR: #FFF7EF; /* header */
+$color--base-li-dark-OR: #F2EDE9; /* 検索BOXボタン･sidebar */
+$color--base-WH: #FFFDFA; /* container */
+$color--base-vi-dark-OR: #F2EDE9; /*検索BOXボタンの*/
+$color--base-li-GY:#F5F5F5; /*single・page(コードの部分)*/
+
+/* マスク色 または薄い画像の背景*/
+$color--mask-op-100: #000000; /* map */
+$color--mask-op-029: rgba(0, 0, 0, 0.29); /* map */
+$color--mask-op-060: rgba(0, 0, 0, 0.60); /* map */
+
+/* 文字色 ・　下線（border）色*/
+$color--char-GY:#707070; /* logo・Menu tableの罫線*/
+$color--char-WH:#FFFFFF; /* ダミーサイト*//* ブランチメニュー*/
+$color--char-li-GY:#EAEAEA; /* Take-out Eat-in(大タイトル)*/
+$color--char-BR:#3C2A10;/* Take-out Eat-in(BOXの内側)*/
+$color--char-DB:#4A6C9B;/* single・page(引用元)*/
+
+/* アイテム色　（BOXやボタン）*/
+$color--item-WH-op-083: rgba(255, 255, 255, 0.83);
+$color--item-WH-op-100:#FFFFFF;
+$color--item-BK-tea: #3C2B1C; /*c-cardの背景*/
+
+/* フォントファミリー　*/
+$font-family--Roboto:'Roboto', sans-serif;/*Hamburger・MENU(ロゴ)・Take-out Eat-in(大タイトル)*/
+$font-family--M-plus:'M PLUS 1p', sans-serif;/* 上記以外の文字 */
+$font-family--icon: FontAwesome;/* フォントオーサム */

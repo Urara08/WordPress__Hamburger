@@ -1,0 +1,32 @@
+/* スマートフォン・タブレット */
+.p-header{
+  position: relative;
+  z-index: 140;
+  height:217px;
+  padding-top: 40px;/*可変で縦が潰れないように設定*/
+  padding-bottom: 40px;/*可変で縦が潰れないように設定*/
+  background-color: $color--base-li-OR;
+  box-sizing: border-box;
+
+&__wrapper{
+  display: flex;
+  flex-direction: column;/*Hamburgerと検索BOXを縦並びに*/
+  justify-content:space-between;
+  align-items: center;
+  height: 100%;
+}
+}
+@media screen and (min-width: 1250px){
+.p-header{
+  height:217px;
+  padding-top: 68px ;/*可変で縦が潰れないように設定*/
+  padding-bottom:68px;/*可変で縦が潰れないように設定*/
+
+&__wrapper{
+  display:flex;
+  flex-direction: row;/*Hamburgerと検索BOXを横並びに*/
+  justify-content: center;
+  height:100%;
+}
+}
+}

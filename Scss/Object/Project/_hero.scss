@@ -1,0 +1,520 @@
+/* スマホ */
+/*------------- frontpage */
+.p-hero{
+  position: relative;
+  z-index: 100;
+  max-width: 100%;
+  height:0;
+  padding-bottom: 75%;
+
+&__png--pc{
+  display: none !important;
+}
+
+&__png--sp{/* スマホ版の画像 */
+  display: block !important;;
+  position: relative;
+  top:0;
+  left:0;
+  width:100%;
+  height:0;
+  padding-bottom: 75%;
+  background-image:url(../img/hero_sp.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+&__label{/* ダミーサイトの文字 */
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  top:43%;
+  left: 7%;/*25px*/
+  height: auto;
+  font-family: $font-family--M-plus;
+  font-size: 9.6vw;/*36px*/
+  font-weight: bold;
+  line-height:60 / 40;
+  color:  $color--char-WH;
+}
+}
+/*------------- archive */
+.p-hero__archive__png--pc{/* pc用の写真は隠す */
+  display: none !important;
+}
+
+.p-hero__archive{
+  display: block !important;
+  position: relative;
+  max-width: 100%;
+  min-width: 375px !important;
+  height: 0;/*高さは無し*/
+  padding-bottom: 76% !important;/*アスペクト比を保つ*/
+  background-color: $color--mask-op-100;
+  font-family:$font-family--M-plus;
+
+&__png--sp{/*heroスマホ用写真を表示する*/
+  display: block !important;
+  position: absolute !important;
+  top:0;
+  left: 0;
+  z-index: 100;
+  width: 100% !important;
+  padding-bottom: 76% !important;/*アスペクト比を保つ*/
+  height: 0;/*高さは設定しない*/
+  background-image:url(../img/hero_sp__archive.png);
+  background-position: left center;/*left centerがカンプに近い*/
+  background-size: cover;
+  background-repeat:no-repeat;
+  vertical-align:bottom !important;
+  box-sizing: border-box;
+}
+
+&__menu-label{/*MENU:の字*/
+  display: inline-block;
+  position: absolute;
+  z-index: 110;
+  top:36.04%;
+  left:4.43%;
+  font-size: 9.6vw;
+  font-weight: bold;
+  color:$color--char-WH;
+  line-height: 1.33;
+}
+
+&__item-label{/*チーズバーガーの字*/
+  display: inline-block !important;
+  position: absolute;
+  z-index: 120;
+  top:54.06%;/*MENUの下へ配置*/;
+  left:4.43%;
+  font-size:4.26vw;
+  font-weight: bold;
+  line-height: 1.43;
+  color:$color--char-WH;
+}
+}
+
+/*------------- single */
+.p-hero__single__png--pc{/* pc用の写真は隠す */
+  display: none !important;
+}
+
+.p-hero__single{
+  display: block !important;
+  position: relative !important;
+  z-index: 100;
+  max-width: 100% !important;
+  height: 0;/*高さは無し*/
+  padding-bottom: 60% !important;/*アスペクト比を保つ*/
+
+&__png--sp{/*heroスマホ用写真を表示する*/
+  display: block !important;
+  position: relative!important;
+  top:0 !important;
+  left: 0;
+  z-index: 100;
+  max-width: 100% !important;
+  padding-bottom: 60% !important;/*アスペクト比を保つ*/
+  height: 0;/*高さは設定しない*/
+  background-image:url(../img/hero__single--sp.png);
+  background-position: left center;/*left centerがカンプに近い*/
+  background-size: cover;
+  background-repeat:no-repeat;
+  vertical-align:bottom !important;
+  box-sizing: border-box;
+}
+
+&__menu-label{/*h1 チーズバーガ―:画像に重なる字*/
+  display: inline-block !important;
+  position: absolute !important;
+  z-index: 140 !important;
+  top:40.44%;
+  left:6.93%;
+  font-size: 9.6vw;
+  color:$color--char-WH;
+  font-weight: bold;
+  line-height: 1.5;
+}
+}
+/* single -------------*/
+/* page -------------*/
+.p-hero__page__png--pc{/* pc用の写真は隠す */
+  display: none !important;
+}
+
+.p-hero__page{
+  display: block !important;
+  position: relative !important;
+  z-index: 100;
+  max-width: 100% !important;
+  height: 0;/*高さは無し*/
+  padding-bottom: 60% !important;/*アスペクト比を保つ*/
+
+&__png--sp{/*heroスマホ用写真を表示する*/
+  display: block !important;
+  position: relative!important;
+  top:0 !important;
+  left: 0;
+  z-index: 100;
+  max-width: 100% !important;
+  padding-bottom: 60% !important;/*アスペクト比を保つ*/
+  height: 0;/*高さは設定しない*/
+  background-image:url(../img/hero__page--sp.png);
+  background-position: left center;/*left centerがカンプに近い*/
+  background-size: cover;
+  background-repeat:no-repeat;
+  vertical-align:bottom !important;
+  box-sizing: border-box;
+}
+
+&__menu-label{/*h1 チーズバーガ―:画像に重なる字*/
+  display: inline-block !important;
+  position: absolute !important;
+  z-index: 140 !important;
+  top:40.44%;
+  left:6.93%;
+  font-size: 9.6vw;
+  color:$color--char-WH;
+  font-weight: bold;
+  line-height: 1.5;
+}
+}
+/* page -------------*/
+
+/* タブレット */
+@media screen and (min-width: 600px){
+/*------------- frontpage */
+.p-hero{
+  position: relative;
+  z-index: 100;
+  max-width: 100%;
+  height:0;
+  padding-bottom: 32.85%;
+
+&__png--sp{
+  display: none !important;/*スマホの画像は隠す*/
+}
+
+&__png--pc{
+  display: block !important;/*PCの画像を表示*/
+  position: relative;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 0;
+  padding-bottom: 32.85%;
+  background-image: url(../img/hero_pc.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+&__label{/* ダミーサイトの文字 */
+  display: block;
+  position: absolute;
+  z-index: 100;
+  top:40%;
+  left: 10%;/*86px*/
+  z-index: 140;
+  font-size: 4.31vw;
+  font-weight: bold;
+  line-height:54 / 36;
+}
+}
+
+/*------------- archive */
+.p-hero__archive__png--sp{/* スマホ用の画像は隠す */
+  display: none !important;
+}
+
+.p-hero__archive{
+  display: block !important;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 33.93% !important;
+
+&__png--pc{/* pc用の画像 */
+  display: block !important;
+  position: relative;
+  top:0;
+  left: 0;
+  z-index: 110;
+  width: 100% !important;
+  height: 0;/* 高さは設定しない */
+  padding-bottom: 33.93% !important;/* アスペクト比を保つ */
+  background-image:url(../img/hero_pc__archive.png);
+  background-position: center;/* centerがカンプに近い */
+  background-size: cover !important;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+}
+
+&__menu-label{/*MENU:*/
+  display: inline-block;
+  position: absolute;
+  z-index: 110;
+  top:36.04%;
+  left:10.31%;
+  font-size:7.19vw;
+  line-height:1.31;
+}
+
+&__item-label{/*チーズバーガーの字*/
+  display: inline-block !important;
+  position: absolute;
+  z-index: 120;
+  top:48.40%;/*MENUの横へ配置*/;
+  left:32.97%;
+  font-size:1.91vw;
+  color:$color--char-WH;
+  font-weight: bold;
+  line-height: 1.43;
+}
+}
+
+/*------------- single */
+.p-hero__single__png--sp{/* スマホ用の画像は隠す */
+  display: none !important;
+}
+
+.p-hero__single{/*heroの外枠 */
+  display: block !important;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 59.95% !important;
+
+&__png--pc{/* pc用の画像 */
+  display: block !important;
+  position: absolute !important;
+  top:0;
+  left: 0;
+  z-index: 110;
+  width: 100% !important;
+  padding-bottom: 59.95% !important;/* アスペクト比を保つ */
+  height: 0;/* 高さは設定しない */
+  background-image:url(../img/hero__single--pc.png);
+  background-position: center;/* centerがカンプに近い */
+  background-size: cover !important;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+}
+
+&__menu-label{/*h1 チーズバーガ―:画像に重なる字*/
+  display: inline-block;
+  position: absolute;
+  z-index: 140;
+  top:36.04%;
+  left:10.31%;
+  font-size:7.19vw;
+  line-height:1.31;
+}
+}
+/*------------- single */
+/* page -------------*/
+.p-hero__page__png--sp{/* スマホ用の画像は隠す */
+  display: none !important;
+}
+
+.p-hero__page{/*heroの外枠 */
+  display: block !important;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 59.95% !important;
+
+&__png--pc{/* pc用の画像 */
+  display: block !important;
+  position: absolute !important;
+  top:0;
+  left: 0;
+  z-index: 110;
+  width: 100% !important;
+  padding-bottom: 59.95% !important;/* アスペクト比を保つ */
+  height: 0;/* 高さは設定しない */
+  background-image:url(../img/hero__page--pc.png);
+  background-position: center;/* centerがカンプに近い */
+  background-size: cover !important;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+}
+
+&__menu-label{/*h1 チーズバーガ―:画像に重なる字*/
+  display: inline-block;
+  position: absolute;
+  z-index: 140;
+  top:36.04%;
+  left:10.31%;
+  font-size:7.19vw;
+  line-height:1.31;
+}
+}
+
+/* page -------------*/
+}
+/* PC */
+@media screen and (min-width: 1250px){
+/*------------- frontpage */
+.p-hero{
+  max-width: 100%;
+  height:0;
+  padding-bottom: 33.93%z;
+
+&__png--pc{
+  width: 100%;
+  height: 0;
+  padding-bottom: 33.93%;
+}
+
+&__label{/* ダミーサイトの文字 */
+  top:44%;
+  left: 16%;/*86px*/
+  font-size: 2.08vw;
+  font-weight: bold;
+  line-height:60 / 40;
+}
+}
+
+/*------------- archive */
+.p-hero__archive__png--sp{/* pcの時は隠す */
+  display: none !important;
+}
+
+.p-hero__archive{
+  display: block !important;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 15.38% !important;
+  background-color: $color--mask-op-100;
+
+&__png--pc{/* pc用の画像 */
+  display: block !important;/* 表示する */
+  position:relative;
+  top:0;
+  left: 0;
+  z-index: 100;
+  width: 100% !important;
+  padding-bottom: 15.38% !important;/* アスペクト比を保つ */
+  height: 0;/* 高さは設定しない */
+  background-image:url(../img/hero_pc__archive.png);
+  background-position: top right !important;
+  background-size: cover !important;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+}
+
+&__menu-label{/*MENU:*/
+  display: inline-block;
+  position: absolute;
+  z-index: 110;
+  top:33.47%;
+  left:5.53%;
+  font-size:3.12vw;
+  font-weight: bold;
+  color:$color--char-WH;
+  line-height:1.31;
+}
+
+&__item-label{/*チーズバーガーの字*/
+  display: inline-block !important;
+  position: absolute;
+  z-index: 120;
+  top:47.28%;/*MENUの横へ配置*/;
+  left:17.7%;
+  font-size:1.03vw;
+  font-weight: bold;
+  line-height: 1.43;
+  color:$color--char-WH;
+}
+}
+
+/*------------- single */
+.p-hero__single__png--sp{/* pcの時は隠す */
+  display: none !important;
+}
+
+.p-hero__single{
+  display: block !important;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 32.19% !important;
+  background-color: $color--mask-op-100;
+
+&__png--pc{/* pc用の画像 */
+  display: block !important;/* 表示する */
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 110;
+  width: 100% !important;
+  padding-bottom: 32.19% !important;/* アスペクト比を保つ */
+  height: 0;/* 高さは設定しない */
+  background-image:url(../img/hero__single--pc.png);
+  background-position: top right !important;
+  background-size: cover !important;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+}
+
+&__menu-label{/*h1 チーズバーガ―:画像に重なる字*/
+  display: inline-block !important;
+  position: absolute;
+  z-index: 140;
+  top:33.47%;
+  left:5.53%;
+  font-size:3.12vw;
+  color:$color--char-WH;
+  font-weight: bold;
+  line-height:1.31;
+}
+}
+/*------------- single */
+/* page -------------*/
+.p-hero__page__png--sp{/* pcの時は隠す */
+  display: none !important;
+}
+
+.p-hero__page{
+  display: block !important;
+  position: relative;
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 32.19% !important;
+  background-color: $color--mask-op-100;
+
+&__png--pc{/* pc用の画像 */
+  display: block !important;/* 表示する */
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 110;
+  width: 100% !important;
+  padding-bottom: 32.19% !important;/* アスペクト比を保つ */
+  height: 0;/* 高さは設定しない */
+  background-image:url(../img/hero__page--pc.png);
+  background-position: top right !important;
+  background-size: cover !important;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+}
+
+&__menu-label{/*h1 チーズバーガ―:画像に重なる字*/
+  display: inline-block !important;
+  position: absolute;
+  z-index: 140;
+  top:33.47%;
+  left:5.53%;
+  font-size:3.12vw;
+  color:$color--char-WH;
+  font-weight: bold;
+  line-height:1.31;
+}
+}
+
+/* page -------------*/
+}

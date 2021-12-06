@@ -1,0 +1,16 @@
+/*スマホ--タブレット--パソコン画面1249pxまで--*/
+.l-header{
+  grid-column: 1 / -1;
+  grid-row: 1 ;
+  max-width: 100%;
+  min-width: 375px;
+  overflow: hidden;
+}
+/*パソコン画面1250px以上--*/
+@media screen and (min-width: 1250px){
+.l-header{
+  grid-column: 1 / -2;
+  grid-row: 1 ;
+  max-width: 100%;
+}
+}
