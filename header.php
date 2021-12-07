@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375,initial-scale=1">
+  <title>
+    <?php
+    wp_title('|,true,right');
+    bloginfo('name'); ?></title>
   <title>Document</title>
   <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/Scss/common.css'));?>" type="text/css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
@@ -15,12 +19,13 @@
   <?php wp_head(); ?>
 </head>
 <body>
+  <?php wp_body_open(); ?>
   <div class="l-body js-body">
     <header  class="l-header">
       <div class="p-header">
         <div class="p-header__wrapper">
-          <div class="c-wrapper__logo header__ttl">
-            <h1 class="c-logo--title--hamburger header__ttl__sub">Hamburger</h1>
+          <div class="c-wrapper__logo">
+            <h1 class="c-logo--title--hamburger">Hamburger</h1>
           </div>
           <?php get_search_form(); ?>
       <div class="c-btn--menu__wrapper">
