@@ -3385,7 +3385,7 @@ a {
 /*-----------------------------------*/
 .c-btn {
   /*mixin*/
-  display: block;
+  display: block !important;
   position: absolute;
   height: auto;
   cursor: pointer;
@@ -3405,11 +3405,12 @@ a {
 
 .c-btn--menu__wrapper {
   /*header側：MENUボタンの位置調整*/
-  position: absolute;
+  display: block !important;
+  position: absolute !important;
   top: 14px !important;
   right: 16px;
   /*headerの右上に配置*/
-  z-index: 50;
+  z-index: 100;
 }
 
 .c-btn--menu__label {
@@ -3419,6 +3420,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #707070;
+  display: block !important;
   font-size: 5.33vw;
   line-height: 1.3;
 }

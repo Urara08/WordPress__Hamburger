@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,21 +12,20 @@
   <script src="<?php echo esc_url(get_theme_file_uri('/jquery/jquery-3.6.0.min.js'));?>"></script>
   <script src="<?php echo esc_url(get_theme_file_uri('/jquery/script_sidebar.js'));?>"></script>
   <script src="<?php echo esc_url(get_theme_file_uri('/jquery/script_search-form.js'));?>"></script>
-
+  <?php wp_head(); ?>
 </head>
 <body>
   <div class="l-body js-body">
     <header  class="l-header">
       <div class="p-header">
         <div class="p-header__wrapper">
-          <div class="c-wrapper__logo">
-            <h1 class="c-logo--title--hamburger">Hamburger</h1>
+          <div class="c-wrapper__logo header__ttl">
+            <h1 class="c-logo--title--hamburger header__ttl__sub">Hamburger</h1>
           </div>
           <?php get_search_form(); ?>
-        </div>
-      </div>
       <div class="c-btn--menu__wrapper">
-        <div class="toggle_btn c-btn--menu ">
-          <p class="c-btn--menu__label">Menu</p></div>
+            <div class="toggle_btn c-btn--menu "><p class="c-btn--menu__label">Menu</p></div>
+          </div><!-- c-btn--menu__wrapperここまで -->
+        </div>
       </div>
     </header>
