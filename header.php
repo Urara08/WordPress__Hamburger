@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375,initial-scale=1">
   <title>Document</title>
-  <link rel="stylesheet" href="Scss/common.css">
+  <link rel="stylesheet" href="<?php echo esc_url(get_theme_file_uri('/Scss/common.css'));?>" type="text/css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
   <script src="jquery/jquery-3.6.0.min.js"></script>
   <script src="jquery/script_sidebar.js"></script>
   <script src="jquery/script_search-form.js"></script>
+
 </head>
 <body>
   <div class="l-body js-body">
