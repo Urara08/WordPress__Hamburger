@@ -16,5 +16,6 @@
 
     function add_files() {
         wp_enqueue_style( 'stylesheet', get_theme_file_uri( '/Scss/common.css' ), false );//CSSの読み込み
+        wp_enqueue_style( 'font-awesome', 'https://pro.fontawesome.com/releases/v5.15.4/css/all.css', array(), '5.15.4' );
     }
     add_action( 'wp_enqueue_scripts', 'add_files' );
