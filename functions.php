@@ -1,7 +1,8 @@
 <?php
     //テーマサポート
-    add_theme_support( 'menus' );
-    add_theme_support( 'title-tag' );
+    add_theme_support( 'menus' );//メニューの管理
+    add_theme_support( 'title-tag' );//タイトルの吐き出し
+    add_theme_support( 'post-thumbnails' );//アイキャッチ画像の投稿
 
     //タイトル出力
     function WordPress__Hamburger_title( $title ) {

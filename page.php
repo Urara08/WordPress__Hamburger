@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375,initial-scale=1">
-  <title>Document</title>
-  <link rel="stylesheet" href="Scss/common.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-rqn26AG5Pj86AF4SO72RK5fyefcQ/x32DNQfChxWvbXIyXFePlEktwD18fEz+kQU" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
-  <script src="jquery/jquery-3.6.0.min.js"></script>
-  <script src="jquery/script_sidebar.js"></script>
-  <script src="jquery/script_search-form.js"></script>
+  <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <div class="l-body js-body">
     <header  class="l-header">
       <div class="p-header">
@@ -253,54 +247,5 @@
 </div>
 </section>
 </main>
-<footer class="l-footer">
-  <div class="p-footer">
-  <div class="p-footer__wrapper">
-    <ul class="p-footer__menu">
-        <li class="p-footer__menu__info">ショップ情報 | ヒストリー</li>
-        <li class="p-footer__menu__copy">Copyright: RaiseTech</li>
-      </ul>
-    </div>
-  </div>
-</footer>
-<aside class="l-sidebar">
-  <div class="p-sidebar js-sidebar">
-    <a class=" p-sidebar__menu__close-btn">
-      <i class=" fal fa-times fa-3x js-sidebar__menu__close-btn"></i>
-    </a>
-    <ul class="p-sidebar__nav"><a class="p-sidebar__nav__label">Menu</a>
-      <li><strong class="p-sidebar__nav__title">バーガー</strong>
-        <ul class="p-sidebar__nav__list">
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ハンバーガー</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">チーズバーガー</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">テリヤキバーガー</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">アボガドバーガー</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">フィッシュバーガー</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ベーコンバーガー</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">チキンバーガー</a></li>
-        </ul>
-      </li>
-      <li><strong class="p-sidebar__nav__title">サイド</strong>
-        <ul class="p-sidebar__nav__list">
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ポテト</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">サラダ</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ナゲット</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">コーン</a></li>
-        </ul>
-      </li>
-      <li><strong class="p-sidebar__nav__title">ドリンク</strong>
-        <ul class="p-sidebar__nav__list">
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">コーラ</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">ファンタ</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">オレンジ</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">アップル</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">紅茶（Ice/Hot)</a></li>
-          <li class="p-sidebar__nav__list__item"><a href="#" class="c-item__title">コーヒー（Ice/Hot)</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</aside>
-<div class="c-overlay js-overlay"></div>
-</body>
-</html>
+<?php get_footer(); ?>
+  <?php get_sidebar(); ?>
