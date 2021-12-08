@@ -9,8 +9,7 @@
 
 
   <script src="<?php echo esc_url(get_theme_file_uri('/jquery/jquery-3.6.0.min.js'));?>"></script>
-  <script src="<?php echo esc_url(get_theme_file_uri('/jquery/script_sidebar.js'));?>"></script>
-  <script src="<?php echo esc_url(get_theme_file_uri('/jquery/script_search-form.js'));?>"></script>
+
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

@@ -19,5 +19,9 @@
         wp_enqueue_style( 'Roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap', array() );//googleフォント読み込み
         wp_enqueue_style( 'stylesheet', get_theme_file_uri( '/Scss/common.css' ), false );//CSSの読み込み
         wp_enqueue_style( 'font-awesome', 'https://pro.fontawesome.com/releases/v5.15.4/css/all.css', array(), '5.15.4' );//font_awesome読み込み
-    }
+
+
+        wp_enqueue_script( 'sidebar.js', get_template_directory_uri() . '/jquery/script_sidebar.js', array('jquery'), '1.0.0', true);
+        wp_enqueue_script( 'search-form.js', get_template_directory_uri() . '/jquery/script_search-form.js', array('jquery'), '1.0.0', true);
+}
     add_action( 'wp_enqueue_scripts', 'add_files' );
