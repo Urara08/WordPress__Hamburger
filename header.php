@@ -7,8 +7,7 @@
 
 
 
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+
   <script src="<?php echo esc_url(get_theme_file_uri('/jquery/jquery-3.6.0.min.js'));?>"></script>
   <script src="<?php echo esc_url(get_theme_file_uri('/jquery/script_sidebar.js'));?>"></script>
   <script src="<?php echo esc_url(get_theme_file_uri('/jquery/script_search-form.js'));?>"></script>
