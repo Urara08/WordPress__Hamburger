@@ -1914,6 +1914,7 @@ a {
   font-weight: bold;
   line-height: 1.5;
   color: #FFFFFF;
+  /*WordPressで吐かれた後のクラス名　CSSスタイルあたらず*/
 }
 .p-footer__menu__info {
   display: inline-block;
@@ -1930,6 +1931,16 @@ a {
   font-size: 3.73vw;
   /*テキストが可変し過ぎない様vw*/
   font-weight: normal;
+}
+.p-footer__menu #menu-gmenu {
+  text-align: center;
+  display: flex !important;
+  flex-direction: row;
+  margin-bottom: 34px;
+  font-size: 5.33vw;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #FFFFFF !important;
 }
 
 /* タブレット */
