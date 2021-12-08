@@ -4,12 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=375,initial-scale=1">
-
-
-
-
-  <script src="<?php echo esc_url(get_theme_file_uri('/jquery/jquery-3.6.0.min.js'));?>"></script>
-
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
