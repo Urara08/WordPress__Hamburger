@@ -1,35 +1,4 @@
-<!DOCTYPE html>
-<html lang="<?php language_attributes(); ?>">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=375,initial-scale=1">
-  <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-  <?php wp_body_open(); ?>
-  <div class="l-body js-body">
-    <header  class="l-header">
-      <div class="p-header">
-        <div class="p-header__wrapper">
-          <div class="c-wrapper__logo">
-            <h1 class="c-logo--title--hamburger">Hamburger</h1>
-          </div>
-          <form class="p-search-form">
-            <input   placeholder=""  class="p-search-form__input" type="search" >
-            <a class="js-search-form__icon">
-              <img class="p-search-form__icon" src="img/search-icon.png">
-            </a>
-            <button class= "p-search-form__button">
-              <a class= "p-search-form__button__label">検索</a>
-            </button>
-          </form>
-          <div class="c-btn--menu__wrapper">
-            <div class="toggle_btn c-btn--menu "><p class="c-btn--menu__label">Menu</p></div>
-          </div>
-        </div>
-      </div>
-    </header>
+<?php get_header(); ?>
     <main class="l-main">
       <div class="l-hero">
         <section class="p-hero__page">
