@@ -15,6 +15,6 @@
     add_filter( 'pre_get_document_title', 'WordPress__Hamburger_title' );
 
     function add_files() {
-        wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
-  }
-  add_action( 'wp_enqueue_scripts', 'add_files' );
+        wp_enqueue_style( 'stylesheet', get_theme_file_uri( '/Scss/common.css' ), false );//CSSの読み込み
+    }
+    add_action( 'wp_enqueue_scripts', 'add_files' );
