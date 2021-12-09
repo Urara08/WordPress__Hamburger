@@ -98,21 +98,7 @@
         </div><!-- Inner--middleの最後 -->
         <div class="p-contents__archive__inner--bottom">
               <ul class="p-pages__list-group"><!-- ページネーション -->
-                <li class="p-pages__list-group-item__title">page</li>
-                <li class="p-pages__list-group-item__counter">1/10</li>
-                <li class="p-pages__list-group-item__back--sp"><a href="#"><img class="p-pages__list-group-item__back__png--sp" src="img/グループ 7.png" alt="前のページへ"><span class="p-pages__list-group-item__back__word--sp">前へ</span></a></li>
-                <li class="p-pages__list-group-item__back--pc"><a href="#"><img class="p-pages__list-group-item__back__png--pc" src="img/グループ 7.png" alt="前のページへ"></a></li>
-                <li class="p-pages__list-group-item this"><a href="#">1</a></li>
-                <li class="p-pages__list-group-item"><a href="#">2</a></li>
-                <li class="p-pages__list-group-item"><a href="#">3</a></li>
-                <li class="p-pages__list-group-item"><a href="#">4</a></li>
-                <li class="p-pages__list-group-item"><a href="#">5</a></li>
-                <li class="p-pages__list-group-item"><a href="#">6</a></li>
-                <li class="p-pages__list-group-item"><a href="#">7</a></li>
-                <li class="p-pages__list-group-item"><a href="#">8</a></li>
-                <li class="p-pages__list-group-item"><a href="#">9</a></li>
-                <li class="p-pages__list-group-item__next--sp"><a href="#"><span class="p-pages__list-group-item__next__word--sp">次へ</span><img class="p-pages__list-group-item__next__png--sp" src="img/グループ 8.png" alt="次のページへ"></a></li>
-                <li class="p-pages__list-group-item__next--pc"><a href="#"><img class="p-pages__list-group-item__next__png--sp" src="img/グループ 8.png" alt="次のページへ"></a></li>
+              <?php wp_pagenavi(); ?>
               </ul><!-- ページネーションの最後 -->
             </div><!-- Inner--middleここまで -->
           </article>
