@@ -2044,7 +2044,9 @@ a {
   color: #707070;
 }
 
-.menu-item {
+.menu-item_1,
+.menu-item_2,
+.menu-item_3 {
   /*__titleを除いた各（バーガー・サイド・ドリンク）メーニュー群の箱*/
   width: 65.39%;
   margin-bottom: 40px !important;
@@ -2055,13 +2057,13 @@ a {
   color: #707070;
 }
 
-.p-sidebar__nav__list__item {
+.menu-item {
   /*各リストアイテムの詳細*/
   margin-bottom: 22px;
 }
-.p-sidebar__nav__list__item:last-child {
+.menu-item:last-child {
   /*各リストアイテムの一番最後*/
-  margin-bottom: 0;
+  margin-bottom: 34px;
 }
 
 .p-sidebar__nav > .c-item__title {
@@ -2124,7 +2126,9 @@ a {
     line-height: 1.5;
   }
 
-  .menu-itemt {
+  .menu-item_1,
+.menu-item_2,
+.menu-item_3 {
     /*__titleを除いた各（バーガー・サイド・ドリンク）メーニュー群の箱*/
     margin-bottom: 40px !important;
     padding-left: 9px !important;
@@ -2136,13 +2140,13 @@ a {
     color: #707070;
   }
 
-  .p-sidebar__nav__list__item {
+  .menu-item {
     /*各リストアイテムの詳細*/
     margin-bottom: 22px;
   }
-  .p-sidebar__nav__list__item:last-child {
+  .menu-item:last-child {
     /*各リストアイテムの詳細*/
-    margin-bottom: 0;
+    margin-bottom: 38px;
   }
 }
 /* PC */
@@ -2188,7 +2192,9 @@ a {
     font-weight: 700;
   }
 
-  .menu-item {
+  .menu-item_1,
+.menu-item_2,
+.menu-item_3 {
     margin-bottom: 40px !important;
     padding-left: 4.26%;
     width: 80%;
@@ -2199,13 +2205,13 @@ a {
     line-height: 1.5;
   }
 
-  .p-sidebar__nav__list__item {
+  .menu-item {
     /*各リストアイテムの詳細*/
     margin-bottom: 22px;
   }
-  .p-sidebar__nav:last-child {
+  .menu-item:last-child {
     /*各リストアイテムの詳細*/
-    margin-bottom: 0;
+    margin-bottom: 40px;
   }
 
   .p-sidebar__menu__close-btn {
