@@ -7,7 +7,7 @@
     register_nav_menu( 'item_2', ' サイドナビゲーション_2 ' );
     register_nav_menu( 'item_3', ' サイドナビゲーション_3 ' );
     register_nav_menu( 'footer_1', ' フッターナビゲーション_1 ' );
-    register_nav_menu( 'footer_2', ' フッターナビゲーション_2 ' );
+
     //タイトル出力
     function WordPress__Hamburger_title( $title ) {
         if ( is_front_page() && is_home() ) { //トップページなら

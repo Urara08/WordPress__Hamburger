@@ -15,8 +15,9 @@
 }
 
 /* 隠す ここから-----------*/
-.current,/*ページ数　”１”*/
-.page{/*ページ数　”２”*/
+span.current,/*ページ数　”１”*/
+a.page.larger,/*ページ数　”２”*/
+a.page.smaller{/*ページ数　”２”*/
   display: none !important;
 }
 .last,
@@ -89,8 +90,8 @@ span>.pages{/*page+〇/〇の部分*/
 }
 
 /*ページ数の部分*/
-.current,/*ページ数　”１”*/
-.page{/*ページ数　”２”*/
+span.current,/*ページ数　”１”*/
+a.page.larger{/*ページ数　”２”*/
   display: inline-block !important;
   width: 35px;
   height: 35px;
@@ -184,8 +185,8 @@ span>.pages{/*page+〇/〇の部分*/
 }
 
 /*ページ数の部分*/
-.current,/*ページ数　”１”*/
-.page{/*ページ数　”２”*/
+span.current,/*ページ数　”１”*/
+a.page.larger{/*ページ数　”２”*/
   display: inline-block !important;
   width: 35px;
   height: 35px;
@@ -198,6 +199,7 @@ span>.pages{/*page+〇/〇の部分*/
 a .page.smaller{
   margin-left: 0;
 }
+
 
 .page:hover {/* hoverしたら色を変える */
   background-color: $color--item-BK-tea !important;

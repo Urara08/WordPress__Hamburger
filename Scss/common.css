@@ -1936,6 +1936,17 @@ a {
   font-weight: normal;
 }
 
+.menu-item menu-item-type {
+  display: inline-block;
+  margin-bottom: 34px;
+  /*px以外長さがおかしい為px*/
+  font-size: 5.33vw;
+  /*テキストが可変し過ぎない様vw*/
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 1.5;
+}
+
 /* タブレット */
 @media screen and (min-width: 600px) {
   .p-footer {
@@ -2392,8 +2403,9 @@ a {
 }
 
 /* 隠す ここから-----------*/
-.current,
-.page {
+span.current,
+a.page.larger,
+a.page.smaller {
   /*ページ数　”２”*/
   display: none !important;
 }
@@ -2480,8 +2492,8 @@ a {
   }
 
   /*ページ数の部分*/
-  .current,
-.page {
+  span.current,
+a.page.larger {
     /*ページ数　”２”*/
     display: inline-block !important;
     width: 35px;
@@ -2588,8 +2600,8 @@ a {
   }
 
   /*ページ数の部分*/
-  .current,
-.page {
+  span.current,
+a.page.larger {
     /*ページ数　”２”*/
     display: inline-block !important;
     width: 35px;

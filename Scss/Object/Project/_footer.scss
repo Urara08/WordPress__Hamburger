@@ -41,7 +41,14 @@
   font-weight: normal;
 }
 }
-
+.menu-item menu-item-type{
+  display:inline-block;
+  margin-bottom: 34px;/*px以外長さがおかしい為px*/
+  font-size: 5.33vw;/*テキストが可変し過ぎない様vw*/
+  font-weight: normal;
+  color:$color--char-WH;
+  line-height: 1.5;
+}
 
 /* タブレット */
 @media screen and (min-width: 600px){
