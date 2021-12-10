@@ -49,7 +49,25 @@
   color:$color--char-WH;
   line-height: 1.5;
 }
+.menu ul{
+display: flex !important;
+justify-content: center;
+font-weight: normal;
+line-height: 1.5;
+}
+.page-item-5::after{
+  content:"|";
+  margin-right: 15px;
+  margin-left: 15px;
+  color: $color--char-WH !important;;
+}
 
+
+ul .page_item a
+{/*効かない*/
+color:$color--char-WH !important;
+
+}
 /* タブレット */
 @media screen and (min-width: 600px){
 .p-footer{

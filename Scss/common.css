@@ -135,8 +135,8 @@ ul, li {
 }
 
 a {
+  color: #707070;
   text-decoration: none;
-  color: #707070 !important;
 }
 
 /*** jsから参照されるファイル ***/
@@ -1945,6 +1945,25 @@ a {
   font-weight: normal;
   color: #FFFFFF;
   line-height: 1.5;
+}
+
+.menu ul {
+  display: flex !important;
+  justify-content: center;
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.page-item-5::after {
+  content: "|";
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #FFFFFF !important;
+}
+
+ul .page_item a {
+  /*効かない*/
+  color: #FFFFFF !important;
 }
 
 /* タブレット */
