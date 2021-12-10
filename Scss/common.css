@@ -307,7 +307,7 @@ a {
   margin-top: 0;
   box-sizing: border-box;
 }
-.p-search-form__input {
+.p-search-form__keyword {
   position: absolute;
   top: 0;
   left: 0;
@@ -380,7 +380,7 @@ a {
     /* 広がり過ぎないように */
     height: auto;
   }
-  .p-search-form__input {
+  .p-search-form__keyword {
     width: 72.52%;
     padding: 10px;
   }
@@ -426,7 +426,7 @@ a {
     /*上のmarginをPCの場合消す*/
     margin-right: 2%;
   }
-  .p-search-form__input {
+  .p-search-form__keyword {
     width: 72.66%;
     line-height: 100%;
   }

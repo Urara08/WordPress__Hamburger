@@ -6,7 +6,7 @@
   margin-top: 0;
   box-sizing: border-box;
 
-&__input{
+&__keyword{
   position: absolute;
   top:0;
   left: 0;
@@ -70,7 +70,7 @@
   max-width: 65.46% !important;/* 広がり過ぎないように */
   height: auto;
 
-&__input{
+&__keyword{
   width: 72.52%;
   padding: 10px;
 }
@@ -110,7 +110,7 @@
     margin-top: -3% !important;/*上のmarginをPCの場合消す*/
     margin-right: 2%;
 
-&__input{
+&__keyword{
     width:72.66%;
     line-height:100%;
 }
