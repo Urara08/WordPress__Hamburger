@@ -2521,7 +2521,7 @@ a {
 
   /*現在のページ数は色を変える(is-activeで指定予定)*/
   .p-pages__list-group-item.this {
-    background-color: #3C2B1C;
+    background-color: #3C2B1C !important;
     color: #FFFFFF;
   }
 
@@ -2582,7 +2582,7 @@ a {
   /*ここまで-----------*/
   /* 表示する スタイリング--------- */
   /* ページネーション全体 */
-  .p-pages__list-group {
+  .wp-pagenavi {
     display: flex !important;
     /*横並びに配置*/
     flex-direction: row !important;
@@ -2591,46 +2591,72 @@ a {
     width: 100%;
     min-width: 38.55%;
     height: 36px;
-    margin-bottom: 64px;
+    margin-bottom: 60px;
     font-size: 16px;
     vertical-align: middle;
     /*無いと中央に配置されない*/
   }
 
+  span > .pages {
+    /*page+〇/〇の部分*/
+    display: inline-block;
+    width: 73px;
+    margin-right: 19.3px;
+  }
+
   /*ページ数の部分*/
-  .p-pages__list-group-item {
+  .current,
+.page {
+    /*ページ数　”２”*/
     display: inline-block;
     width: 35px;
     height: 35px;
-    padding: 7px !important;
-    margin-left: 0.96%;
+    padding: 7px 11px !important;
+    margin-left: 15px !important;
     box-sizing: border-box;
   }
 
+  .page:hover {
+    /* hoverしたら色を変える */
+    background-color: #3C2B1C !important;
+    color: #FFFFFF;
+  }
+
   /* ページ数以外 */
-  .p-pages__list-group-item__title {
+  .pages {
+    /* 〇/〇 */
+    margin-left: 0;
+    padding-top: 7px !important;
+    padding-bottom: 7px;
+    border: none !important;
+  }
+
+  .pages:before {
     /* page */
+    display: inline-block !important;
+    content: "page";
     margin-right: 5px;
-    padding: 8px;
+    color: #707070;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
     border: none !important;
   }
-  .p-pages__list-group-item__back--pc {
-    /* << */
+
+  .nextpostslink,
+.previouspostslink {
+    /* ＜＜ */
     margin-right: 17.2px;
-    padding: 8px;
+    padding-top: 7px;
+    padding-bottom: 7px;
     border: none !important;
   }
-  .p-pages__list-group-item__next--pc {
-    /* 1/10 */
-    margin-left: 17.2px;
-    padding: 8px;
-    border: none !important;
-  }
-  .p-pages__list-group-item__counter {
-    /* >> */
-    margin-left: 19.3px;
-    padding: 8px;
-    border: none !important;
+
+  /* hoverしたら色を変える */
+  .nextpostslink:hover,
+.previouspostslink:hover {
+    /* ＜＜ */
+    color: #3C2B1C !important;
+    font-weight: bold;
   }
 }
 /* pageでも流用*/
