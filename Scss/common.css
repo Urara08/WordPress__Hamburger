@@ -2485,88 +2485,6 @@ a {
   }
 
   /* ここまで-----------*/
-  /* ページネーション全体----------- */
-  .p-pages__list-group {
-    justify-content: center;
-    /*両端に配置する*/
-    max-width: 100%;
-    min-width: 71.8%;
-    height: 35px;
-    margin-bottom: 30px;
-    font-weight: bold !important;
-  }
-
-  /* ----------- */
-  /* 表示する スタイリング--------- */
-  /*ページ数の部分 */
-  .p-pages__list-group-item {
-    display: inline-block !important;
-    /* 表示する */
-    width: 35px;
-    height: 35px;
-    padding: 7px;
-    /*枠の上下中央に配置*/
-    margin-left: 2.5%;
-    background-color: #FFFFFF;
-    font-size: 16px;
-    text-align: center;
-    /*数字を枠の左右中央に配置 */
-    border: solid 1px #707070;
-    box-sizing: border-box;
-  }
-
-  .p-pages__list-group.this {
-    margin-left: 0;
-  }
-
-  /*現在のページ数は色を変える(is-activeで指定予定)*/
-  .p-pages__list-group-item.this {
-    background-color: #3C2B1C !important;
-    color: #FFFFFF;
-  }
-
-  /*ページ数以外の部分 */
-  .p-pages__list-group-item {
-    /* page*/
-  }
-  .p-pages__list-group-item__title {
-    display: inline-block !important;
-    padding: 7px;
-    /*枠の上下中央に配置*/
-    border: none !important;
-    /*枠は無し*/
-  }
-  .p-pages__list-group-item__counter {
-    /*1/10*/
-    display: inline-block !important;
-    margin-right: 19px;
-    padding: 7px;
-    /*枠の上下中央に配置*/
-    border: none !important;
-  }
-  .p-pages__list-group-item__back--pc {
-    /* << */
-    display: inline-block !important;
-    /*表示する*/
-    margin-right: 15px;
-    padding: 7px;
-    /*枠の上下中央に配置*/
-    border: none !important;
-    /*枠は無し*/
-    box-sizing: border-box;
-  }
-  .p-pages__list-group-item__next--pc {
-    /* >> */
-    display: inline-block !important;
-    /*表示する*/
-    margin-left: 15px;
-    padding: 7px;
-    /*枠の上下中央に配置*/
-    border: none !important;
-    /*枠は無し*/
-    box-sizing: border-box;
-  }
-
   /* 表示する スタイリング--------- */
   /* ページネーション全体 */
   .wp-pagenavi {
@@ -2628,7 +2546,7 @@ a {
   .nextpostslink,
 .previouspostslink {
     /* ＜＜ */
-    margin-right: 17.2px;
+    margin-right: 15px;
     padding-top: 7px !important;
     padding-bottom: 7px;
     border: none !important;
