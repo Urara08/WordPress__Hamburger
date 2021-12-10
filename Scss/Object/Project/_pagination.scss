@@ -52,12 +52,7 @@ a.page.smaller{/*ページ数　”２”*/
   border:none !important;
 }
 
-/* hoverしたら色を変える */
-.nextpostslink:hover,/* ＞＞ */
-.previouspostslink:hover{/* ＜＜ */
-  color: $color--item-BK-tea !important;
-  font-size: 20px;
-}
+
 
 /* タブレット */
 @media screen and  (min-width: 600px){
@@ -104,7 +99,7 @@ a.page.larger{/*ページ数　”２”*/
 }
 
 
-.page:hover {/* hoverしたら色を変える */
+.page.larger:hover {/* hoverしたら色を変える */
   background-color: $color--item-BK-tea !important;
   color:$color--char-WH;
 }
@@ -146,12 +141,7 @@ a .nextpostslink{/* ＞＞ */
   border:none !important;
 }
 
-/* hoverしたら色を変える */
-.nextpostslink:hover,/* ＞＞ */
-.previouspostslink:hover{/* ＜＜ */
-  color: $color--item-BK-tea !important;
-  font-size: 20px;
-}
+
 }
 
 /*PＣ*/
@@ -201,7 +191,7 @@ a .page.smaller{
 }
 
 
-.page:hover {/* hoverしたら色を変える */
+.page.larger:hover {/* hoverしたら色を変える */
   background-color: $color--item-BK-tea !important;
   color:$color--char-WH;
 }
@@ -240,10 +230,4 @@ a .nextpostslink{/* ＞＞ */
 }
 
 
-/* hoverしたら色を変える */
-.nextpostslink:hover,/* ＞＞ */
-.previouspostslink:hover{/* ＜＜ */
-  color: $color--item-BK-tea !important;
-  font-size: 20px;
-}
 }

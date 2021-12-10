@@ -2467,14 +2467,6 @@ a.page.smaller {
   border: none !important;
 }
 
-/* hoverしたら色を変える */
-.nextpostslink:hover,
-.previouspostslink:hover {
-  /* ＜＜ */
-  color: #3C2B1C !important;
-  font-size: 20px;
-}
-
 /* タブレット */
 @media screen and (min-width: 600px) {
   /* 隠す */
@@ -2525,7 +2517,7 @@ a.page.larger {
     box-sizing: border-box;
   }
 
-  .page:hover {
+  .page.larger:hover {
     /* hoverしたら色を変える */
     background-color: #3C2B1C !important;
     color: #FFFFFF;
@@ -2571,14 +2563,6 @@ a.page.larger {
     padding-top: 7px !important;
     padding-bottom: 7px;
     border: none !important;
-  }
-
-  /* hoverしたら色を変える */
-  .nextpostslink:hover,
-.previouspostslink:hover {
-    /* ＜＜ */
-    color: #3C2B1C !important;
-    font-size: 20px;
   }
 }
 /*PＣ*/
@@ -2636,7 +2620,7 @@ a.page.larger {
     margin-left: 0;
   }
 
-  .page:hover {
+  .page.larger:hover {
     /* hoverしたら色を変える */
     background-color: #3C2B1C !important;
     color: #FFFFFF;
@@ -2677,14 +2661,6 @@ a.page.larger {
     padding-top: 7px !important;
     padding-bottom: 7px;
     border: none !important;
-  }
-
-  /* hoverしたら色を変える */
-  .nextpostslink:hover,
-.previouspostslink:hover {
-    /* ＜＜ */
-    color: #3C2B1C !important;
-    font-size: 20px;
   }
 }
 /* pageでも流用*/
