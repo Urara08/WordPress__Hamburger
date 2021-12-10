@@ -23,6 +23,11 @@
   @include c-wrapper--card;
   margin-bottom: 20.9px;/*下の余白を調整*/
 }
+
+.c-wrapper--card--archive:last-child{
+  margin-bottom: 0 !important;
+}
+
 /*mixin*/
 .c-caption-group--card{/*文章の一番外側の枠*/
   background-color: $color--char-BR;
@@ -249,7 +254,7 @@
   margin-bottom: 30px;/*下の余白*/
 }
 
-.c-card:last-child{/*一番下のcardのmarginの調整*/
+.c-wrapper--card--archive:last-child{/*一番下のcardのmarginの調整*/
   margin-bottom: 0 !important;
 }
 

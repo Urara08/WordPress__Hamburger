@@ -1,6 +1,6 @@
 /* pagination */
 /* スマホ */
-.p-pages__list-group{/* ページネーション全体 */
+.wp-pagenavi{/* ページネーション全体 */
   display: flex !important;/*横並びに配置*/
   flex-direction: row !important;/*ページの真ん中へ*/
   justify-content: space-between;/*両端に*/
@@ -13,44 +13,41 @@
   font-weight: normal;
   line-height: 1.43;
 }
+
 /* 隠す ここから-----------*/
-.p-pages__list-group-item{/*ページ数(#1～９)*/
+.current,/*ページ数　”１”*/
+.page{/*ページ数　”２”*/
   display: none !important;
 }
-.p-pages__list-group-item{/* page */
-&__title{
+.last,
+.extend{
   display: none;
 }
 
-&__counter{/* 1/10 */
-  display: none;
+.pages{/*page+〇/〇の部分*/
+  display: none !important;
 }
 
-&__back--pc{/* ＜＜ */
-  display: none;
-}
-&__next--pc{/* ＞＞ */
-display: none !important;
-}
-}
 /* ここまで-----------*/
 
 /* 表示する スタイリング--------- */
-.p-pages__list-group-item{
-&__back--sp{/* ＜＜前へ */
-  display: inline-block;
-  border:none !important;/* 枠で囲まない */
-  font-weight: bold;
-  color:$color--char-GY;
+.nextpostslink,/* ＞＞ */
+.previouspostslink{/* ＜＜ */
+  margin-right: 15px;
+  padding-top: 7px !important;
+  padding-bottom: 7px;
+  border:none !important;
+}
 
+/* hoverしたら色を変える */
+.nextpostslink:hover,/* ＞＞ */
+.previouspostslink:hover{/* ＜＜ */
+  color: $color--item-BK-tea !important;
+  font-size: 20px;
 }
-&__next--sp{/* 次へ＞＞*/
-  display: inline-block;
-  border:none !important;/* 枠で囲まない */
-  font-weight: bold;
-  color:$color--char-GY;
-}
-}
+
+
+
 /* <<・>>記号の部分のスタイリング */
 .p-pages__list-group-item{
 &__back__word--sp{/* 前へ */
@@ -58,7 +55,7 @@ display: none !important;
   width: 32px;
   height: 22px;
   margin-left: 8.2px;
-  font-family: $font-family--M-plus;
+  font-family: $font-family--Roboto;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.43;
@@ -70,7 +67,7 @@ display: none !important;
   width: 32px;
   height: 22px;
   margin-right: 8.2px;
-  font-family: $font-family--M-plus;
+  font-family: $font-family--Roboto;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.43;
@@ -116,11 +113,12 @@ display: none !important;
   min-width: 71.8%;
   height: 35px;
   margin-bottom: 30px;
+  font-family: $font-family--Roboto;
   font-weight: bold !important;
 }
 
 span>.pages{/*page+〇/〇の部分*/
-  display: inline-block;
+  display: inline-block !important;
   width: 73px;
   margin-right: 19.3px;
 
@@ -129,11 +127,14 @@ span>.pages{/*page+〇/〇の部分*/
 /*ページ数の部分*/
 .current,/*ページ数　”１”*/
 .page{/*ページ数　”２”*/
-  display: inline-block;
+  display: inline-block !important;
   width: 35px;
   height: 35px;
   padding: 7px 11px!important;
   margin-left: 15px !important;
+  color:$color--char-GY;
+  background-color: $color--item-WH-op-100;
+  border: 1px solid $color--char-GY;
   box-sizing: border-box;
 }
 .page:hover {/* hoverしたら色を変える */
@@ -143,9 +144,11 @@ span>.pages{/*page+〇/〇の部分*/
 
 /* ページ数以外 */
 .pages{/* 〇/〇 */
+  display: inline-block !important;
   margin-left:0;
   padding-top: 7px !important;
   padding-bottom: 7px;
+  color:$color--char-GY;
   border:none !important;
 }
 
@@ -160,6 +163,7 @@ span>.pages{/*page+〇/〇の部分*/
 }
  .nextpostslink,/* ＞＞ */
  .previouspostslink{/* ＜＜ */
+  display: inline-block !important;
   margin-right: 15px;
   padding-top: 7px !important;
   padding-bottom: 7px;
@@ -192,7 +196,7 @@ span>.pages{/*page+〇/〇の部分*/
 }
 
 span>.pages{/*page+〇/〇の部分*/
-  display: inline-block;
+  display: inline-block !important;
   width: 73px;
   margin-right: 19.3px;
 
@@ -201,11 +205,13 @@ span>.pages{/*page+〇/〇の部分*/
 /*ページ数の部分*/
 .current,/*ページ数　”１”*/
 .page{/*ページ数　”２”*/
-  display: inline-block;
+  display: inline-block !important;
   width: 35px;
   height: 35px;
   padding: 7px 11px!important;
   margin-left: 15px !important;
+  background-color: $color--item-WH-op-100;
+  border: 1px solid $color--char-GY;
   box-sizing: border-box;
 }
 .page:hover {/* hoverしたら色を変える */
@@ -215,6 +221,7 @@ span>.pages{/*page+〇/〇の部分*/
 
 /* ページ数以外 */
 .pages{/* 〇/〇 */
+  display: inline-block !important;
   margin-left:0;
   padding-top: 7px !important;
   padding-bottom: 7px;
@@ -225,7 +232,6 @@ span>.pages{/*page+〇/〇の部分*/
   display: inline-block !important;
   content:"page";
   margin-right: 5px;
-
   color:$color--char-GY;
   font-family: $font-family--Roboto;
   font-weight: bold;

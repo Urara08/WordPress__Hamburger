@@ -67,10 +67,10 @@
           </section><!-- card　ここまで -->
         </div><!-- Inner--middleの最後 -->
         <div class="p-contents__archive__inner--bottom">
-              <ul class="p-pages__list-group"><!-- ページネーション -->
+          <!-- ページネーション -->
               <?php wp_pagenavi(); ?>
-              </ul><!-- ページネーションの最後 -->
-            </div><!-- Inner--middleここまで -->
+              <!-- ページネーションここまで -->
+            </div><!-- inner--bottomここまで -->
           </article>
         </main>
         <?php get_footer(); ?>

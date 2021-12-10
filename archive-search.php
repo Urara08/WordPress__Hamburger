@@ -97,9 +97,9 @@
           </section><!-- card　ここまで -->
         </div><!-- Inner--middleの最後 -->
         <div class="p-contents__archive__inner--bottom">
-              <ul class="p-pages__list-group"><!-- ページネーション -->
-              <?php wp_pagenavi(); ?>
-              </ul><!-- ページネーションの最後 -->
+          <!-- ページネーション -->
+          <?php wp_pagenavi(); ?>
+              <!-- ページネーションここまで -->
             </div><!-- Inner--middleここまで -->
           </article>
         </main>
