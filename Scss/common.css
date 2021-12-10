@@ -2918,16 +2918,19 @@ a.page.larger {
   max-width: 100%;
   margin-left: 0;
   margin-bottom: 20px;
+  color: #3C2A10;
 }
 .p-contents__single__block-list-group--2 {
   /*インデントがある行*/
   display: block;
   margin-left: 18px;
   margin-bottom: 20px;
+  color: #3C2A10;
 }
 .p-contents__single__block-list-group--1.hp_mb60 {
   /*3段目のリスト*/
   margin-bottom: 60px;
+  color: #3C2A10;
 }
 
 /* ------------コードのブロック------------*/
@@ -2964,6 +2967,7 @@ a.page.larger {
   width: 40.29%;
   height: 77px;
   padding: 28px 0px 27px 30px !important;
+  color: #3C2A10;
   text-align: left;
   /*基本を左寄せにする*/
   border: solid 1px #707070;
@@ -2975,6 +2979,7 @@ a.page.larger {
   width: 59.11%;
   height: 77px;
   padding: 28px 12.6px 27px 30px !important;
+  color: #3C2A10;
   border: solid 1px #707070;
   box-sizing: border-box;
 }
@@ -4117,6 +4122,7 @@ a.page.larger {
   width: 100% !important;
   height: 100%;
   font-size: 16px;
+  color: #3C2A10;
   line-height: 1.43;
   word-wrap: break-word;
   overflow-y: hidden;
@@ -4308,6 +4314,7 @@ a.page.larger {
     width: 100% !important;
     height: auto;
     font-size: 1.91vw;
+    color: #3C2A10;
     line-height: 1.43;
     word-wrap: break-word;
   }
@@ -4432,6 +4439,7 @@ a.page.larger {
     width: 100% !important;
     height: auto;
     font-size: 0.83vw;
+    color: #3C2A10;
     line-height: 1.43;
     word-wrap: break-word;
   }

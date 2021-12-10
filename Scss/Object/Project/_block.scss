@@ -161,16 +161,19 @@
   max-width: 100%;
   margin-left: 0;
   margin-bottom: 20px;
+  color:$color--char-BR;
 }
 
 &__block-list-group--2{/*インデントがある行*/
   display: block;
   margin-left: 18px;
   margin-bottom: 20px;
+  color:$color--char-BR;
 }
 
 &__block-list-group--1.hp_mb60{/*3段目のリスト*/
   margin-bottom: 60px;
+  color:$color--char-BR;
 }
 }
 
@@ -205,6 +208,7 @@
   width:40.29%;
   height: 77px;
   padding: 28px 0px 27px 30px !important;
+  color: $color--char-BR;
   text-align: left;/*基本を左寄せにする*/
   border: solid 1px $color--char-GY;
   box-sizing: border-box;
@@ -215,6 +219,7 @@
   width:59.11%;
   height: 77px;
   padding: 28px 12.6px 27px 30px!important;
+  color: $color--char-BR;
   border: solid 1px $color--char-GY;
   box-sizing: border-box;
 }
