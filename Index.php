@@ -4,7 +4,7 @@
           <section class="p-hero">
             <div class="p-hero__png--pc" alt="ハンバーガーの画像"></div>
             <div class="p-hero__png--sp"  alt="ハンバーガーの画像"></div>
-            <h2 class="p-hero__label">ダミーサイト</h2>
+            <h2 class="p-hero__label description"><?php bloginfo( 'description' ); ?></h2>
           </section>
         </div>
 　　　　<div class="p-contents__wrapper">
