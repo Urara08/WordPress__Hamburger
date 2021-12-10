@@ -2413,8 +2413,25 @@ a {
 .nextpostslink,
 .previouspostslink {
   /* ＜＜ */
-  margin-right: 15px;
   padding-top: 7px !important;
+  padding-bottom: 7px;
+  border: none !important;
+}
+
+.previouspostslink:after {
+  /* 前へ */
+  content: "前へ";
+  margin-left: 8.2px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px;
+  border: none !important;
+}
+
+.nextpostslink:before {
+  /*次へ*/
+  content: "次へ";
+  margin-left: 8.2px !important;
+  padding-right: 7px !important;
   padding-bottom: 7px;
   border: none !important;
 }
@@ -2427,60 +2444,20 @@ a {
   font-size: 20px;
 }
 
-/* <<・>>記号の部分のスタイリング */
-.p-pages__list-group-item__back__word--sp {
-  /* 前へ */
-  display: inline-block !important;
-  width: 32px;
-  height: 22px;
-  margin-left: 8.2px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.43;
-  vertical-align: top;
-}
-.p-pages__list-group-item__next__word--sp {
-  /* 次へ */
-  display: inline-block !important;
-  width: 32px;
-  height: 22px;
-  margin-right: 8.2px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 1.43;
-  vertical-align: top;
-}
-.p-pages__list-group-item__back__png--sp {
-  /* << */
-  display: inline-block;
-  width: 17.53px;
-  height: 17.07px;
-  padding-top: 2px;
-}
-.p-pages__list-group-item__next__png--sp {
-  /* << */
-  display: inline-block;
-  width: 17.53px;
-  height: 17.07px;
-  padding-top: 2px;
-  padding-bottom: 2.89px;
-}
-
 /* タブレット */
 @media screen and (min-width: 600px) {
-  /* 隠す部分 ここから-----------*/
-  .p-pages__list-group-item__back--sp {
-    /*＜＜前へ*/
-    display: none !important;
-  }
-  .p-pages__list-group-item__next--sp {
-    /*次へ＞＞*/
+  /* 隠す */
+  .previouspostslink:after {
+    /* 前へ */
     display: none !important;
   }
 
-  /* ここまで-----------*/
+  .nextpostslink:before {
+    /*次へ*/
+    display: none !important;
+  }
+
+  /* 隠すここまで */
   /* 表示する スタイリング--------- */
   /* ページネーション全体 */
   .wp-pagenavi {
@@ -2524,16 +2501,6 @@ a {
   }
 
   /* ページ数以外 */
-  .pages {
-    /* 〇/〇 */
-    display: inline-block !important;
-    margin-left: 0;
-    padding-top: 7px !important;
-    padding-bottom: 7px;
-    color: #707070;
-    border: none !important;
-  }
-
   .pages:before {
     /* page */
     display: inline-block !important;
@@ -2545,11 +2512,31 @@ a {
     border: none !important;
   }
 
-  .nextpostslink,
-.previouspostslink {
-    /* ＜＜ */
+  .pages {
+    /* 〇/〇 */
     display: inline-block !important;
-    margin-right: 15px;
+    margin-left: 0;
+    padding-top: 7px !important;
+    padding-bottom: 7px;
+    color: #707070;
+    border: none !important;
+  }
+
+  a .page.smaller {
+    margin-left: 0;
+  }
+
+  a .previouspostslink {
+    /* ＜＜ */
+    margin-right: 17.2px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px;
+    border: none !important;
+  }
+
+  a .nextpostslink {
+    /* ＞＞ */
+    margin-left: 17.2px !important;
     padding-top: 7px !important;
     padding-bottom: 7px;
     border: none !important;
@@ -2565,6 +2552,18 @@ a {
 }
 /*PＣ*/
 @media screen and (min-width: 1250px) {
+  /* 隠す */
+  .previouspostslink:after {
+    /* 前へ */
+    display: none !important;
+  }
+
+  .nextpostslink:before {
+    /*次へ*/
+    display: none !important;
+  }
+
+  /* 隠すここまで */
   /* 表示する スタイリング--------- */
   /* ページネーション全体 */
   .wp-pagenavi {
@@ -2586,7 +2585,6 @@ a {
     /*page+〇/〇の部分*/
     display: inline-block !important;
     width: 73px;
-    margin-right: 19.3px;
   }
 
   /*ページ数の部分*/
@@ -2601,6 +2599,10 @@ a {
     background-color: #FFFFFF;
     border: 1px solid #707070;
     box-sizing: border-box;
+  }
+
+  a .page.smaller {
+    margin-left: 0;
   }
 
   .page:hover {
@@ -2630,10 +2632,17 @@ a {
     border: none !important;
   }
 
-  .nextpostslink,
-.previouspostslink {
+  a .previouspostslink {
     /* ＜＜ */
-    margin-right: 17.2px;
+    margin-right: 17.2px !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px;
+    border: none !important;
+  }
+
+  a .nextpostslink {
+    /* ＞＞ */
+    margin-left: 17.2px !important;
     padding-top: 7px !important;
     padding-bottom: 7px;
     border: none !important;
