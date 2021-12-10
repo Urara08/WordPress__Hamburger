@@ -2566,20 +2566,84 @@ a {
     /*枠は無し*/
     box-sizing: border-box;
   }
+
+  /* 表示する スタイリング--------- */
+  /* ページネーション全体 */
+  .wp-pagenavi {
+    display: inline-flex;
+    justify-content: center;
+    /*両端に配置する*/
+    max-width: 100%;
+    min-width: 71.8%;
+    height: 35px;
+    margin-bottom: 30px;
+    font-weight: bold !important;
+  }
+
+  span > .pages {
+    /*page+〇/〇の部分*/
+    display: inline-block;
+    width: 73px;
+    margin-right: 19.3px;
+  }
+
+  /*ページ数の部分*/
+  .current,
+.page {
+    /*ページ数　”２”*/
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 7px 11px !important;
+    margin-left: 15px !important;
+    box-sizing: border-box;
+  }
+
+  .page:hover {
+    /* hoverしたら色を変える */
+    background-color: #3C2B1C !important;
+    color: #FFFFFF;
+  }
+
+  /* ページ数以外 */
+  .pages {
+    /* 〇/〇 */
+    margin-left: 0;
+    padding-top: 7px !important;
+    padding-bottom: 7px;
+    border: none !important;
+  }
+
+  .pages:before {
+    /* page */
+    display: inline-block !important;
+    content: "page";
+    margin-right: 5px;
+    color: #707070;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    border: none !important;
+  }
+
+  .nextpostslink,
+.previouspostslink {
+    /* ＜＜ */
+    margin-right: 17.2px;
+    padding-top: 7px !important;
+    padding-bottom: 7px;
+    border: none !important;
+  }
+
+  /* hoverしたら色を変える */
+  .nextpostslink:hover,
+.previouspostslink:hover {
+    /* ＜＜ */
+    color: #3C2B1C !important;
+    font-size: 20px;
+  }
 }
 /*PＣ*/
 @media screen and (min-width: 1250px) {
-  /* 隠す部分 ここから-----------*/
-  .p-pages__list-group-item__back--sp {
-    /*＜＜前へ*/
-    display: none !important;
-  }
-  .p-pages__list-group-item__next--sp {
-    /*次へ＞＞*/
-    display: none !important;
-  }
-
-  /*ここまで-----------*/
   /* 表示する スタイリング--------- */
   /* ページネーション全体 */
   .wp-pagenavi {
@@ -2646,7 +2710,7 @@ a {
 .previouspostslink {
     /* ＜＜ */
     margin-right: 17.2px;
-    padding-top: 7px;
+    padding-top: 7px !important;
     padding-bottom: 7px;
     border: none !important;
   }
