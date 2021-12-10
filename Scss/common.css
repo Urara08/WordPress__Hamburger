@@ -1923,28 +1923,12 @@ a {
   display: inline-block;
   margin-bottom: 34px;
   /*px以外長さがおかしい為px*/
-  font-size: 5.33vw;
-  /*テキストが可変し過ぎない様vw*/
-  font-weight: normal;
-  line-height: 1.5;
 }
 .p-footer__menu___copy {
   display: inline-block;
   line-height: 1.42;
-  font-size: 3.73vw;
-  /*テキストが可変し過ぎない様vw*/
+  font-size: 14px;
   font-weight: normal;
-}
-
-.menu-item menu-item-type {
-  display: inline-block;
-  margin-bottom: 34px;
-  /*px以外長さがおかしい為px*/
-  font-size: 5.33vw;
-  /*テキストが可変し過ぎない様vw*/
-  font-weight: normal;
-  color: #FFFFFF;
-  line-height: 1.5;
 }
 
 .menu ul {
@@ -1959,6 +1943,13 @@ a {
   margin-right: 15px;
   margin-left: 15px;
   color: #FFFFFF !important;
+}
+
+.page-item-5,
+.page-item-9 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 ul .page_item a {
@@ -1984,17 +1975,19 @@ ul .page_item a {
     display: inline-block;
     margin-bottom: 34px;
     /*px以外長さがおかしい為px*/
-    font-size: 2.39vw !important;
-    /*テキストが可変し過ぎない様vw*/
-    font-weight: normal;
-    line-height: 1.5;
   }
   .p-footer__menu__copy {
     display: inline-block;
-    font-size: 1.67vw;
-    /*テキストが可変し過ぎない様vw*/
+    font-size: 14px;
     font-weight: normal;
     line-height: 1.42;
+  }
+
+  .page-item-5,
+.page-item-9 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
   }
 }
 /* PC */
@@ -2019,17 +2012,19 @@ ul .page_item a {
     display: inline-block;
     margin-bottom: 34px;
     /*px以外長さが合わない*/
-    font-size: 1.04vw !important;
-    /*vw：テキストの可変超過を防ぐ*/
-    font-weight: normal;
-    line-height: 1.5;
   }
   .p-footer__menu__copy {
     display: inline-block;
-    font-size: 0.72vw;
-    /*テキストが可変し過ぎない様vw*/
+    font-size: 14px;
     font-weight: normal;
     line-height: 1.42;
+  }
+
+  .page-item-5,
+.page-item-9 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
   }
 }
 /* スマホ */

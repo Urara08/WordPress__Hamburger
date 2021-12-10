@@ -29,37 +29,34 @@
   &__info{
   display:inline-block;
   margin-bottom: 34px;/*px以外長さがおかしい為px*/
-  font-size: 5.33vw;/*テキストが可変し過ぎない様vw*/
-  font-weight: normal;
-  line-height: 1.5;
 }
 
   &___copy{
   display:inline-block;
   line-height: 1.42;
-  font-size: 3.73vw;/*テキストが可変し過ぎない様vw*/
+  font-size: 14px;
   font-weight: normal;
 }
 }
-.menu-item menu-item-type{
-  display:inline-block;
-  margin-bottom: 34px;/*px以外長さがおかしい為px*/
-  font-size: 5.33vw;/*テキストが可変し過ぎない様vw*/
-  font-weight: normal;
-  color:$color--char-WH;
-  line-height: 1.5;
-}
+
+
 .menu ul{
-display: flex !important;
-justify-content: center;
-font-weight: normal;
-line-height: 1.5;
+  display: flex !important;
+  justify-content: center;
+  font-weight: normal;
+  line-height: 1.5;
 }
 .page-item-5::after{
   content:"|";
   margin-right: 15px;
   margin-left: 15px;
   color: $color--char-WH !important;;
+}
+.page-item-5,
+.page-item-9{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 
 
@@ -83,16 +80,20 @@ color:$color--char-WH !important;
   &__info{
   display:inline-block;
   margin-bottom:34px;/*px以外長さがおかしい為px*/
-  font-size: 2.39vw !important;/*テキストが可変し過ぎない様vw*/
-  font-weight: normal;
-  line-height: 1.5;
 }
+
   &__copy{
   display:inline-block;
-  font-size: 1.67vw;/*テキストが可変し過ぎない様vw*/
+  font-size: 14px;
   font-weight: normal;
   line-height: 1.42;
 }
+}
+.page-item-5,
+.page-item-9{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 }
 /* PC */
@@ -114,15 +115,18 @@ color:$color--char-WH !important;
   &__info{
     display:inline-block;
     margin-bottom:34px;/*px以外長さが合わない*/
-    font-size: 1.04vw !important;/*vw：テキストの可変超過を防ぐ*/
-    font-weight: normal;
-    line-height: 1.5;
 }
   &__copy{
     display:inline-block;
-    font-size: 0.72vw;/*テキストが可変し過ぎない様vw*/
+    font-size: 14px;
     font-weight: normal;
     line-height: 1.42;
 }
+}
+.page-item-5,
+.page-item-9{
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
 }
 }
