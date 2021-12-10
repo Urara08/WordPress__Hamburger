@@ -2656,7 +2656,7 @@ a {
 .previouspostslink:hover {
     /* ＜＜ */
     color: #3C2B1C !important;
-    font-weight: bold;
+    font-size: 20px;
   }
 }
 /* pageでも流用*/
