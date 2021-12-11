@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php /*Template Name:ショップ情報;*/ ?>
     <main class="l-main">
       <div class="l-hero">
         <section class="p-hero__page">
@@ -12,8 +13,8 @@
           <div class="p-contents__single__block-lead__area">
             <section class="p-contents__single__block-lead">
               <div class="p-contents__single__block-lead__inner">
-                <h2 class="p-contents__single__block-lead__title  tag-h2">見出しH2</h2>
-                <p class="p-contents__single__block-lead__text">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
+                <h2 class="p-contents__single__block-lead__title  tag-h2"><?php echo CFS()->get('shop_title'); ?></h2>
+                <p class="p-contents__single__block-lead__text"><?php echo CFS()->get('shop_text'); ?></p>
               </div>
             </section>
           </div>
