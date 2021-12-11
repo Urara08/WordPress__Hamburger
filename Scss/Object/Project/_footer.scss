@@ -28,11 +28,14 @@
 
   &__info{
   display:inline-block;
-  margin-bottom: 34px;/*px以外長さがおかしい為px*/
+  margin-top: 0px;
+
 }
 
   &___copy{
   display:inline-block;
+  margin-top: 34px;
+  margin-bottom: 0;/*px以外長さがおかしい為px*/
   line-height: 1.42;
   font-size: 14px;
   font-weight: normal;
@@ -40,27 +43,29 @@
 }
 
 
-.menu ul{
+.menu-footer_1-container .menu{/*カスタムメニュー全体*/
   display: flex !important;
   justify-content: center;
   font-weight: normal;
   line-height: 1.5;
 }
-.page-item-5::after{
+
+.menu-item-170::after{/*ショップ情報の後ろ*/
   content:"|";
   margin-right: 15px;
   margin-left: 15px;
   color: $color--char-WH !important;;
 }
-.page-item-5,
-.page-item-9{
+.menu-item-170,
+.menu-item-169{/*ショップ情報とヒストリー*/
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
 }
 
 
-ul .page_item a
+.menu-item-170 a,
+.menu-item-169 a
 {/*効かない*/
 color:$color--char-WH !important;
 
@@ -79,18 +84,21 @@ color:$color--char-WH !important;
 .p-footer__menu{
   &__info{
   display:inline-block;
-  margin-bottom:34px;/*px以外長さがおかしい為px*/
+  margin-top:0;
+  margin-bottom:0;
 }
 
   &__copy{
   display:inline-block;
+  margin-top:34px;
+  margin-bottom: 0;
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42;
 }
 }
-.page-item-5,
-.page-item-9{
+.menu-item-170,
+.menu-item-169{
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
@@ -114,17 +122,21 @@ color:$color--char-WH !important;
   .p-footer__menu{
   &__info{
     display:inline-block;
-    margin-bottom:34px;/*px以外長さが合わない*/
+    margin-top:0;
+    margin-bottom:0;
+
 }
   &__copy{
     display:inline-block;
+    margin-top:34px;
+    margin-bottom:0;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.42;
 }
 }
-.page-item-5,
-.page-item-9{
+.menu-item-169,
+.menu-item-170{
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
