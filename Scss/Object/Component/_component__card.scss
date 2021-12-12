@@ -64,7 +64,8 @@
 .c-btn--card{/*cardのbutton*/
   @include c-button;
   position: relative;
-  min-width: 167px;
+  max-width:163.16px;
+  min-width: 167px !important;
   height: 42.47px;
   padding: 10px;
   background-color:$color--item-WH-op-100;
@@ -164,6 +165,7 @@
 .c-caption-group--card--archive{/*文章の一番外側の枠*/
   @include c-caption-group--card;
   max-width: 50%;
+  min-width: 43.16%;
   padding-top:29px;
   padding-bottom: 40px ;
   min-height: 100%;
@@ -220,7 +222,7 @@
 .c-btn--card{
   @include c-button;
   position: relative;
-  min-width: 163.16px;
+  width:163.16px;
   height: 42.47px;
   padding: 10px;
   border-radius:38px;
@@ -309,6 +311,7 @@
 .c-btn--card{
   @include c-button;
   position: relative;
+  width: 292px;
   min-width: 292px;
   height: 76px;
   padding: 10px;

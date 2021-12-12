@@ -3660,7 +3660,8 @@ a.page.larger {
   box-sizing: border-box;
   transition: transform 0.3s opacity 0.3s;
   position: relative;
-  min-width: 167px;
+  max-width: 163.16px;
+  min-width: 167px !important;
   height: 42.47px;
   padding: 10px;
   background-color: #FFFFFF;
@@ -3795,6 +3796,7 @@ a.page.larger {
     color: #FFFFFF;
     box-sizing: border-box;
     max-width: 50%;
+    min-width: 43.16%;
     padding-top: 29px;
     padding-bottom: 40px;
     min-height: 100%;
@@ -3860,7 +3862,7 @@ a.page.larger {
     box-sizing: border-box;
     transition: transform 0.3s opacity 0.3s;
     position: relative;
-    min-width: 163.16px;
+    width: 163.16px;
     height: 42.47px;
     padding: 10px;
     border-radius: 38px;
@@ -3980,6 +3982,7 @@ a.page.larger {
     box-sizing: border-box;
     transition: transform 0.3s opacity 0.3s;
     position: relative;
+    width: 292px;
     min-width: 292px;
     height: 76px;
     padding: 10px;

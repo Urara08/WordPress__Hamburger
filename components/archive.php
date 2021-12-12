@@ -1,29 +1,39 @@
-<article class="p-contents__archive">
-<div class="p-contents__archive__inner--top">
-  <section class="p-contents__archive__introduction"><!-- 導入記事　ここから -->
-  <div class="p-contents__archive__introduction__inner">
-    <h2 class="p-contents__archive__introduction__title">小見出しが入ります</h2>
-    <p class="p-contents__archive__introduction__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-  </div>
-</section><!-- 導入記事　ここまで -->
-</div><!-- p-contents__archive__inner--top　ここまで -->
 <div class="p-contents__archive__inner--middle">
-  <section class="p-contents__archive__cards"><!-- card　ここから -->
-  <div class="c-wrapper--card--archive">
-    <figure class="c-card--archive"><!-- 商品詳細　① -->
-    <div class="c-photo-frame--card--archive">
-      <div class="c-photo--archive" alt="ハンバーガーの画像"></div>
-              </div>
-              <figcaption class="c-caption-group--card--archive">
-                <h3 class="c-category--card">チーズバーガー</h3>
-                <h4 class="c-sub-heading--card">小見出しが入ります</h4>
-                <p class="c-detail--card--archive">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-                <div class="c-btn-wrapper--card--archive">
-                  <div class="c-btn--card"><a class="c-btn-label--card">詳しくみる</a></div>
+  <section class="p-contents__archive__cards">
+    <?php
+    if(have_posts()) :
+      while(have_posts()) :
+        the_post();
+        ?>
+        <div class="c-wrapper--card--archive">
+          <figure class="c-card--archive">
+            <div class="c-photo-frame--card--archive">
+              <div class="thumbnail">
+                <?php
+                if(has_post_thumbnail() ) :
+                  the_post_thumbnail();
+                  else :
+                    ?><div class="no-thumbnail"></div><?php
+                  endif;
+                  ?>
+                  </div>
                 </div>
+                  <figcaption class="c-caption-group--card--archive">
+                    <h3 class="c-category--card"><?php the_title(); ?></h3>
+                    <h4 class="c-sub-heading--card"><?php  the_title(); ?></h4>
+                    <div class="c-detail--card--archive"><?php the_excerpt(); ?></div>
+                    <div class="c-btn-wrapper--card--archive">
+                      <div class="c-btn--card"><a href="<?php the_permalink(); ?>" class="c-btn-label--card">詳しくみる</a></div>
+                      </div>
               </figcaption>
             </figure>
           </div>
-          </article>
-        <?php get_footer(); ?>
-        <?php get_sidebar(); ?>
+              <?php
+              endwhile;
+            else:
+            ?>
+            <p class="c-card--archive">お探しの商品は見つかりませんでした</p><?php
+            endif;
+            ?>
+            </section><!-- card　ここまで -->
+          </div><!-- Inner--middleの最後 -->
