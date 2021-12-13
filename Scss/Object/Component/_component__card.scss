@@ -140,6 +140,11 @@
   margin-left: 5.05%;
   line-height: 1.43;
 }
+.thumbnail{
+  object-fit: cover !important;
+  max-width: 100%;
+}
+
 
 /* タブレット ------------------------------------ */
 @media screen and (min-width: 600px){
