@@ -6,6 +6,7 @@
             'caption',
         ));}
 
+
     //テーマサポート
     add_theme_support( 'menus' );//メニューの管理
     add_theme_support( 'title-tag' );//タイトルの吐き出し

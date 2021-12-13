@@ -38,6 +38,7 @@
 .c-caption-group--card--archive{/*文章の一番外側の枠*/
   @include c-caption-group--card;
   max-width: 100%;
+
   padding-top: 30.5px;
   padding-bottom: 43.7px;
   font-size: 16px;
@@ -52,13 +53,13 @@
   vertical-align:bottom;
 }
 
-.c-photo--archive{/*写真*/
+.thumbnail{/*写真*/
   @include c-photo;
   height: 0;/*高さは設定しない*/
   padding-bottom:68.58%;/*アスペクト比を維持*/
-  background-image:url(../img/item__archive.png);
   background-position: center;
   background-repeat:no-repeat ;
+  vertical-align: bottom !important;
 }
 
 .c-btn--card{/*cardのbutton*/
@@ -142,7 +143,7 @@
 }
 .thumbnail{
   object-fit: cover !important;
-  max-width: 100%;
+  width: 100%;
 }
 
 
@@ -213,10 +214,12 @@
   height: auto;
 }
 
-.c-photo--archive{
+
+.thumbnail{
   display: block !important;
+  width: 100%;
   height:100%;
-  background-image:url(../img/item__archive.png);
+
   background-position: left top;/*カンプに近い*/
   background-size: cover;
   background-repeat:no-repeat;
@@ -251,8 +254,9 @@
   @include c-card;
   display: flex;
   flex-direction: row;/*画像を左側、文章を右側に*/
-  min-width: 78.55% !important;
-  height: auto;
+  width: 1353px !important;
+  height:  471px !important;
+
 }
 
 .c-wrapper--card--archive {
@@ -267,11 +271,10 @@
 
 .c-caption-group--card--archive{/*文章の一番外側の枠*/
   @include c-caption-group--card;
-  max-width: 50%;
+  width: 50% !important;
   padding: 0;
   padding-top:53px;
   padding-bottom: 60px;
-  min-height: 100%;
 }
 
 .c-category--card{/*card内の大きい見出し*/
@@ -304,13 +307,16 @@
 
 /*c-card 写真側*/
 .c-photo-frame--card--archive{
-  width: 50%;
-    height: auto;
+  min-width: 50%;
+
 }
 
-.c-photo--archive{/*写真*/
+.thumbnail{/*写真*/
   display: block !important;
+  width: 50%;
+  height: 100%;
   background-position: left center;/*left centerがカンプに近い*/
+  background-size: cover !important;
 }
 
 .c-btn--card{

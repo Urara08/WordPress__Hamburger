@@ -17,7 +17,11 @@
             </div>
           </section><!-- 導入記事　ここまで -->
         </div><!-- p-contents__archive__inner--top　ここまで -->
+
+
         <?php get_template_part("components/archive"); ?>
+
+
         <div class="p-contents__archive__inner--bottom">
           <!-- ページネーション -->
               <?php wp_pagenavi(); ?>

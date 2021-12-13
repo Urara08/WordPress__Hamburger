@@ -5,7 +5,7 @@
         <section class="p-hero__page">
           <div class="p-hero__page__png--sp" alt="ハンバーガーの画像"></div>
           <div class="p-hero__page__png--pc" alt="ハンバーガーの画像"></div>
-          <h2 class="p-hero__label">ヒストリー</h2>
+          <h2 class="p-hero__label"><?php echo CFS()->get('history_title'); ?></h2>
         </section>
       </div>
       <section class="p-contents__single">
