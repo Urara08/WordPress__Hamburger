@@ -2402,7 +2402,7 @@ a {
     /*cardグループの外側の余白*/
     display: inline-block !important;
     width: 87.12% !important;
-    margin: 0 6.43% 150px 6.43% !important;
+    margin: 0 100px 150px 100px !important;
     box-sizing: border-box;
   }
 }
@@ -3761,6 +3761,12 @@ a.page.larger {
   margin-right: 5.05%;
   margin-left: 5.05%;
   line-height: 1.43;
+}
+
+.thumbnail {
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  max-width: 100%;
 }
 
 /* タブレット ------------------------------------ */
