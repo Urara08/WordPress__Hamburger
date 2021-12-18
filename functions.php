@@ -38,3 +38,50 @@
         wp_enqueue_script( 'search-form.js', get_template_directory_uri() . '/jquery/script_search-form.js', array('jquery'), '1.0.0', true);// jQueryスクリプトファイル読み込み
     }
     add_action( 'wp_enqueue_scripts', 'add_files' );// 関数の実行
+
+    //カスタム投稿
+    function add_custom_post_type(){
+        // アイテム
+        register_post_type(
+            'item', // 1.投稿タイプ名
+            array(   // 2.オプション
+                'label' => 'アイテム', // 投稿タイプの名前
+                'public'        => true, // 利用する場合はtrueにする
+                'has_archive'   => true, // この投稿タイプのアーカイブを有効にする
+                'menu_position' => 5, // この投稿タイプが表示されるメニューの位置
+                'menu_icon'     => 'dashicons-wordpress', // メニューで使用するアイコン
+                'supports' => array( // サポートする機能
+                    'title',
+                    'author',
+                    'thumbnail',
+                    'excerpt',
+                    'custom-fields' ,
+                )
+            )
+        );
+    }
+    add_action('init', 'add_custom_post_type');
+// カスタムタクソノミーの追加
+function add_custom_taxonomy(){
+    // 制作実績(カテゴリー)
+    register_taxonomy(
+        'drink', // 1.タクソノミーの名前
+        'item',          // 2.利用する投稿タイプ
+        array(            // 3.オプション
+            'label' => 'カテゴリー', // タクソノミーの表示名
+            'hierarchical' => true, // 階層を持たせるかどうか
+            'public' => true, // 利用する場合はtrueにする
+        )
+    );
+    // 制作実績(タグ)
+    register_taxonomy(
+        'drink-tag', // 1.タクソノミーの名前
+        'item',     // 2.利用する投稿タイプ
+        array(       // 3.オプション
+            'label' => 'タグ', // タクソノミーの表示名
+            'hierarchical' => false, // 階層を持たせるかどうか
+            'public' => true, // 利用する場合はtrueにする
+        )
+    );
+}
+add_action('init', 'add_custom_taxonomy');

@@ -942,6 +942,7 @@ a {
     height: 0;
     padding-bottom: 32.19% !important;
     background-color: #000000;
+    /*item*/
   }
   .p-hero__single__png--pc {
     /* pc用の画像 */
@@ -973,6 +974,18 @@ a {
     color: #FFFFFF;
     font-weight: bold;
     line-height: 1.31;
+  }
+  .p-hero__single .item_photo__wrapper {
+    width: 100%;
+    height: 0;
+    padding-bottom: 32.19% !important;
+    /* アスペクト比を保つ */
+    overflow: hidden;
+  }
+  .p-hero__single .item_photo {
+    width: 100%;
+    height: auto;
+    margin-top: -10%;
   }
 
   /*------------- single */
