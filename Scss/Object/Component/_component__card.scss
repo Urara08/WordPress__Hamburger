@@ -141,8 +141,12 @@
   line-height: 1.43;
 }
 .thumbnail{
-  object-fit: cover !important;
   max-width: 100%;
+  background-position: left top;/*カンプに近い*/
+  background-size: cover;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+  box-sizing: border-box;
 }
 
 
@@ -208,15 +212,9 @@
 }
 
 /*c-card 写真側*/
-.c-photo-frame--card--archive{/*cardの写真の外枠*/
-  width: 50%;
+.thumbnail{/*cardの写真の外枠*/
+  max-width: 50%;
   height: auto;
-}
-
-.c-photo--archive{
-  display: block !important;
-  height:100%;
-  background-image:url(../img/item__archive.png);
   background-position: left top;/*カンプに近い*/
   background-size: cover;
   background-repeat:no-repeat;
@@ -251,12 +249,13 @@
   @include c-card;
   display: flex;
   flex-direction: row;/*画像を左側、文章を右側に*/
-  min-width: 78.55% !important;
+  width: 100% !important;
   height: auto;
 }
 
 .c-wrapper--card--archive {
   @include c-wrapper--card;
+  width: 100% !important;
   margin-left: 0;
   margin-bottom: 30px;/*下の余白*/
 }
@@ -303,14 +302,15 @@
 }
 
 /*c-card 写真側*/
-.c-photo-frame--card--archive{
-  width: 50%;
-    height: auto;
-}
 
-.c-photo--archive{/*写真*/
+.thumbnail{/*写真*/
   display: block !important;
-  background-position: left center;/*left centerがカンプに近い*/
+  max-width: 50% !important;
+  background-position: left top;/*カンプに近い*/
+  background-size: cover;
+  background-repeat:no-repeat;
+  vertical-align:bottom;
+  box-sizing: border-box;
 }
 
 .c-btn--card{

@@ -128,9 +128,16 @@
 }
 }
 /* card の集まり*/
+.p-contents__archive__inner--middle{
+width: 100%;
+margin:0 !important;
+
+}
+
+
 .p-contents__archive__cards{/*cardグループの外側の余白*/
   display: inline-block !important;
-  width:87.12% !important;
+  width: 87.12%;
   margin: 0 100px 150px 100px !important;
   box-sizing: border-box;
 }
