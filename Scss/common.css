@@ -3599,6 +3599,7 @@ a.page.larger {
   /*一番外側の枠*/
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
   /*画像を上・文章を下*/
   margin: 0;
 }
@@ -3797,6 +3798,7 @@ a.page.larger {
     /*一番外側の枠*/
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     /*画像を左・文章を右に*/
@@ -3921,6 +3923,7 @@ a.page.larger {
     /*一番外側の枠*/
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     /*画像を左側、文章を右側に*/
@@ -4086,6 +4089,7 @@ a.page.larger {
   /* 外枠 */
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* c-photo-frame--*/
@@ -4127,6 +4131,7 @@ a.page.larger {
   /* 外枠 */
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
   display: flex;
   flex-direction: row !important;
   /* 写真と文章を横に並べる*/
@@ -4189,6 +4194,7 @@ a.page.larger {
 .c-photo-frame--card--single--type_frame {
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
   height: 0;
   /*高さは指定しない*/
   padding-bottom: 62.17%;
@@ -4316,6 +4322,7 @@ a.page.larger {
     /* 外枠 */
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     /* 写真と文章を横並びに */
     flex-direction: row !important;
@@ -4454,6 +4461,7 @@ a.page.larger {
     /* 外枠 */
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     flex-direction: row !important;
     max-width: 100%;

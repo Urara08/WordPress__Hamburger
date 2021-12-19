@@ -5,7 +5,7 @@
           <div class="p-hero__archive__png--pc" alt="ハンバーガーの画像"></div>
           <div class="p-hero__archive__png--sp" alt="ハンバーガーの画像"></div>
           <h2 class="p-hero__archive__menu-label">Menu:</h2>
-          <h3 class="p-hero__archive__item-label">チーズバーガー</h3>
+          <h3 class="p-hero__archive__item-label"><?php wp_title(''); ?></h3>
         </section>
       </div><!-- アイキャッチ（ヒーロー）　ここまで -->
       <article class="p-contents__archive"><!-- ここから下コンテンツ -->

@@ -35,9 +35,10 @@
 
 /*カード---------------------------------------*/
 /*c-card-----------------*/
-@mixin c-card($width: 100%,$box-sizing: border-box) {
+@mixin c-card($width: 100%,$box-sizing: border-box,$overflow: hidden) {
   width: 100%;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /*c-wrapper--card-----------------*/
