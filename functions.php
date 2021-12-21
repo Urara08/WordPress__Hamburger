@@ -110,3 +110,12 @@ function my_set_redirect_template(){
     }
 }
 add_action('template_redirect', 'my_set_redirect_template');
+
+function custom_search($search, $wp_query) {
+    //サーチページ以外だったら終了
+    if (!$wp_query->is_search) return;
+    //投稿記事のみ検索
+    $search .= " AND post_type = 'item'";
+    return $search;
+}
+add_filter('posts_search','custom_search', 10, 2);
