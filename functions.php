@@ -11,9 +11,14 @@
     add_theme_support( 'title-tag' );//タイトルの吐き出し
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
+    register_nav_menu( 'title_burger', ' サイドタイトル_バーガー ' );
+    register_nav_menu( 'title_side', ' サイドタイトル_サイド ' );
+    register_nav_menu( 'title_drink', ' サイドタイトル_ドリンク ' );
+
     register_nav_menu( 'item_1', ' サイドナビゲーション_1 ' );
     register_nav_menu( 'item_2', ' サイドナビゲーション_2 ' );
     register_nav_menu( 'item_3', ' サイドナビゲーション_3 ' );
+
     register_nav_menu( 'footer_1', ' フッターナビゲーション_1 ' );
 
     //タイトル出力
@@ -85,3 +90,13 @@ function add_custom_taxonomy(){
     );
 }
 add_action('init', 'add_custom_taxonomy');
+
+
+function post_has_archive( $args, $post_type ) {
+	if ( 'post' == $post_type ) {
+		$args['rewrite'] = true;
+		$args['has_archive'] = 'category'; // 任意のURL
+	}
+	return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );

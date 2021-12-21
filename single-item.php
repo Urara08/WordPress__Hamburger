@@ -5,9 +5,10 @@
 
     <main class="l-main">
       <div class="l-hero">
-        <section class="p-hero__single">
-        <?php if (have_posts()) : ?>
+      <?php if (have_posts()) : ?>
       <?php while (have_posts()) : the_post(); ?>
+        <section id="<?php the_title(); ?>" class="p-hero__single">
+
       <div class="item_photo__wrapper">
         <img class="item_photo" src="<?php echo CFS()->get('item_photo'); ?>" alt="<?php the_title(); ?>">
         </div>
