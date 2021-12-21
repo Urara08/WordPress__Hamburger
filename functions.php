@@ -100,3 +100,10 @@ function post_has_archive( $args, $post_type ) {
 	return $args;
 }
 add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
+function redirect_404() {
+    //メインページ・シングルページ・アーカイブ（月別）・固定ページ 以外の指定の場合 404 ページを表示する
+    if(is_home() || is_single() || is_month() || is_page()) return;
+    include('404.php');
+    exit;
+    }
+    add_action('template_redirect', 'redirect_404');
