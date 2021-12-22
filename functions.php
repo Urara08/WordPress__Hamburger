@@ -4,6 +4,7 @@
             'search-form',
             'gallery',
             'caption',
+            'wp-block-styles',
         ));}
 
     //テーマサポート
@@ -11,6 +12,7 @@
     add_theme_support( 'title-tag' );//タイトルの吐き出し
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
+
     register_nav_menu( 'title_burger', ' サイドタイトル_バーガー ' );
     register_nav_menu( 'title_side', ' サイドタイトル_サイド ' );
     register_nav_menu( 'title_drink', ' サイドタイトル_ドリンク ' );
@@ -51,9 +53,9 @@
             'item', // 1.投稿タイプ名
             array(   // 2.オプション
                 'label' => 'アイテム', // 投稿タイプの名前
-                'public'        => true, // 利用する場合はtrueにする
-                'has_archive'   => true, // この投稿タイプのアーカイブを有効にする
-                'menu_position' => 5, // この投稿タイプが表示されるメニューの位置
+                'public'        => true, // 利用するのでtrue
+                'has_archive'   => true, // アーカイブを有効にする
+                'menu_position' => 5, // メニューの位置
                 'menu_icon'     => 'dashicons-wordpress', // メニューで使用するアイコン
                 'supports' => array( // サポートする機能
                     'title',
@@ -66,30 +68,7 @@
         );
     }
     add_action('init', 'add_custom_post_type');
-// カスタムタクソノミーの追加
-function add_custom_taxonomy(){
-    // 制作実績(カテゴリー)
-    register_taxonomy(
-        'drink', // 1.タクソノミーの名前
-        'item',          // 2.利用する投稿タイプ
-        array(            // 3.オプション
-            'label' => 'カテゴリー', // タクソノミーの表示名
-            'hierarchical' => true, // 階層を持たせるかどうか
-            'public' => true, // 利用する場合はtrueにする
-        )
-    );
-    // 制作実績(タグ)
-    register_taxonomy(
-        'drink-tag', // 1.タクソノミーの名前
-        'item',     // 2.利用する投稿タイプ
-        array(       // 3.オプション
-            'label' => 'タグ', // タクソノミーの表示名
-            'hierarchical' => false, // 階層を持たせるかどうか
-            'public' => true, // 利用する場合はtrueにする
-        )
-    );
-}
-add_action('init', 'add_custom_taxonomy');
+
 
 
 function post_has_archive( $args, $post_type ) {
@@ -111,11 +90,10 @@ function my_set_redirect_template(){
 }
 add_action('template_redirect', 'my_set_redirect_template');
 
-function custom_search($search, $wp_query) {
-    //サーチページ以外だったら終了
-    if (!$wp_query->is_search) return;
-    //投稿記事のみ検索
-    $search .= " AND post_type = 'item'";
-    return $search;
-}
-add_filter('posts_search','custom_search', 10, 2);
+/*【出力カスタマイズ】検索対象をカスタム投稿タイプで絞り込む */
+function my_pre_get_posts($query) {
+    if ( !is_admin() && $query->is_main_query() && $query->is_search() ) {
+      $query->set( 'post_type', array('item','page','page-history') );
+    }
+  }
+  add_action( 'pre_get_posts','my_pre_get_posts' );
