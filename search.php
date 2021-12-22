@@ -8,9 +8,12 @@
           <h3 class="p-hero__archive__item-label"><?php wp_title(''); ?></h3>
         </section>
       </div><!-- アイキャッチ（ヒーロー）　ここまで -->
-<div>
-      <h2><?php the_search_query(); //検索された文字列を取得 ?>の検索結果</h2>
+<div class="p-contents__single__inner--to">
+  <div class="p-contents__single__block-lead">
+
+      <h2 class="p-contents__single__block-lead__title"><?php the_search_query(); //検索された文字列を取得 ?>の検索結果</h2>
       </div>
+    </div>
 
 <?php if (have_posts()): ?>
   <?php while ( have_posts() ) : the_post(); ?>
