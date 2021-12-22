@@ -8,28 +8,35 @@
           <h3 class="p-hero__archive__item-label"><?php wp_title(''); ?></h3>
         </section>
       </div><!-- アイキャッチ（ヒーロー）　ここまで -->
-      <h2>
-<?php the_search_query(); //検索された文字列を取得 ?>の検索結果</h2>
+
 <div class="row">
 <?php if (have_posts()): ?>
-  <?php while ( have_posts() ) : the_post(); ?>
-        <li>
-            <h3><?php the_title(); ?></h3>
-            <a href="<?php echo get_the_permalink(); ?>">
-            <?php
-            if(mb_strlen(get_the_permalink(), 'UTF-8')>80){
-                $excerpt= mb_substr(get_the_permalink(), 0, 80);
-                echo $excerpt.'...';
-            }else{
-                echo get_the_permalink();
-            }
-            ?>
-            </a>
-        </li>
-    <?php endwhile; ?>
-<?php else : ?>
-        <p>入力されたキーワードに該当する結果はありませんでした。入力キーワードを変更して再度検索を行ってください。</p>
-<?php endif; ?>
+      <?php if (!$_GET['s']) { ?>
+        <p>検索キーワードが未入力です<p>
+
+      <?php } else { ?>
+
+
+        <?php while(have_posts()):the_post(); ?>
+
+          <article>
+
+              <a href="<?php the_permalink(); ?>"><?php the_title() ?></a>
+
+
+
+          </article>
+        <?php endwhile; ?>
+
+
+
+
+      <?php } ?>
+    <?php else: ?>
+      <p>検索されたキーワードに一致する記事はありませんでした</p>
+
+    <?php endif; ?>
+
 </main>
 
 <?php get_footer(); ?>
