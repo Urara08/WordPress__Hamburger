@@ -636,7 +636,6 @@ a {
   /*アスペクト比を保つ*/
   height: 0;
   /*高さは設定しない*/
-  background-image: url(../img/hero__page--sp.png);
   background-position: left center;
   /*left centerがカンプに近い*/
   background-size: cover;
@@ -827,7 +826,6 @@ a {
     /* アスペクト比を保つ */
     height: 0;
     /* 高さは設定しない */
-    background-image: url(../img/hero__page--pc.png);
     background-position: center;
     /* centerがカンプに近い */
     background-size: cover !important;
@@ -1016,7 +1014,6 @@ a {
     /* アスペクト比を保つ */
     height: 0;
     /* 高さは設定しない */
-    background-image: url(../img/hero__page--pc.png);
     background-position: top right !important;
     background-size: cover !important;
     background-repeat: no-repeat;
