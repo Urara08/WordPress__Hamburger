@@ -90,10 +90,11 @@ function my_set_redirect_template(){
 }
 add_action('template_redirect', 'my_set_redirect_template');
 
-/*【出力カスタマイズ】検索対象をカスタム投稿タイプで絞り込む */
-function my_pre_get_posts($query) {
-    if ( !is_admin() && $query->is_main_query() && $query->is_search() ) {
-      $query->set( 'post_type', array('item','page','page-history') );
-    }
-  }
-  add_action( 'pre_get_posts','my_pre_get_posts' );
+//検索結果を投稿のみにする
+function SearchFilter( $query ) {
+	if ( $query -> is_search ) {
+		$query -> set( 'post_type', 'post' );
+	}
+	return $query;
+}
+add_filter( 'pre_get_posts', 'SearchFilter' );
