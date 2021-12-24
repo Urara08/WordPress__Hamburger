@@ -3777,6 +3777,7 @@ a.page.larger {
   margin-right: 5.05%;
   margin-left: 5.05%;
   line-height: 1.43;
+  overflow: hidden;
 }
 
 .thumbnail {
@@ -3785,7 +3786,7 @@ a.page.larger {
   /*カンプに近い*/
   background-size: cover;
   background-repeat: no-repeat;
-  vertical-align: bottom;
+  vertical-align: bottom !important;
   box-sizing: border-box;
 }
 
@@ -3947,11 +3948,10 @@ a.page.larger {
     background-color: #3C2B1C;
     color: #FFFFFF;
     box-sizing: border-box;
-    max-width: 50%;
+    max-width: 100% !important;
     padding: 0;
     padding-top: 53px;
     padding-bottom: 60px;
-    min-height: 100%;
   }
 
   .c-category--card {
@@ -3989,13 +3989,10 @@ a.page.larger {
   .thumbnail {
     /*写真*/
     display: block !important;
-    max-width: 50% !important;
-    background-position: left top;
-    /*カンプに近い*/
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100% !important;
     vertical-align: bottom;
     box-sizing: border-box;
+    overflow: hidden;
   }
 
   .c-btn--card {
@@ -4034,6 +4031,12 @@ a.page.larger {
     font-weight: bold;
     font-size: 16px;
     line-height: 2.06;
+  }
+
+  .myClass {
+    /*サムネイル*/
+    width: 100%;
+    height: 100%;
   }
 }
 /* pageでも流用*/

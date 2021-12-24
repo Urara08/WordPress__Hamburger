@@ -98,3 +98,7 @@ function SearchFilter( $query ) {
 	return $query;
 }
 add_filter( 'pre_get_posts', 'SearchFilter' );
+
+//サムネイルのサイズ設定
+// 'large-feature'という名前で幅100%、高さautoのサムネイルを作成
+add_image_size( 'large-feature', 677, 471 );

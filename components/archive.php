@@ -1,6 +1,5 @@
-
-        <div class="p-contents__archive__inner--middle">
-<ul class="p-contents__archive__cards"><!-- card　ここから -->
+<div class="p-contents__archive__inner--middle">
+  <ul class="p-contents__archive__cards"><!-- card　ここから -->
 
 <?php
     if(have_posts()) :
@@ -13,7 +12,7 @@
               <div class="thumbnail">
                 <?php
                 if(has_post_thumbnail() ) :
-                  the_post_thumbnail('');
+                  the_post_thumbnail('large-feature', array('class' => 'myClass'));
                   else :
                     ?><div class="no-thumbnail"></div><?php
                   endif;
@@ -28,9 +27,9 @@
                       <div class="c-btn--card"><a lass="c-btn--card" href="<?php echo home_url('/'); ?>item/<?php global $post; echo($slug = $post->post_name);?>" class="c-btn-label--card">詳しくみる</a></div>
                     </div>
 
-                </div>
-            </li>
-          </div>
+                  </div>
+                </li>
+              </div>
               <?php
               endwhile;
             else:
@@ -39,4 +38,4 @@
             endif;
             ?>
             </ul>
-            </div>
+          </div>
