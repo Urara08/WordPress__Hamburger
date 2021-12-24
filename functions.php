@@ -17,6 +17,9 @@
     register_nav_menu( 'title_side', ' サイドタイトル_サイド ' );
     register_nav_menu( 'title_drink', ' サイドタイトル_ドリンク ' );
 
+    register_nav_menu( 'take-out', ' テイクアウト ' );
+    register_nav_menu( 'eat-in', ' イートイン ' );
+
     register_nav_menu( 'item_1', ' サイドナビゲーション_1 ' );
     register_nav_menu( 'item_2', ' サイドナビゲーション_2 ' );
     register_nav_menu( 'item_3', ' サイドナビゲーション_3 ' );

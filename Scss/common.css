@@ -1105,7 +1105,6 @@ a {
 .take-out {
   /*マルチクラス */
   margin-right: 0;
-  background-image: url(../img/p-contents__branch-menu__take-out.png);
   background-size: cover;
   background-position: top right;
   /*centerよりカンプに近い*/
@@ -1115,7 +1114,6 @@ a {
 .eat-in {
   /*マルチクラス */
   margin-top: 20px;
-  background-image: url(../img/p-contents__branch-menu__eat-in.png);
   background-size: cover;
   background-position: top right;
   /*centerよりカンプに近い */
@@ -1594,7 +1592,6 @@ a {
 .p-access-map__png-sp {
   /*スマホ用の写真*/
   display: block;
-  background-image: url(../img/map_mob.png);
   position: absolute;
   z-index: 130;
   top: 0;
@@ -1739,7 +1736,6 @@ a {
     height: 0;
     padding-bottom: 49.76%;
     /*アスペクト比を保つ*/
-    background-image: url(../img/map_tab.png);
     background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;
@@ -1798,7 +1794,6 @@ a {
   .p-access-map__png-pc {
     /*PC用の画像を表示する*/
     display: block;
-    background-image: url(../img/map_pc.png);
     z-index: 130;
     position: absolute;
     top: 0;
