@@ -262,6 +262,13 @@ a {
 }
 /* Project
 * ========================== */
+/* ブロックエディタ用*/
+.content h2 {
+  color: #3C2A10;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+}
+
 /* スマートフォン・タブレット */
 .p-header {
   position: relative;

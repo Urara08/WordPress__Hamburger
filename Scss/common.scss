@@ -26,6 +26,9 @@
 
 /* Project
 * ========================== */
+/* ブロックエディタ用*/
+@import "./Object/project/_editor-style" ;
+
 @import "./Object/project/_header";
 @import "./Object/project/_search-form" ;
 @import "./Object/Project/_hero" ;
@@ -40,6 +43,7 @@
 
 @import "./Object/project/_single" ;
 @import "./Object/project/_block" ;
+
 
 /* Component ------------ */
 @import "./Object/Component/_component" ;

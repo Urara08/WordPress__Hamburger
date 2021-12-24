@@ -13,6 +13,8 @@
     add_theme_support('post-thumbnails');
     add_theme_support('automatic-feed-links');
 
+
+
     register_nav_menu( 'title_burger', ' サイドタイトル_バーガー ' );
     register_nav_menu( 'title_side', ' サイドタイトル_サイド ' );
     register_nav_menu( 'title_drink', ' サイドタイトル_ドリンク ' );
@@ -105,3 +107,11 @@ add_filter( 'pre_get_posts', 'SearchFilter' );
 //サムネイルのサイズ設定
 // 'large-feature'という名前で幅100%、高さautoのサムネイルを作成
 add_image_size( 'large-feature', 677, 471 );
+
+//ブロックエディターの設定
+add_editor_style('Scss/editor-style.css');
+add_action('after_setup_theme','my_editor_support');
+function my_editor_support() {
+    add_theme_support('editor-styles');
+    add_editor_style('Scss/editor-style.css');
+}
