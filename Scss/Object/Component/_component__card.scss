@@ -267,7 +267,7 @@
 
 .c-caption-group--card--archive{/*文章の一番外側の枠*/
   @include c-caption-group--card;
-  max-width: 100% !important;
+  width: 50% !important;
   padding: 0;
   padding-top:53px;
   padding-bottom: 60px;
@@ -334,7 +334,12 @@
 }
 .myClass,
 .attachment-{/*サムネイル*/
-  width:100%;
+  width:100% !important;
+  height:100%;
+}
+.p-contents__archive__cards .c-wrapper--card--archive:last-child>
+.myClass{
+  width:100% !important;
   height:100%;
 }
 }
