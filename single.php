@@ -2,8 +2,8 @@
     <main class="l-main">
       <div class="l-hero">
         <section class="p-hero__single">
-          <div class="p-hero__single__png--sp" alt="ハンバーガーの画像"></div>
-          <div class="p-hero__single__png--pc" alt="ハンバーガーの画像"></div>
+          <div class="p-hero__single__png--sp" alt="画像"></div>
+          <div class="p-hero__single__png--pc" alt="画像"></div>
           <h2 class="p-hero__label">h1 チーズバーガー</h2>
         </section>
       </div>
@@ -97,7 +97,6 @@
                 </div>
               </figure>
             </div>
-　
             <div class="p-contents__single__block__area"><div class="p-contents__single__block-list">
               <div class="p-contents__single__block-list__inner">
                 <div class="p-contents__single__block-list">

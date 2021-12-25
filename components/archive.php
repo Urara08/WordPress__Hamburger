@@ -1,5 +1,6 @@
 <div class="p-contents__archive__inner--middle">
-  <ul class="p-contents__archive__cards"><!-- card　ここから -->
+  <ul class="p-contents__archive__cards">
+    <!-- card　ここから -->
 
 <?php
     if(have_posts()) :

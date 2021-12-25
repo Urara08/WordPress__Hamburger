@@ -14,10 +14,9 @@
         <div class="p-header__wrapper">
           <div class="c-wrapper__logo">
             <h1 class="c-logo--title--hamburger header__ttl"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-
           </div>
           <?php get_search_form(); ?>
-      <div class="c-btn--menu__wrapper">
+          <div class="c-btn--menu__wrapper">
             <div class="toggle_btn c-btn--menu"><p class="c-btn--menu__label">Menu</p></div>
           </div><!-- c-btn--menu__wrapperここまで -->
         </div>
