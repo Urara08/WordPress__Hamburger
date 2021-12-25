@@ -9,11 +9,9 @@
 </section>
 </div><!-- アイキャッチ（ヒーロー）　ここまで -->
 
-<div class="p-contents__single__inner--to">
-  <div class="p-contents__single__block-lead">
-    <h2 class="p-contents__single__block-lead__title"><?php the_search_query(); //検索された文字列を取得 ?>の検索結果</h2>
-  </div>
-</div>
+<article class="p-contents__archive">
+<div class="p-contents__archive__inner--top search"></div>
+
 
 <?php if (have_posts()): ?>
   <?php while ( have_posts() ) : the_post(); ?>
@@ -52,6 +50,7 @@
       <?php else : ?>
         <p>入力されたキーワードに該当する結果はありませんでした。入力キーワードを変更して再度検索を行ってください。</p>
         <?php endif; ?>
+      </article>
       </main>
 
       <?php get_footer(); ?>
