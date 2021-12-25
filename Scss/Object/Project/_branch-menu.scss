@@ -1,63 +1,65 @@
-  /* スマホ */
-  .p-contents{/*外枠*/
-    width:100% ;
-    height: auto ;
-    display: flex !important;
-    justify-content: center !important;
-    margin: 0;
-    padding: 0;
-    background-color:$color--base-WH;
+/* スマホ */
+.p-contents{/*外枠*/
+  width:100% ;
+  height: auto ;
+  display: flex !important;
+  justify-content: center !important;
+  margin: 0;
+  padding: 0;
+  background-color:$color--base-WH;
 
-  &__inner{ /*contentsの内側*/
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
-    width: 89.6% ;
-    height: auto;
-    margin-top:20px; /*pxでないとズレる*/
-    margin-bottom: 49px !important;/*pxでないとズレる*/
-    box-sizing: border-box;
-    /*overflow: hiddenをつけると2カラムの比率崩れる*/
+&__inner{ /*contentsの内側*/
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  width: 89.6% ;
+  height: auto;
+  margin-top:20px; /*pxでないとズレる*/
+  margin-bottom: 49px !important;/*pxでないとズレる*/
+  box-sizing: border-box;
+  /*overflow: hiddenをつけると2カラムの比率崩れる*/
 }
 }
 
-  .p-contents__branch-menu{/*2メニュー共通 */
-    position: relative;
-    min-width:80%;/*字が飛び出ないように*/
-    height: auto;
-    padding:89% 3% 20% 3%;
-    overflow: hidden;
 
-  &__inner{/*白い2つのBOXを囲う*/
-    display: flex;
-    flex-direction: column;/*2つのBOXを縦に並べる*/
-  }
+.p-contents__branch-menu{/*2メニュー共通 */
+  position: relative;
+  min-width:80%;/*字が飛び出ないように*/
+  height: auto;
+  padding:89% 3% 20% 3%;
+  overflow: hidden;
 
-  &__label{/*Take-out･Eat-in共通大ラベル */
-    position: absolute;
-    top:3%;
-    left:3%;
-    display: inline-block;
-    margin-bottom: 4%;
-    font-family:$font-family--Roboto;
-    font-weight: bold;
-    line-height: 1.31;
-    color:$color--char-li-GY !important;
-    vertical-align: top;
+&__inner{/*白い2つのBOXを囲う*/
+  display: flex;
+  flex-direction: column;/*2つのBOXを縦に並べる*/
 }
 
-  &__label::after { /*共通下線 */
-    content: "";
-    position: absolute;
-    top:75px;
-    left:0px;
-    width: 33.89px;
-    height: 4px;
-    display: inline-block;
-    color:$color--char-li-GY;
-    background-color: $color--char-li-GY;
+&__label{/*Take-out･Eat-in共通大ラベル */
+  position: absolute;
+  top:3%;
+  left:3%;
+  display: inline-block;
+  margin-bottom: 4%;
+  font-family:$font-family--Roboto;
+  font-weight: bold;
+  line-height: 1.31;
+  color:$color--char-li-GY !important;
+  vertical-align: top;
+}
+
+&__label::after { /*共通下線 */
+  content: "";
+  position: absolute;
+  top:75px;
+  left:0px;
+  width: 33.89px;
+  height: 4px;
+  display: inline-block;
+  color:$color--char-li-GY;
+  background-color: $color--char-li-GY;
 }
 }
+
 
 /*WordPressのクラス*/
 .menu-item-435 a,
@@ -66,61 +68,63 @@
   font-size: 41px;
 }
 
-  .take-out{/*マルチクラス */
-    margin-right: 0;
 
-    background-size: cover;
-    background-position: top right;/*centerよりカンプに近い*/
-    background-repeat:no-repeat;
-}
-  .eat-in{/*マルチクラス */
-    margin-top: 20px;
-
-    background-size: cover;
-    background-position: top right;/*centerよりカンプに近い */
-    background-repeat:no-repeat;
-  }
-
-  .p-contents__branch-menu{
-  &__box--top {/*白いBOX:上*/
-    display: inline-block;
-    width:100%;
-    min-width:89.8%;
-    min-height:44%;/*字が飛び出ないように*/
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-bottom: 9px;
-    background-color   : $color--item-WH-op-083;
-    color:$color--char-BR;
-    object-fit: contain !important;/*ないと縦横比崩れが起きる*/
+.take-out{/*マルチクラス */
+  margin-right: 0;
+  background-size: cover;
+  background-position: top right;/*centerよりカンプに近い*/
+  background-repeat:no-repeat;
 }
 
-  &__box--bottom {/*白いBOX:下*/
-    display: inline-block;
-    width: 100%;
-    min-width:89.8%;
-    min-height:44%;/*字が飛び出ないように*/
-    padding-top: 15px;
-    padding-bottom: 10px;
-    margin-bottom: 0 !important;
-    background-color   : $color--item-WH-op-083;
-    color:$color--char-BR;
-    object-fit: contain !important;/*ないと縦横比崩れが起きる*/
+
+.eat-in{/*マルチクラス */
+  margin-top: 20px;
+  background-size: cover;
+  background-position: top right;/*centerよりカンプに近い */
+  background-repeat:no-repeat;
 }
 
-  &__box__title {/*白いBOX内:タイトル(共通)*/
-    display: inline-block;
-    margin-left: 3%;
-    margin-bottom:15px;
-    font-size: 6vw;
-    font-weight: bold;
-    line-height: 1.45;
-    overflow-wrap: break-word;
+
+.p-contents__branch-menu{
+&__box--top {/*白いBOX:上*/
+  display: inline-block;
+  width:100%;
+  min-width:89.8%;
+  min-height:44%;/*字が飛び出ないように*/
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 9px;
+  background-color   : $color--item-WH-op-083;
+  color:$color--char-BR;
+  object-fit: contain !important;/*ないと縦横比崩れが起きる*/
+}
+
+&__box--bottom {/*白いBOX:下*/
+  display: inline-block;
+  width: 100%;
+  min-width:89.8%;
+  min-height:44%;/*字が飛び出ないように*/
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-bottom: 0 !important;
+  background-color   : $color--item-WH-op-083;
+  color:$color--char-BR;
+  object-fit: contain !important;/*ないと縦横比崩れが起きる*/
+}
+
+&__box__title {/*白いBOX内:タイトル(共通)*/
+  display: inline-block;
+  margin-left: 3%;
+  margin-bottom:15px;
+  font-size: 6vw;
+  font-weight: bold;
+  line-height: 1.45;
+  overflow-wrap: break-word;
 }
 }
 
-  .p-contents__branch-menu{
-  &__box__text{/*白いBOX内:テキスト(共通)*/
+.p-contents__branch-menu{
+&__box__text{/*白いBOX内:テキスト(共通)*/
   display: block;
   position: relative;
   max-width: 92.47%;
@@ -144,6 +148,8 @@
   object-fit: contain;
 }
 }
+
+
 /* タブレット */
 @media screen and (min-width: 600px){
 .p-contents{  /*contentsの外枠*/
@@ -165,6 +171,7 @@
 }
 }
 
+
 .p-contents__branch-menu{/*take-out・eat-in共通 */
   max-width:100%;
   min-width: 47.28% !important;
@@ -172,18 +179,21 @@
   padding: 46.4% 2% 1.61% 2% !important;
 }
 
-  /*take-out*/
+
+/*take-out*/
 .take-out{/*マルチクラス */
   margin-right: 5.43%;
 }
 
-  /*eat-in*/
+
+/*eat-in*/
 .eat-in{/*マルチクラス */
   margin-top: 0;
 }
 
+
 .p-contents__branch-menu{
-  &__label{/*take-out・eat-in共通大ラベル */
+&__label{/*take-out・eat-in共通大ラベル */
   position: absolute;
   display: inline-block;
   top:4%;
@@ -195,7 +205,7 @@
   vertical-align: top;
 }
 
-  &__label::after { /*大ラベル共通の下線 */
+&__label::after { /*大ラベル共通の下線 */
   content: "";
   position: absolute;
   top:80px;
@@ -208,6 +218,7 @@
 }
 }
 
+
 /*WordPressのクラス*/
 .menu-item-435 a,
 .menu-item-436 a{
@@ -215,8 +226,9 @@
   font-size: 44px;
 }
 
+
 .p-contents__branch-menu{
-  &__box--top {/*白いBOX:上*/
+&__box--top {/*白いBOX:上*/
   min-width:92.21%;
   min-height: 15%;/*字が飛び出ないように*/
   padding-top: 14.5%;
@@ -226,7 +238,7 @@
   object-fit: contain !important;/*ないと縦横比崩れが起きる*/
 }
 
-  &__box--bottom {/*白いBOX:下*/
+&__box--bottom {/*白いBOX:下*/
   max-width:100%;
   min-width:92.21%;
   min-height: 15%;
@@ -236,8 +248,10 @@
   object-fit: contain !important;/*ないと縦横比崩れが起きる*/
 }
 }
+
+
 .p-contents__branch-menu{
-  &__box__title{/*白いBOX内：共通タイトル*/
+&__box__title{/*白いBOX内：共通タイトル*/
   display: inline-block;
   margin-left: 3.2%;
   margin-bottom: 19px;
@@ -247,7 +261,7 @@
   overflow-wrap: break-word;
 }
 
-  &__box__text{/*白いBOX内：共通テキスト*/
+&__box__text{/*白いBOX内：共通テキスト*/
   display: block;
   position: relative;
   width: 100%;
@@ -261,7 +275,7 @@
   object-fit: contain;
 }
 
-  &__box__text::before{/*字が増えても崩れないように*/
+&__box__text::before{/*字が増えても崩れないように*/
   position: absolute;
   top:0;
   left:0;
@@ -273,6 +287,8 @@
 }
 }
 }
+
+
 /* PC */
 @media screen and (min-width: 1250px){
 .p-contents{  /*contentsの外枠*/
@@ -295,6 +311,7 @@
 }
 }
 
+
 /*branch-menu ------------ */
 .p-contents__branch-menu{/*2メニュー共通 */
   position: relative !important;
@@ -305,8 +322,8 @@
   min-height: 30.84%;/*字が飛び出ないように*/
   padding: 67.14% 3.2% 1.67% 3.2%;
   object-fit: contain;
-
 }
+
 
 /*take-out*/
 .take-out{/*マルチクラス */
@@ -343,7 +360,7 @@
 
 
 .p-contents__branch-menu{
-  &__box--top {/*白いBOX:上 */
+&__box--top {/*白いBOX:上 */
   max-width:100% !important;
   min-width:92.47%;
   min-height:14.54%;/*字が飛び出ないように*/
@@ -353,7 +370,7 @@
   object-fit: contain !important;/*ないと縦横比崩れが起きる*/
 }
 
-  &__box--bottom {/*白いBOX:下 */
+&__box--bottom {/*白いBOX:下 */
   max-width:100% !important;
   min-width:92.47%;
   min-height: 14.54%;/*字が飛び出ないように*/
@@ -363,8 +380,10 @@
   object-fit: contain !important;/*ないと縦横比崩れが起きる*/
 }
 }
+
+
 .p-contents__branch-menu{
-  &__box__title{/*box内の共通タイトル*/
+&__box__title{/*box内の共通タイトル*/
   display: inline-block;
   margin-left: 3.24%;
   margin-bottom: 2.17%;
@@ -374,7 +393,7 @@
   overflow-wrap: break-word;
 }
 
-  &__box__text{/*box内の共通テキスト*/
+&__box__text{/*box内の共通テキスト*/
   display: block;
   position: relative;
   width: 100%　!important;
@@ -387,7 +406,7 @@
   line-height:1.43;
 }
 
-  &__box__text::before{/*字が増えても崩れないように*/
+&__box__text::before{/*字が増えても崩れないように*/
   position: absolute;
   top:0;
   left:0;
