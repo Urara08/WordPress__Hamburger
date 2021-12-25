@@ -1155,23 +1155,29 @@ a {
   display: inline-block;
   margin-bottom: 4%;
   font-family: "Roboto", sans-serif;
-  font-size: 11vw;
   font-weight: bold;
   line-height: 1.31;
-  color: #EAEAEA;
+  color: #EAEAEA !important;
   vertical-align: top;
 }
 .p-contents__branch-menu__label::after {
   /*共通下線 */
   content: "";
   position: absolute;
-  top: 181%;
+  top: 75px;
   left: 0px;
   width: 33.89px;
   height: 4px;
   display: inline-block;
   color: #EAEAEA;
   background-color: #EAEAEA;
+}
+
+/*WordPressのクラス*/
+.menu-item-435 a,
+.menu-item-436 a {
+  color: #EAEAEA !important;
+  font-size: 41px;
 }
 
 .take-out {
@@ -1310,10 +1316,8 @@ a {
     top: 4%;
     left: 3%;
     margin-bottom: 30px;
-    font-size: 5.3vw;
     font-weight: bold;
     line-height: 1.31;
-    color: #EAEAEA;
     -o-object-fit: contain;
        object-fit: contain;
     vertical-align: top;
@@ -1322,13 +1326,20 @@ a {
     /*大ラベル共通の下線 */
     content: "";
     position: absolute;
-    top: 63px;
+    top: 80px;
     left: 0px;
     width: 35.91px;
     height: 4px;
     display: inline-block;
     background-color: #EAEAEA;
     vertical-align: top;
+  }
+
+  /*WordPressのクラス*/
+  .menu-item-435 a,
+.menu-item-436 a {
+    color: #EAEAEA !important;
+    font-size: 44px;
   }
 
   .p-contents__branch-menu__box--top {
@@ -1448,7 +1459,6 @@ a {
     top: 3%;
     left: 3%;
     display: inline-block;
-    font-size: 4.16vw;
     line-height: 1.32;
     vertical-align: top;
   }
@@ -1456,10 +1466,17 @@ a {
     /*大きな共通ラベルの下線 */
     content: "";
     position: absolute;
-    top: 156%;
+    top: 139px;
     left: 0px;
     width: 63px;
     height: 4px;
+  }
+
+  /*WordPressのクラス*/
+  .menu-item-435 a,
+.menu-item-436 a {
+    color: #EAEAEA !important;
+    font-size: 80px;
   }
 
   .p-contents__branch-menu__box--top {
