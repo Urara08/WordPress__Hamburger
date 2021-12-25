@@ -224,6 +224,10 @@
   box-sizing: border-box;
 }
 }
+/* ------------ブロックエディタ用の記載------------*/
+.p-contents__single__block-table.mt-0{
+  margin-top: 0;
+}
 
 /* ------------ボタンのブロック------------*/
 .p-contents__single__block-button{/*埋め込み先*/
