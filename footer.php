@@ -1,4 +1,3 @@
-
 <footer class="l-footer">
         <div class="p-footer">
           <div class="p-footer__wrapper">

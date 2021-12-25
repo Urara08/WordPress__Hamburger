@@ -2010,7 +2010,8 @@ a {
   font-weight: normal;
 }
 
-.menu-footer_1-container .menu {
+/*WordPressのID・クラス　ここから*/
+#menu-footer_1 {
   /*カスタムメニュー全体*/
   display: flex !important;
   justify-content: center;
@@ -2018,7 +2019,7 @@ a {
   line-height: 1.5;
 }
 
-.menu-item-170::after {
+.menu-item-421::after {
   /*ショップ情報の後ろ*/
   content: "|";
   margin-right: 15px;
@@ -2026,20 +2027,20 @@ a {
   color: #FFFFFF !important;
 }
 
-.menu-item-170,
-.menu-item-169 {
+.menu-item-420,
+.menu-item-421 {
   /*ショップ情報とヒストリー*/
   font-size: 20px;
   font-weight: normal;
   line-height: 1.5;
 }
 
-.menu-item-170 a,
-.menu-item-169 a {
-  /*効かない*/
+.menu-item-420 a,
+.menu-item-421 a {
   color: #FFFFFF !important;
 }
 
+/*WordPressのID・クラス　ここまで*/
 /* タブレット */
 @media screen and (min-width: 600px) {
   .p-footer {
@@ -2068,12 +2069,15 @@ a {
     line-height: 1.42;
   }
 
-  .menu-item-170,
-.menu-item-169 {
+  /*WordPressのクラス　ここから*/
+  .menu-item-420,
+.menu-item-421 {
     font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
   }
+
+  /*WordPressのクラス　ここまで*/
 }
 /* PC */
 @media screen and (min-width: 1250px) {
@@ -2107,12 +2111,15 @@ a {
     line-height: 1.42;
   }
 
-  .menu-item-169,
-.menu-item-170 {
+  /*WordPressのクラス　ここから*/
+  .menu-item-420,
+.menu-item-421 {
     font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
   }
+
+  /*WordPressのクラス　ここまで*/
 }
 /* スマホ */
 .p-sidebar {
@@ -2160,9 +2167,10 @@ a {
   color: #707070;
 }
 
-.menu-item_1,
-.menu-item_2,
-.menu-item_3 {
+/* WordPressが自動でつけたID */
+#menu-item_1,
+#menu-item_2,
+#menu-item_3 {
   /*__titleを除いた各（バーガー・サイド・ドリンク）メーニュー群の箱*/
   width: 65.39%;
   margin-bottom: 40px !important;
@@ -2171,8 +2179,10 @@ a {
   font-weight: 400;
   line-height: 1.5;
   color: #707070;
+  white-space: nowrap;
 }
 
+/* WordPressが自動でつけたクラス */
 .menu-item {
   /*各リストアイテムの詳細*/
   margin-bottom: 22px;
@@ -2242,9 +2252,10 @@ a {
     line-height: 1.5;
   }
 
-  .menu-item_1,
-.menu-item_2,
-.menu-item_3 {
+  /* WordPressが自動でつけたID */
+  #menu-item_1,
+#menu-item_2,
+#menu-item_3 {
     /*__titleを除いた各（バーガー・サイド・ドリンク）メーニュー群の箱*/
     margin-bottom: 40px !important;
     padding-left: 9px !important;
@@ -2256,6 +2267,7 @@ a {
     color: #707070;
   }
 
+  /* WordPressが自動でつけたクラス */
   .menu-item {
     /*各リストアイテムの詳細*/
     margin-bottom: 22px;
@@ -2308,9 +2320,10 @@ a {
     font-weight: 700;
   }
 
-  .menu-item_1,
-.menu-item_2,
-.menu-item_3 {
+  /* WordPressが自動でつけたID */
+  #menu-item_1,
+#menu-item_2,
+#menu-item_3 {
     margin-bottom: 40px !important;
     padding-left: 4.26%;
     width: 80%;
@@ -2321,6 +2334,7 @@ a {
     line-height: 1.5;
   }
 
+  /* WordPressが自動でつけたクラス */
   .menu-item {
     /*各リストアイテムの詳細*/
     margin-bottom: 22px;
