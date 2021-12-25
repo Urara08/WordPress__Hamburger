@@ -1,5 +1,5 @@
 <!-- 引用タグのブロック -->
-<div class="p-contents__single__block__area editor">
+<div class="p-contents__single__block__area">
 <div class="quote p-contents__single__block-quote">
 <div class="p-contents__single__block-quote__inner">
 <p class="p-contents__single__block-quote__text"><?php block_field( 'quote-description' ); ?></p>
