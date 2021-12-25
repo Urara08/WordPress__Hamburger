@@ -2409,6 +2409,12 @@ a {
   word-wrap: break-word;
 }
 
+/* search.phpのマージン*/
+.p-contents__archive__inner--top.search {
+  /* 外枠 */
+  margin: 30px 5.33% 19px 5.33% !important;
+}
+
 .p-contents__archive__inner--middle {
   /* cardの埋め込み先 */
   max-width: 100%;
