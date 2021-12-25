@@ -1,6 +1,79 @@
-.content h2{
+/* ブロックエディタのスタイリング */
+/* スマホ */
+.content{
+  margin-right: 2.6%;
+  margin-left: 2.6%;
   color: $color--char-BR;
-  font-family:$font-family--M-plus;
-  font-weight: bold;
+  font-family:$font-family--M-plus !important;
+}
 
+
+.content{
+& h1{font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+& h2{font-size:24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+& h3{font-size:18px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+& h4{font-size:16px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+}
+
+.content{
+& h5{font-size: 12px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+& h6{font-size:10px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+& strong{font-weight: bold;
+}
+
+&em{font-weight: bold;
+}
+}
+
+
+.content{
+& p{line-height: 1.43;
+}
+}
+
+
+/* タブレット */
+@media screen and (min-width: 600px){
+.content{
+  margin-right: 7.19%;
+  margin-left: 7.19%;
+}
+}
+
+
+/* PC */
+@media screen and (min-width: 1250px){
+.content{
+  margin-right: 6.43%;
+  margin-left: 6.43%;
+}
 }
