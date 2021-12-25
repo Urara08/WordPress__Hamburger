@@ -1,4 +1,4 @@
-<!-- 'photo-add-sentence1'　フラッシュ画像写真（文章あり）－１-->
+<!-- 'photo-add-text'　フラッシュ画像写真（文章あり）－１-->
 
 <div class="c-wrapper--card--single hp_mb117">
   <figure class="c-card--single--special">
