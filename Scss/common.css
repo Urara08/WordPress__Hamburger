@@ -4526,11 +4526,11 @@ a.page.larger {
 
   /*3番目のcard-------------------------*/
   /*c-caption-group*/
-  .c-caption-group--card--single.pc-only {
+  .c-caption-group--card--single.--for-pc {
     /* 文章の外枠ーーー*/
-    padding-right: 5.18%;
+    padding-right: 5.18% !important;
     /* paの場合テキストの右側にpaddingがつく*/
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 
   /* 2番目・3番目のcard共通---------------*/
