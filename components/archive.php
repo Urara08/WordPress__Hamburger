@@ -1,6 +1,6 @@
 <div class="p-contents__archive__inner--middle">
-  <ul class="p-contents__archive__cards">
-    <!-- card　ここから -->
+  <ul <?php post_class('p-contents__archive__cards'); ?>>
+    <!-- cardここから -->
 
 <?php
     if(have_posts()) :
@@ -31,6 +31,7 @@
                   </div>
                 </li>
               </div>
+              <?php wp_link_pages(); ?>
               <?php
               endwhile;
             else:

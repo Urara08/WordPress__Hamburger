@@ -2,7 +2,7 @@
 
     //基本機能
     function my_setup(){
-    add_theme_support( 'menus' );//メニューの管理
+    register_nav_menus();//メニューの管理
     add_theme_support('post-thumbnails');//アイキャッチ生成
     add_theme_support( 'title-tag' );//タイトルタグ生成
     add_theme_support('automatic-feed-links');//RSSフィード
