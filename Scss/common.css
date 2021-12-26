@@ -2970,6 +2970,7 @@ a.page.larger {
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  margin-bottom: 30px;
   background-color: #F5F5F5;
   font-weight: normal;
   box-sizing: border-box;
