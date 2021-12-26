@@ -8,7 +8,7 @@
 
       <section id="<?php the_title(); ?>" class="p-hero__single">
       <div class="item_photo__wrapper">
-        <img class="item_photo" src="<?php echo CFS()->get('item_photo'); ?>" alt="<?php the_title(); ?>">
+        <img class="item_photo" src="<?php echo CFS()->get('item_photo','large-item'); ?>" alt="<?php the_title(); ?>">
       </div>
       <h2 class="p-hero__label"><?php echo CFS()->get('item_title'); ?></h2>
     </section>
