@@ -766,7 +766,7 @@ a {
     left: 10%;
     /*86px*/
     z-index: 140;
-    font-size: 4.31vw;
+    font-size: 36px;
     font-weight: bold;
     line-height: 54/36;
   }
@@ -923,7 +923,7 @@ a {
   .p-hero {
     max-width: 100%;
     height: 0;
-    padding-bottom: 33.93% z;
+    padding-bottom: 33.93%;
   }
   .p-hero__png--pc {
     width: 100%;
@@ -935,7 +935,7 @@ a {
     top: 44%;
     left: 16%;
     /*86px*/
-    font-size: 2.08vw;
+    font-size: 40px;
     font-weight: bold;
     line-height: 60/40;
   }

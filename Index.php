@@ -9,7 +9,7 @@
         <div class="l-hero">
           <section class="p-hero">
             <div class="p-hero__png--pc p-hero__png--sp"  style="background-image: url(<?php the_post_thumbnail_url(); ?>)" alt="背景の画像"></div>
-            <h2 class="p-hero__label description"><?php bloginfo( 'description' ); ?></h2>
+            <h2 class="p-hero__label"><?php bloginfo( 'description' ); ?></h2>
           </section>
         </div>
         <div class="p-contents__wrapper">
