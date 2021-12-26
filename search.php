@@ -37,7 +37,7 @@
                 <h4 class="c-sub-heading--card"><?php  the_title(); ?></h4><!-- タイトルを表示-->
                 <div class="c-detail--card--archive"><?php the_excerpt(); ?></div><!-- 文章の続きを表示-->
                 <div class="c-btn-wrapper--card--archive">
-                  <div class="c-btn--card"><a lass="c-btn--card" href="<?php echo home_url('/'); ?>item/<?php global $post; echo($slug = $post->post_name);?>" class="c-btn-label--card">詳しくみる</a></div>
+                  <div class="c-btn--card"><a lass="c-btn--card" href="<?php echo esc_url( home_url( '/' ) ); ?>item/<?php global $post; echo($slug = $post->post_name);?>" class="c-btn-label--card">詳しくみる</a></div>
                 </div><!-- 詳細ボタンを押すとアイテム（詳細）ページに転送される-->
 
               </div>

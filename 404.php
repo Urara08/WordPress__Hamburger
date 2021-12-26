@@ -5,7 +5,7 @@
         <p>お探しのページは見つかりませんでした。</p>
         <br>
         <p>別のキーワードでお探し頂くか、</p>
-        <p>申し訳ございませんが、<a style="font-size:18px"href="<?php echo home_url('/'); ?>">こちらのリンク</a>からトップページにお戻りください。 </p>
+        <p>申し訳ございませんが、<a style="font-size:18px"href="<?php echo esc_url( home_url()); ?>">こちらのリンク</a>からトップページにお戻りください。 </p>
     </div>
 </main><!-- main -->
 </main>
