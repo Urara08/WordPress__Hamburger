@@ -544,7 +544,6 @@ a {
   width: 100%;
   height: 0;
   padding-bottom: 75%;
-  background-image: url(../img/hero_sp.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -596,7 +595,7 @@ a {
   /*アスペクト比を保つ*/
   height: 0;
   /*高さは設定しない*/
-  background-image: url(../img/hero_sp__archive.png);
+  background-image: url(../Img/hero_sp__archive.png);
   background-position: left center;
   /*left centerがカンプに近い*/
   background-size: cover;
@@ -658,7 +657,6 @@ a {
   /*アスペクト比を保つ*/
   height: 0;
   /*高さは設定しない*/
-  background-image: url(../img/hero__single--sp.png);
   background-position: left center;
   /*left centerがカンプに近い*/
   background-size: cover;
@@ -752,7 +750,6 @@ a {
     width: 100%;
     height: 0;
     padding-bottom: 32.85%;
-    background-image: url(../img/hero_pc.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -796,7 +793,7 @@ a {
     /* 高さは設定しない */
     padding-bottom: 33.93% !important;
     /* アスペクト比を保つ */
-    background-image: url(../img/hero_pc__archive.png);
+    background-image: url(../Img/hero_pc__archive.png);
     background-position: center;
     /* centerがカンプに近い */
     background-size: cover !important;
@@ -853,7 +850,6 @@ a {
     /* アスペクト比を保つ */
     height: 0;
     /* 高さは設定しない */
-    background-image: url(../img/hero__single--pc.png);
     background-position: center;
     /* centerがカンプに近い */
     background-size: cover !important;
@@ -967,7 +963,7 @@ a {
     /* アスペクト比を保つ */
     height: 0;
     /* 高さは設定しない */
-    background-image: url(../img/hero_pc__archive.png);
+    background-image: url(../Img/hero_pc__archive.png);
     background-position: top right !important;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -1027,7 +1023,6 @@ a {
     /* アスペクト比を保つ */
     height: 0;
     /* 高さは設定しない */
-    background-image: url(../img/hero__single--pc.png);
     background-position: top right !important;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -1989,7 +1984,7 @@ a {
   max-width: 100%;
   min-width: 67%;
   height: auto;
-  background-image: url(../img/c-footer.png);
+  background-image: url(../Img/c-footer.png);
   -o-object-fit: cover;
      object-fit: cover;
   /*要素全体を画像で覆う*/
@@ -3914,6 +3909,7 @@ a.page.larger {
   background-repeat: no-repeat;
   vertical-align: bottom !important;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* タブレット ------------------------------------ */
