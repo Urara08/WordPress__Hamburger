@@ -9,6 +9,7 @@
   font-weight: bold;
 }
 
+
 /*Hamburgerのロゴ*/
 .c-logo--title--hamburger{
   @include c-logo;
@@ -17,10 +18,12 @@
   line-height:1.32;
 }
 
+
 /*Hamburgerのロゴの位置調整*/
  .c-wrapper__logo{
   margin: 5px auto 38px auto;/*38px：c-logo--title--hamburgerと検索BOXまでの距離*/
 }
+
 
 /*ボタン*/
 /*-----------------------------------*/
@@ -32,11 +35,14 @@
   box-sizing: border-box;
   transition: transform .3s, opacity .3s;
 }
+
+
 /*header側：MENUボタン*/
 .c-btn--menu{
   @include c-button;
   width: 13.6%;
 }
+
 
 .c-btn--menu__wrapper{/*header側：MENUボタンの位置調整*/
   display: block !important;
@@ -46,12 +52,14 @@
   z-index: 100;
 }
 
+
 .c-btn--menu__label{/*MENUボタンの字のスタイル*/
   @include c-logo;
   display: block !important;
   font-size: 5.33vw;
   line-height:1.3;
 }
+
 
 /*フィルター/
 /*-----------------------------------*/
@@ -69,9 +77,11 @@
   opacity:0.5;
 }
 
+
 .c-overlay.is-show{/*jsのスタイル*/
   @include c-overlay
 }
+
 
 /*タブレット*/
 @media screen and (min-width: 600px){
@@ -83,6 +93,8 @@
   max-width: 24.34% !important;
   font-size: 4.79vw;
   }
+
+
 /*ボタン/
 /*-----------------------------------*/
 /*headerのMENUボタン*/
@@ -102,6 +114,8 @@
 }
 }
 }
+
+
 /* PC */
 @media screen and (min-width: 1250px){
 /*ロゴ*/
@@ -114,9 +128,12 @@
   line-height:1.31;
 }
 
+
 .c-wrapper__logo{/*Hamburgerのロゴの位置を調整*/
   margin-left: 4% !important;
 }
+
+
 /*ボタン/
 /*-----------------------------------*/
 /*headerのMENUボタン*/

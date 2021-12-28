@@ -2,11 +2,10 @@
 <main class="l-main">
 
 <section class="p-hero__archive">
-  <div class="p-hero__archive__png--pc" alt="ハンバーガーの画像"></div><!-- 画像はCSSから参照 -->
-  <div class="p-hero__archive__png--sp" alt="ハンバーガーの画像"></div><!-- 画像はCSSから参照 -->
-
+  <div class="p-hero__archive__png--pc" style="background-image: url(<?php echo esc_url(get_theme_file_uri('/Img/hero_pc__archive.png'));?>"  alt="ハンバーガーの画像"></div><!-- 画像はCSSから参照 -->
+  <div class="p-hero__archive__png--sp" style="background-image: url(<?php echo esc_url(get_theme_file_uri('/Img/hero_sp__archive.png'));?>"  alt="ハンバーガーの画像"></div><!-- 画像はCSSから参照 -->
   <h2 class="p-hero__archive__menu-label">Menu:</h2>
-  <h3 class="p-hero__archive__item-label"><?php wp_title(''); ?></h3><!-- タイトルを表示 -->
+  <h3 class="p-hero__archive__item-label"><?php wp_title(''); ?></h3><!-- ページのタイトルを表示 -->
 </section>
 
 <article class="p-contents__archive">

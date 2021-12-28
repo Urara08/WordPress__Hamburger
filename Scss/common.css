@@ -595,7 +595,6 @@ a {
   /*アスペクト比を保つ*/
   height: 0;
   /*高さは設定しない*/
-  background-image: url(../Img/hero_sp__archive.png);
   background-position: left center;
   /*left centerがカンプに近い*/
   background-size: cover;
@@ -963,7 +962,6 @@ a {
     /* アスペクト比を保つ */
     height: 0;
     /* 高さは設定しない */
-    background-image: url(../Img/hero_pc__archive.png);
     background-position: top right !important;
     background-size: cover !important;
     background-repeat: no-repeat;
@@ -1984,7 +1982,6 @@ a {
   max-width: 100%;
   min-width: 67%;
   height: auto;
-  background-image: url(../Img/c-footer.png);
   -o-object-fit: cover;
      object-fit: cover;
   /*要素全体を画像で覆う*/
@@ -3722,12 +3719,6 @@ a.page.larger {
   margin: 0;
 }
 
-.c-photo-group {
-  /*写真の外側の枠*/
-  display: block;
-  width: 100%;
-}
-
 .c-wrapper--card {
   width: 100%;
 }
@@ -3756,37 +3747,12 @@ a.page.larger {
   background-color: #3C2B1C;
   color: #FFFFFF;
   box-sizing: border-box;
+  position: relative;
+  top: -30px;
   max-width: 100%;
   padding-top: 30.5px;
   padding-bottom: 43.7px;
   font-size: 16px;
-}
-
-.c-photo {
-  /* mixin */
-  max-width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: bottom;
-}
-
-.c-photo--archive {
-  /*写真*/
-  max-width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: bottom;
-  height: 0;
-  /*高さは設定しない*/
-  padding-bottom: 68.58%;
-  /*アスペクト比を維持*/
-  background-image: url(../img/item__archive.png);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .c-btn--card {
@@ -3902,7 +3868,11 @@ a.page.larger {
 }
 
 .thumbnail {
-  max-width: 100%;
+  max-width: 89.62%;
+  height: 0 !important;
+  /*高さは設定しない*/
+  padding-bottom: 68.58%;
+  /*アスペクト比を維持*/
   background-position: left top;
   /*カンプに近い*/
   background-size: cover;
@@ -3910,6 +3880,15 @@ a.page.larger {
   vertical-align: bottom !important;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.myClass {
+  /*サムネイル*/
+  width: 100% !important;
+  height: 0;
+  /*高さは設定しない*/
+  padding-bottom: 68.58%;
+  /*アスペクト比を維持*/
 }
 
 /* タブレット ------------------------------------ */
@@ -3945,6 +3924,8 @@ a.page.larger {
     background-color: #3C2B1C;
     color: #FFFFFF;
     box-sizing: border-box;
+    position: relative;
+    top: 0;
     max-width: 50%;
     min-width: 43.16%;
     padding-top: 29px;
@@ -3989,8 +3970,9 @@ a.page.larger {
   /*c-card 写真側*/
   .thumbnail {
     /*cardの写真の外枠*/
-    max-width: 50%;
+    width: 100% !important;
     height: auto;
+    padding-bottom: 0%;
     background-position: left top;
     /*カンプに近い*/
     background-size: cover;
@@ -4070,6 +4052,8 @@ a.page.larger {
     background-color: #3C2B1C;
     color: #FFFFFF;
     box-sizing: border-box;
+    position: relative;
+    top: 0;
     width: 50% !important;
     padding: 0;
     padding-top: 53px;
@@ -4112,6 +4096,8 @@ a.page.larger {
     /*写真*/
     display: block !important;
     width: 100% !important;
+    height: auto;
+    padding-bottom: 0;
     vertical-align: bottom;
     box-sizing: border-box;
     overflow: hidden;
@@ -4155,16 +4141,18 @@ a.page.larger {
     line-height: 2.06;
   }
 
-  .myClass,
-.attachment- {
+  .myClass {
     /*サムネイル*/
     width: 100% !important;
     height: 100%;
+    padding-bottom: 0;
   }
 
   .p-contents__archive__cards .c-wrapper--card--archive:last-child > .myClass {
     width: 100% !important;
     height: 100%;
+    padding-bottom: 0;
+    /*アスペクト比を維持*/
   }
 }
 /* pageでも流用*/
