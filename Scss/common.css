@@ -3747,8 +3747,6 @@ a.page.larger {
   background-color: #3C2B1C;
   color: #FFFFFF;
   box-sizing: border-box;
-  position: relative;
-  top: -30px;
   max-width: 100%;
   padding-top: 30.5px;
   padding-bottom: 43.7px;
@@ -3868,27 +3866,29 @@ a.page.larger {
 }
 
 .thumbnail {
-  max-width: 89.62%;
-  height: 0 !important;
-  /*高さは設定しない*/
-  padding-bottom: 68.58%;
-  /*アスペクト比を維持*/
-  background-position: left top;
-  /*カンプに近い*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: bottom !important;
+  /*cardの写真の外枠*/
+  position: relative;
+  top: 2.5px;
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  vertical-align: top !important;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-.myClass {
+.myClass.wp-post-image {
   /*サムネイル*/
-  width: 100% !important;
-  height: 0;
-  /*高さは設定しない*/
-  padding-bottom: 68.58%;
-  /*アスペクト比を維持*/
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
 }
 
 /* タブレット ------------------------------------ */
@@ -3970,15 +3970,27 @@ a.page.larger {
   /*c-card 写真側*/
   .thumbnail {
     /*cardの写真の外枠*/
+    position: relative;
+    top: 0px;
     width: 100% !important;
     height: auto;
-    padding-bottom: 0%;
+    padding-bottom: 0;
     background-position: left top;
     /*カンプに近い*/
     background-size: cover;
     background-repeat: no-repeat;
     vertical-align: bottom;
     box-sizing: border-box;
+  }
+
+  .myClass.wp-post-image {
+    /*サムネイル*/
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top center;
+       object-position: top center;
   }
 
   .c-btn--card {
@@ -4093,14 +4105,25 @@ a.page.larger {
 
   /*c-card 写真側*/
   .thumbnail {
-    /*写真*/
+    /*cardの写真の外枠*/
+    position: relative;
+    top: 0px;
     display: block !important;
-    width: 100% !important;
+    width: 50% !important;
     height: auto;
-    padding-bottom: 0;
     vertical-align: bottom;
     box-sizing: border-box;
     overflow: hidden;
+  }
+
+  .myClass.wp-post-image {
+    /*サムネイル*/
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top center;
+       object-position: top center;
   }
 
   .c-btn--card {
@@ -4141,18 +4164,15 @@ a.page.larger {
     line-height: 2.06;
   }
 
-  .myClass {
+  .myClass.wp-post-image {
     /*サムネイル*/
     width: 100% !important;
     height: 100%;
-    padding-bottom: 0;
   }
 
   .p-contents__archive__cards .c-wrapper--card--archive:last-child > .myClass {
     width: 100% !important;
     height: 100%;
-    padding-bottom: 0;
-    /*アスペクト比を維持*/
   }
 }
 /* pageでも流用*/
