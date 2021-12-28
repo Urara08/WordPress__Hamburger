@@ -38,6 +38,8 @@
   color:  $color--char-WH;
 }
 }
+
+
 /*------------- archive */
 .p-hero__archive__png--pc{/* pc用の写真は隠す */
   display: none !important;
@@ -62,7 +64,6 @@
   width: 100% !important;
   padding-bottom: 76% !important;/*アスペクト比を保つ*/
   height: 0;/*高さは設定しない*/
-  background-image:url(../Img/hero_sp__archive.png);
   background-position: left center;/*left centerがカンプに近い*/
   background-size: cover;
   background-repeat:no-repeat;
@@ -137,6 +138,8 @@
   line-height: 1.5;
 }
 }
+
+
 /* single -------------*/
 /* page -------------*/
 .p-hero__page__png--pc{/* pc用の写真は隠す */
@@ -223,10 +226,12 @@
 }
 }
 
+
 /*------------- archive */
 .p-hero__archive__png--sp{/* スマホ用の画像は隠す */
   display: none !important;
 }
+
 
 .p-hero__archive{
   display: block !important;
@@ -274,10 +279,12 @@
 }
 }
 
+
 /*------------- single */
 .p-hero__single__png--sp{/* スマホ用の画像は隠す */
   display: none !important;
 }
+
 
 .p-hero__single{/*heroの外枠 */
   display: block !important;
@@ -295,7 +302,6 @@
   width: 100% !important;
   padding-bottom: 59.95% !important;/* アスペクト比を保つ */
   height: 0;/* 高さは設定しない */
-
   background-position: center;/* centerがカンプに近い */
   background-size: cover !important;
   background-repeat:no-repeat;
@@ -334,7 +340,6 @@
   width: 100% !important;
   padding-bottom: 59.95% !important;/* アスペクト比を保つ */
   height: 0;/* 高さは設定しない */
-
   background-position: center;/* centerがカンプに近い */
   background-size: cover !important;
   background-repeat:no-repeat;
@@ -351,6 +356,7 @@
   line-height:1.31;
 }
 }
+
 
 /* page -------------*/
 }
@@ -382,6 +388,7 @@
   display: none !important;
 }
 
+
 .p-hero__archive{
   display: block !important;
   position: relative;
@@ -399,7 +406,6 @@
   width: 100% !important;
   padding-bottom: 15.38% !important;/* アスペクト比を保つ */
   height: 0;/* 高さは設定しない */
-  background-image:url(../Img/hero_pc__archive.png);
   background-position: top right !important;
   background-size: cover !important;
   background-repeat:no-repeat;
@@ -431,10 +437,12 @@
 }
 }
 
+
 /*------------- single */
 .p-hero__single__png--sp{/* pcの時は隠す */
   display: none !important;
 }
+
 
 .p-hero__single{
   display: block !important;
@@ -470,6 +478,8 @@
   font-weight: bold;
   line-height:1.31;
 }
+
+
 /*item*/
 .item_photo__wrapper{
   width: 100%;
@@ -478,19 +488,21 @@
   overflow:hidden;
 }
 
+
 .item_photo{
   width: 100%;
   height: auto;
   margin-top:-10%;
-
+}
 }
 
-}
+
 /*------------- single */
 /* page -------------*/
 .p-hero__page__png--sp{/* pcの時は隠す */
   display: none !important;
 }
+
 
 .p-hero__page{
   display: block !important;
@@ -509,7 +521,6 @@
   width: 100% !important;
   padding-bottom: 32.19% !important;/* アスペクト比を保つ */
   height: 0;/* 高さは設定しない */
-
   background-position: top right !important;
   background-size: cover !important;
   background-repeat:no-repeat;
@@ -528,6 +539,5 @@
   line-height:1.31;
 }
 }
-
 /* page -------------*/
 }
