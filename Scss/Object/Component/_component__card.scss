@@ -152,10 +152,10 @@
 }
 
 
-.myClass{/*サムネイル*/
+.myClass.wp-post-image{/*サムネイル*/
   width:100% !important;
-  height: 0;/*高さは設定しない*/
-  padding-bottom:68.58%;/*アスペクト比を維持*/
+  height: 0 !important;/*高さは設定しない*/
+  padding-bottom:68.58% !important;/*アスペクト比を維持*/
 }
 
 
@@ -349,7 +349,7 @@
 }
 
 
-.myClass{/*サムネイル*/
+.myClass.wp-post-image{/*サムネイル*/
   width:100% !important;
   height:100%;
   padding-bottom:0;
