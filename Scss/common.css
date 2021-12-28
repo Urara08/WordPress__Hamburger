@@ -408,6 +408,7 @@ a {
   color: #707070 !important;
   font-weight: bold;
   box-sizing: border-box;
+  background-color: red;
 }
 .p-search-form__label {
   /*button内の” 検索 ”*/
@@ -3876,7 +3877,7 @@ a.page.larger {
      object-fit: cover;
   -o-object-position: top center;
      object-position: top center;
-  vertical-align: top !important;
+  vertical-align: bottom;
   box-sizing: border-box;
   overflow: hidden;
 }
