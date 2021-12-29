@@ -4141,10 +4141,7 @@ a.page.larger {
   }
 
   .c-btn-wrapper--card--archive {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @includec-btn-wrapper--card;
     margin-top: 60px;
   }
 

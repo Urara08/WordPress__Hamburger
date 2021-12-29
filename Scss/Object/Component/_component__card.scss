@@ -2,13 +2,13 @@
 /* スマホ ------------------------------------ */
 
 .c-card {/* mixin */
-  width: 100%;
+  width:100%;
 }
 
 
 .c-card--archive{/*一番外側の枠*/
   @include c-card;/*画像を上・文章を下*/
-  margin: 0;
+  margin:0;
 }
 
 
@@ -19,42 +19,42 @@
 
 .c-wrapper--card--archive{
   @include c-wrapper--card;
-  margin-bottom: 20.9px;/*下の余白を調整*/
+  margin-bottom:20.9px;/*下の余白を調整*/
 }
 
 
 .c-wrapper--card--archive:last-child{
-  margin-bottom: 0 !important;
+  margin-bottom:0 !important;
 }
 
 
 /*mixin*/
 .c-caption-group--card{/*文章の一番外側の枠*/
-  background-color: $color--char-BR;
+  background-color:$color--char-BR;
   color:$color--char-WH;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 
 .c-caption-group--card--archive{/*文章の一番外側の枠*/
   @include c-caption-group--card;
-  max-width: 100%;
-  padding-top: 30.5px;
-  padding-bottom: 43.7px;
-  font-size: 16px;
+  max-width:100%;
+  padding-top:30.5px;
+  padding-bottom:43.7px;
+  font-size:16px;
 }
 
 
 .c-btn--card{/*cardのbutton*/
   @include c-button;
-  position: relative;
+  position:relative;
   max-width:163.16px;
-  min-width: 167px !important;
-  height: 42.47px;
-  padding: 10px;
+  min-width:167px !important;
+  height:42.47px;
+  padding:10px;
   background-color:$color--item-WH-op-100;
   color:$color--char-GY !important;
-  font-weight: 600;
+  font-weight:600;
   border-radius:30px;
 }
 
@@ -144,18 +144,18 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: top center;
+  object-position:top center;
   vertical-align:bottom ;
-  box-sizing: border-box;
-  overflow: hidden;
+  box-sizing:border-box;
+  overflow:hidden;
 }
 
 
 .myClass.wp-post-image{/*サムネイル*/
-  width:100% ;
-  height: auto ;
-  object-fit: cover;
-  object-position: top center;
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  object-position:top center;
 }
 
 
@@ -163,101 +163,101 @@
 @media screen and (min-width: 600px){
 .c-card--archive{/*一番外側の枠*/
   @include c-card;
-  display: flex;
-  flex-direction: row;/*画像を左・文章を右に*/
-  min-width: 85.44% !important;
-  min-height: 45.16%;
-  height: auto;
+  display:flex;
+  flex-direction:row;/*画像を左・文章を右に*/
+  min-width:85.44% !important;
+  min-height:45.16%;
+  height:auto;
 }
 
 
 .c-wrapper--card--archive{
   @include c-wrapper--card;
-  margin-left: 0;
-  margin-bottom: 20.5px;/*下の余白*/
+  margin-left:0;
+  margin-bottom:20.5px;/*下の余白*/
 }
 
 
 .c-card--archive:last-child{/*一番下のcardのmarginの調整*/
-  margin-bottom: 0 !important;
+  margin-bottom:0 !important;
 }
 
 
 .c-caption-group--card--archive{/*文章の一番外側の枠*/
   @include c-caption-group--card;
-  position: relative;
-  top: 0;
-  max-width: 50%;
-  min-width: 43.16%;
+  position:relative;
+  top:0;
+  max-width:50%;
+  min-width:43.16%;
   padding-top:29px;
-  padding-bottom: 40px ;
-  min-height: 100%;
+  padding-bottom:40px;
+  min-height:100%;
 }
 
 
 .c-category--card{/*大見出し*/
-  display: inline-block;
+  display:inline-block;
   width:81.84%;
-  margin-bottom: 24px;
-  margin-left: 9.08% !important;
-  margin-right: 9.08% !important;
+  margin-bottom:24px;
+  margin-left:9.08% !important;
+  margin-right:9.08% !important;
   font-size:2.39vw;
-  font-weight: bold;
+  font-weight:bold;
   font-family:$font-family--M-plus;
-  line-height: 1.5;
+  line-height:1.5;
 }
 
 
 .c-sub-heading--card{/* 中見出し */
   width:81.84%;
-  margin-bottom: 10px;
-  margin-left: 9.08% !important;
-  margin-right: 9.08% !important;
-  font-size: 1.91vw;
-  font-weight: bold;
+  margin-bottom:10px;
+  margin-left:9.08% !important;
+  margin-right:9.08% !important;
+  font-size:1.91vw;
+  font-weight:bold;
   font-family:$font-family--M-plus;
-  line-height: 1.5;
+  line-height:1.5;
 }
 
 
 .c-detail--card--archive{/* 説明の詳細（長文の部分） */
   width:81.84%;
-  padding-bottom: 10px;
-  margin-right: 9.08% !important;
-  margin-left: 9.08% !important;
+  padding-bottom:10px;
+  margin-right:9.08% !important;
+  margin-left:9.08% !important;
   font-size:1.91vw;
 }
 
 
 /*c-card 写真側*/
 .thumbnail{/*cardの写真の外枠*/
-  position: relative;
+  position:relative;
   top:0px;
-  width: 50% !important;
-  height: auto;
-  padding-bottom: 0;
-  background-position: left top;/*カンプに近い*/
-  background-size: cover;
+  width:50% !important;
+  height:auto;
+  padding-bottom:0;
+  background-position:left top;/*カンプに近い*/
+  background-size:cover;
   background-repeat:no-repeat;
   vertical-align:bottom;
-  box-sizing: border-box;
+  box-sizing:border-box;
 }
 
 
 .myClass.wp-post-image{/*サムネイル*/
-  width:100% ;
-  height:100% ;
-  object-fit: cover;
-  object-position: top center;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top center;
 }
 
 
 .c-btn--card{
   @include c-button;
-  position: relative;
+  position:relative;
   width:163.16px;
-  height: 42.47px;
-  padding: 10px;
+  height:42.47px;
+  padding:10px;
   border-radius:38px;
 }
 
@@ -265,13 +265,13 @@
 .c-btn-label--card{
   @include c-btn-label;
   font-size:16px;
-  line-height: 1.06;
+  line-height:1.06;
 }
 
 
 .c-btn-wrapper--card--archive{/*card内のbuttonのwrapper*/
   @include c-btn-wrapper--card;
-  margin-top: 45px;
+  margin-top:45px;
 }
 }
 
@@ -279,107 +279,106 @@
 @media screen and (min-width: 1250px){
 .c-card--archive{/*一番外側の枠*/
   @include c-card;
-  display: flex;
+  display:flex;
   flex-direction: row;/*画像を左側、文章を右側に*/
-  width: 100% !important;
-  height: auto;
+  width:100% !important;
+  height:auto;
 }
 
 
 .c-wrapper--card--archive {
   @include c-wrapper--card;
-  width: 100% !important;
-  margin-left: 0;
-  margin-bottom: 30px;/*下の余白*/
+  width:100% !important;
+  margin-left:0;
+  margin-bottom:30px;/*下の余白*/
 }
 
 
 .c-wrapper--card--archive:last-child{/*一番下のcardのmarginの調整*/
-  margin-bottom: 0 !important;
+  margin-bottom:0 !important;
 }
 
 
 .c-caption-group--card--archive{/*文章の一番外側の枠*/
   @include c-caption-group--card;
-  position: relative;
-  top: 0;
-  width: 50% !important;
-  padding: 0;
+  position:relative;
+  top:0;
+  width:50% !important;
+  padding:0;
   padding-top:53px;
-  padding-bottom: 60px;
-
+  padding-bottom:60px;
 }
 
 .c-category--card{/*card内の大きい見出し*/
   display: inline-block;
-  width: 81.38%;
-  margin-left: 12.35%;
-  margin-bottom: 47px;
+  width:81.38%;
+  margin-left:12.35%;
+  margin-bottom:47px;
   font-size:1.87vw;
-  font-weight: bold;
+  font-weight:bold;
   font-family:$font-family--M-plus;
-  line-height: 1.5;
+  line-height:1.5;
 }
 
 .c-sub-heading--card{/* 中見出し */
-  width: 81.38%;
-  margin-left: 12.35%;
-  margin-bottom: 17px;
-  font-size: 1.25vw;
-  font-weight: bold;
-  line-height: 1.5;
+  width:81.38%;
+  margin-left:12.35%;
+  margin-bottom:17px;
+  font-size:1.25vw;
+  font-weight:bold;
+  line-height:1.5;
 }
 
 .c-detail--card--archive{/* 説明の詳細（長文の部分） */
-  width: 81.38%;
-  padding-bottom: 10px;
-  margin-right: 9.31%;
-  margin-left: 9.31%;
+  width:81.38%;
+  padding-bottom:10px;
+  margin-right:9.31%;
+  margin-left:9.31%;
   font-size:0.83vw;
 }
 
 /*c-card 写真側*/
 
 .thumbnail{/*cardの写真の外枠*/
-  position: relative;
+  position:relative;
   top:0px;
-  display: block !important;
-  width: 50% !important;
-  height: auto;
+  display:block !important;
+  width:50% !important;
+  height:auto;
   vertical-align:bottom;
   box-sizing: border-box;
   overflow: hidden;
 }
 
 .myClass.wp-post-image{/*サムネイル*/
-  width:100% ;
-  height:100% ;
-  object-fit: cover;
-  object-position: top center;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:top center;
 }
 
 
 .c-btn--card{
   @include c-button;
-  position: relative;
-  width: 292px;
-  min-width: 292px;
-  height: 76px;
-  padding: 10px;
+  position:relative;
+  width:292px;
+  min-width:292px;
+  height:76px;
+  padding:10px;
   border-radius:38px;
 }
 
 
 .c-btn-wrapper--card--archive{
-  @include c-btn-wrapper--card;
-  margin-top: 60px;
+  @includec-btn-wrapper--card;
+  margin-top:60px;
 }
 
 
 .c-btn-label--card{
   @include c-btn-label;
   font-size:16px;
-  line-height: 2.06;
+  line-height:2.06;
 }
 
 
