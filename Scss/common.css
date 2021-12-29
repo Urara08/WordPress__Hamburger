@@ -408,7 +408,6 @@ a {
   color: #707070 !important;
   font-weight: bold;
   box-sizing: border-box;
-  background-color: red;
 }
 .p-search-form__label {
   /*button内の” 検索 ”*/
@@ -3973,7 +3972,7 @@ a.page.larger {
     /*cardの写真の外枠*/
     position: relative;
     top: 0px;
-    width: 100% !important;
+    width: 50% !important;
     height: auto;
     padding-bottom: 0;
     background-position: left top;
