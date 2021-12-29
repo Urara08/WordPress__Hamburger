@@ -1,135 +1,148 @@
 /* スマホ */
 .p-search-form{
-  position: relative;
-  width: 85.33%;
-  min-height: 46px;
-  margin-top: 0;
-  box-sizing: border-box;
+  position:  relative ;
+  width:  85.33% ;
+  min-height:  46px ;
+  margin-top:  0 ;
+  box-sizing:  border-box ;
 
 &__keyword{
-  position: absolute;
-  top:0;
-  left: 0;
-  width:72.52%;
-  height: 46px;
-  padding: 10px;
-  border: solid $color--char-GY 1px;
-	font-family:$font-family--icon;
-  font-weight: lighter;
-  border-radius: 10px;
-  box-sizing: border-box;
+  position:  absolute ;
+  top: 0 ;
+  left:  0 ;
+  width:  72.52% ;
+  height:  46px ;
+  padding:  10px ;
+  border:  solid $color--char-GY 1px  ;
+	font-family:  $font-family--icon ;
+  font-weight:  lighter ;
+  border-radius:  10px ;
+  box-sizing:  border-box ;
 }
 
 &__button{
-  position: absolute;
-  top:0;
-  right: 0;
-	min-width: 24.95%;
-  height: 46px;
-	margin-left:13px;/*inputとの余白*/
-  padding: 12px 8%;/*px以外は崩れる*/
-	background-color: $color--base-vi-dark-OR;
-  border: solid $color--char-GY 1px;
-  border-radius: 10px;
-  color:$color--char-GY !important;
-  font-weight: bold;
-  box-sizing: border-box;
+  position:  absolute ;
+  top:  0 ;
+  right:  0 ;
+	min-width:  24.95% ;
+  height:  46px ;
+	margin-left:  13px ;/*inputとの余白*/
+  padding:  12px 8% ;/*px以外は崩れる*/
+	background-color:  $color--base-vi-dark-OR ;
+  border:  solid $color--char-GY 1px ;
+  border-radius:  10px ;
+  color:  $color--char-GY !important ;
+  font-weight:  bold ;
+  box-sizing:  border-box ;
 
 }
 
 &__label{/*button内の” 検索 ”*/
-  display: inline-block;
-  position: absolute;
-  top: 50%;/*真ん中に配置*/
-  left: 50%;
-  transform: translate(-50%, -50%);/*真ん中に配置*/
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width:100%;
-  font-size: 16px;
-  font-weight:bold;
-  line-height:1.43;
-  color:$color--char-GY;
-	border-radius:10px;
-  box-sizing: border-box;
+  display:  inline-block ;
+  position:  absolute ;
+  top:  50% ;/*真ん中に配置*/
+  left:  50% ;
+  transform:  translate(-50%, -50%) ;/*真ん中に配置*/
+  -webkit-transform:  translate(-50%, -50%) ;
+  -ms-transform:  translate(-50%, -50%) ;
+  width:  100% ;
+  font-size:  16px ;
+  font-weight:  bold ;
+  line-height:  1.43 ;
+  color:  $color--char-GY ;
+	border-radius:  10px ;
+  box-sizing:  border-box ;
 }
 }
+
+
 .p-search-form__icon{/*虫眼鏡アイコン*/
-  display: block;
-  position: absolute;
-  top: 50%;/*真ん中に配置*/
-  left: 5%;
-  transform: translate(-50%, -50%);/*真ん中に配置*/
-  -webkit-transform: translate(5%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  max-width: 6% !important;
-  height: auto;
-  font-size: 6.4vw;
+  display:  block ;
+  position:  absolute ;
+  top:  50% ;/*真ん中に配置*/
+  left:  5% ;
+  transform:  translate(-50%, -50%) ;/*真ん中に配置*/
+  -webkit-transform:  translate(5%, -50%) ;
+  -ms-transform:  translate(-50%, -50%) ;
+  max-width:  6% !important ;
+  height:  auto ;
+  font-size:  6.4vw ;
 }
+
+
 /* タブレット */
 @media screen and (min-width: 600px){
 .p-search-form{
-  max-width: 65.46% !important;/* 広がり過ぎないように */
-  height: auto;
+  max-width:  65.46% !important ;/* 広がり過ぎないように */
+  height:  auto ;
 
 &__keyword{
-  width: 72.52%;
-  padding: 10px;
-}
-&__button{
-  width: 24.9%;
-	margin-left:2.56%;/*inputとの余白*/
-  padding: 12px 8%;/*潰れないように*/
-	background-color: $color--base-vi-dark-OR;
-  border: solid $color--char-GY 1px;
-  border-radius: 10px;
-  font-size: 16px;
-  line-height: 1.43;
-  color:$color--char-GY;
-  font-weight: bold;
-  box-sizing: border-box;
-}
-}
-.p-search-form__icon{/* 虫眼鏡アイコン */
-  top: 50%;/*inputの真ん中に配置*/
-  left:3.03%;
-  max-width: 4% !important;
-  transform: translate(-50%, -50%);/*inputの真ん中に配置*/
-  -webkit-transform: translate(-3.03%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  width:  72.52% ;
+  padding:  10px ;
 }
 
-.js-search-form__icon.is-active{
-  display: none !important;
-  }
+&__button{
+  width:  24.9% ;
+	margin-left:  2.56% ;/*inputとの余白*/
+  padding:  12px 8% ;/*潰れないように*/
+	background-color:  $color--base-vi-dark-OR ;
+  border:  solid $color--char-GY 1px ;
+  border-radius:  10px ;
+  font-size:  16px ;
+  line-height:  1.43 ;
+  color:  $color--char-GY ;
+  font-weight:  bold ;
+  box-sizing:  border-box ;
 }
+}
+
+
+.p-search-form__icon{/* 虫眼鏡アイコン */
+  top:  50% ;/*inputの真ん中に配置*/
+  left:  3.03% ;
+  max-width:  4% !important ;
+  transform:  translate(-50%, -50%) ;/*inputの真ん中に配置*/
+  -webkit-transform:  translate(-3.03%, -50%) ;
+  -ms-transform:  translate(-50%, -50%) ;
+}
+
+
+.js-search-form__icon.is-active{
+  display:  none !important ;
+}
+}
+
+
 /* PC */
 @media screen and (min-width: 1250px){
   .p-search-form{
-    position: relative;
-    width: 35.09%;
-    height: 0;
-    margin-top: -3% !important;/*上のmarginをPCの場合消す*/
-    margin-right: 2%;
+    position:  relative ;
+    width:  35.09% ;
+    height:  0 ;
+    margin-top:  -3% !important ;/*上のmarginをPCの場合消す*/
+    margin-right:  2% ;
 
 &__keyword{
-    width:72.66%;
-    line-height:100%;
+    width:  72.66% ;
+    line-height:  100% ;
 }
+
 &__button{
-    max-width: 136px;
-    height: 100%;
-    padding: 12px 5%;/*潰れないように*/
-    margin-left: 13px;
+    max-width:  136px ;
+    height:  100% ;
+    padding:  12px 5% ;/*潰れないように*/
+    margin-left:  13px ;
 }
 }
+
+
 .p-search-form__icon{/* 虫眼鏡アイコン */
-    position: relative;
-    top: 50% !important;/*inputの真ん中に配置*/
-    left:3.03%;
-    transform: translate(-50%, -50%);/*inputの真ん中に配置*/
-    -webkit-transform: translate(-3.03%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    min-width: 4.39%;
+    position:  relative ;
+    top:  50% !important ;/*inputの真ん中に配置*/
+    left:  3.03% ;
+    transform:  translate(-50%, -50%) ;/*inputの真ん中に配置*/
+    -webkit-transform:  translate(-3.03%, -50%) ;
+    -ms-transform:  translate(-50%, -50%) ;
+    min-width:  4.39% ;
 }
 }

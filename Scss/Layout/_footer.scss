@@ -1,17 +1,17 @@
 /*スマホ--タブレット--パソコン画面1249pxまで--*/
 .l-footer{
-  grid-column: 1 /-1;
-  grid-row: 3 /-1;
-  max-width: 100%;
-  min-width: 375px;
-  overflow-y: hidden !important;
+  grid-column:  1 /-1 ;
+  grid-row:  3 /-1 ;
+  max-width:  100% ;
+  min-width:  375px ;
+  overflow-y:  hidden !important ;
 }
 /*パソコン画面1250px以上--*/
 @media screen and (min-width: 1250px){
 .l-footer{
-  grid-column: 1 / -1;
-  grid-row: 3 / -1;
-  max-width: 100%;
-  overflow: hidden;
+  grid-column:  1 / -1 ;
+  grid-row:  3 / -1 ;
+  max-width:  100% ;
+  overflow:  hidden ;
 }
 }

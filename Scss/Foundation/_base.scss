@@ -1,31 +1,31 @@
 
 html{
-  text-decoration: none;/*リテキストの装飾を行わない*/
-  box-sizing: border-box;/*padding・borderを含めてサイズを指定する*/
-  list-style: none;/*リストの装飾は表示しない*/
+  text-decoration:  none ;/*リテキストの装飾を行わない*/
+  box-sizing:  border-box ;/*padding・borderを含めてサイズを指定する*/
+  list-style:  none ;/*リストの装飾は表示しない*/
 }
 body {
-  min-width: 375px;
-  min-height: 100vh;/*ブラウザの高さいっぱいに要素を広げる*/
-  max-width: 100%;/*最大幅*/
-  font-family:$font-family--M-plus;
-  box-sizing: border-box;
+  min-width:  375px ;
+  min-height:  100vh ;/*ブラウザの高さいっぱいに要素を広げる*/
+  max-width:  100% ;/*最大幅*/
+  font-family:  $font-family--M-plus ;
+  box-sizing:  border-box ;
 }
 
 main{
-  background-color: $color--base-WH;
+  background-color:  $color--base-WH ;
 }
 
 img, background {
-  max-width: 100%;/*最大幅*/
+  max-width:  100% ;/*最大幅*/
 }
 
 ul, li{
-  list-style: none;/*リストの装飾をしない*/
-  text-decoration: none;/*文字の装飾をしない*/
+  list-style:  none ;/*リストの装飾をしない*/
+  text-decoration:  none ;/*文字の装飾をしない*/
 }
 
 a{
-  color:$color--char-GY;
-  text-decoration: none;
+  color:  $color--char-GY ;
+  text-decoration:  none ;
 }

@@ -1,22 +1,21 @@
 /*スマホ--タブレット--パソコン画面1249pxまで--*/
 .l-main{
-  grid-column: 1 / -1;
-  grid-row: 2 / -2;
-  max-width: 100%;
-  min-width: 375px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  grid-column:  1 / -1 ;
+  grid-row:  2 / -2 ;
+  max-width:  100% ;
+  min-width:  375px ;
+  height:  100% ;
+  margin:  0 ;
+  padding:  0 ;
 
 }
 /*パソコン画面1250px以上--*/
 @media screen and (min-width: 1250px){
 .l-main{
-  grid-column: 1 / -2 ;
-  grid-row: 2 / -2;
-  max-width: 100%;
-  margin: 0;
-  padding: 0;
-
+  grid-column:  1 / -2 ;
+  grid-row:  2 / -2 ;
+  max-width:  100% ;
+  margin:  0 ;
+  padding:  0 ;
 }
 }

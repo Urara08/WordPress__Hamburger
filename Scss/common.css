@@ -555,11 +555,9 @@ a {
   z-index: 100;
   top: 43%;
   left: 7%;
-  /*25px*/
   height: auto;
   font-family: "M PLUS 1p", sans-serif;
   font-size: 9.6vw;
-  /*36px*/
   font-weight: bold;
   line-height: 60/40;
   color: #FFFFFF;
@@ -620,7 +618,6 @@ a {
   position: absolute;
   z-index: 120;
   top: 54.06%;
-  /*MENUの下へ配置*/
   left: 4.43%;
   font-size: 4.26vw;
   font-weight: bold;
@@ -760,7 +757,6 @@ a {
     z-index: 100;
     top: 40%;
     left: 10%;
-    /*86px*/
     z-index: 140;
     font-size: 36px;
     font-weight: bold;
@@ -929,7 +925,6 @@ a {
     /* ダミーサイトの文字 */
     top: 44%;
     left: 16%;
-    /*86px*/
     font-size: 40px;
     font-weight: bold;
     line-height: 60/40;
@@ -1367,7 +1362,6 @@ a {
     margin-left: 3.2%;
     margin-bottom: 19px;
     font-size: 24px;
-    /*2.87vw*/
     font-weight: bold;
     line-height: 1.5;
     overflow-wrap: break-word;
@@ -1382,7 +1376,6 @@ a {
     margin-left: 3%;
     margin-right: 3%;
     font-size: 16px;
-    /*1.91vw*/
     line-height: 1.43;
     overflow-wrap: break-word;
     -o-object-fit: contain;
@@ -1506,14 +1499,14 @@ a {
     margin-bottom: 2.17%;
     font-size: 1.92vw;
     font-weight: bold;
-    line-height: 36/24;
+    line-height: 1.5;
     overflow-wrap: break-word;
   }
   .p-contents__branch-menu__box__text {
     /*box内の共通テキスト*/
     display: block;
     position: relative;
-    width: 100% 　 !important;
+    width: 100% !important;
     height: 0;
     margin-left: 3.24% !important;
     margin-left: 3.24% !important;
@@ -1641,16 +1634,16 @@ a {
   /*透けないように*/
 }
 .p-access-map__text-group__index::after {
-  content: "";
-  display: inline-block !important;
   position: absolute;
   z-index: 140;
   top: 62px;
   /*px以外長さがおかしい為px*/
   left: 0;
+  display: inline-block !important;
   width: 75px;
   /*記号で長さが必要な為px*/
   height: 2px;
+  content: "";
   margin-bottom: 0;
   white-space: nowrap;
   background-color: #FFFFFF;
@@ -1780,7 +1773,6 @@ a {
     box-sizing: border-box;
   }
   .p-access-map__text-group__index::after {
-    content: "";
     display: inline-block;
     position: absolute;
     z-index: 140;
@@ -1790,6 +1782,7 @@ a {
     width: 75px;
     /*記号で長さが必要な為px*/
     height: 2px;
+    content: "";
     background-color: #FFFFFF;
     opacity: 1;
     /*透けないように*/
@@ -1945,7 +1938,6 @@ a {
   }
   .p-access-map__text-group__index::after {
     /*タイトル下の下線*/
-    content: "";
     display: inline-block;
     position: absolute;
     z-index: 140;
@@ -1954,6 +1946,7 @@ a {
     width: 75px;
     /*記号で長さが必要な為px*/
     height: 2px;
+    content: "";
     background-color: #FFFFFF;
     opacity: 1;
     /*透けないように*/
@@ -2601,7 +2594,7 @@ a.page.smaller {
 
 /* タブレット */
 @media screen and (min-width: 600px) {
-  /* 隠す */
+  /* 隠す -------*/
   .previouspostslink:after {
     /* 前へ */
     display: none !important;
@@ -2699,7 +2692,7 @@ a.page.larger {
 }
 /*PＣ*/
 @media screen and (min-width: 1250px) {
-  /* 隠す */
+  /* 隠す --------*/
   .previouspostslink:after {
     /* 前へ */
     display: none !important;
@@ -3000,7 +2993,7 @@ a.page.larger {
   font-weight: normal;
   line-height: 1.43;
 }
-　　 .p-contents__single__block-quote__source__title {
+.p-contents__single__block-quote__source__title {
   /* 引用元 */
   display: inline-block !important;
   font-size: 16px !important;
@@ -3017,11 +3010,11 @@ a.page.larger {
 }
 .p-contents__single__block-quote__source__link::after {
   /*下線（リンク）*/
-  display: inline-block !important;
-  content: "";
   position: absolute;
   top: 100%;
   left: 0px;
+  display: inline-block !important;
+  content: "";
   width: 100%;
   height: 1px;
 }
@@ -3029,12 +3022,10 @@ a.page.larger {
 /* ------------リストのブロック------------*/
 .p-contents__single__block-list {
   /*本体*/
-  float: none;
-  /* floatは解除 */
+  float: none !important;
   clear: both;
   /* floatは解除 */
   display: block;
-  float: none !important;
   max-width: 100%;
   min-width: 53.86%;
   min-height: 87.23%;
@@ -3095,14 +3086,14 @@ a.page.larger {
   border-collapse: collapse !important;
 }
 .p-contents__single__block-table__title {
-  border-collapse: collapse;
-  /*2重線にしない*/
   width: 40.29%;
   height: 77px;
   padding: 28px 0px 27px 30px !important;
   color: #3C2A10;
   text-align: left;
   /*基本を左寄せにする*/
+  border-collapse: collapse;
+  /*2重線にしない*/
   border: solid 1px #707070;
   box-sizing: border-box;
 }
@@ -3279,11 +3270,11 @@ a.page.larger {
   }
   .p-contents__single__block-quote__source__link::after {
     /*下線（リンク）*/
-    display: inline-block !important;
-    content: "";
     position: absolute;
     top: 0;
     left: 0px;
+    display: inline-block !important;
+    content: "";
     width: 100%;
     height: 1px;
     color: #4A6C9B;
@@ -3292,12 +3283,10 @@ a.page.larger {
   /* ------------リストのブロック------------*/
   .p-contents__single__block-list {
     /*本体*/
-    float: none;
-    /*floatは解除する*/
+    float: none !important;
     clear: both;
     /*floatは解除する*/
     display: block;
-    float: none !important;
     max-width: 100%;
     min-width: 28.15%;
     min-height: 77.35%;
@@ -3317,22 +3306,21 @@ a.page.larger {
     width: 100% !important;
     margin-top: 30px;
     background-color: #FFFFFF;
-    border: solid red 1px;
     overflow-x: hidden;
   }
   .p-contents__single__block-table__title {
-    border-collapse: collapse;
-    /*題*/
     width: 30.11%;
     padding: 28px 0px 27px 30px !important;
     /*インデントの部分*/
+    border-collapse: collapse;
+    /*題*/
   }
   .p-contents__single__block-table__item {
-    border-collapse: collapse;
-    /*データ*/
     width: 69.88%;
     padding: 28px 0px 27px 30px !important;
     /*インデントの部分*/
+    border-collapse: collapse;
+    /*データ*/
   }
 
   /* ------------ボタンのブロック------------*/
@@ -3340,9 +3328,9 @@ a.page.larger {
     /*本体*/
     position: relative;
     display: block !important;
-    padding-bottom: 0;
     width: 60.08% !important;
     height: 104px;
+    padding-bottom: 0;
     margin-bottom: 60px;
   }
   .p-contents__single__block-button__wrapper {
@@ -3509,14 +3497,14 @@ a.page.larger {
     margin-top: 50px;
   }
   .p-contents__single__block-table__title {
-    border-collapse: collapse;
     width: 31.7%;
     padding: 28px 0px 27px 30px !important;
+    border-collapse: collapse;
   }
   .p-contents__single__block-table__item {
-    border-collapse: collapse;
     width: 68.66%;
     padding: 28px 0px 27px 30px !important;
+    border-collapse: collapse;
   }
 
   /* ------------ボタンのブロック------------*/
@@ -3524,9 +3512,9 @@ a.page.larger {
     /* 埋め込み先*/
     position: relative;
     display: block !important;
-    padding-bottom: 0;
     width: 429px !important;
     height: 104px;
+    padding-bottom: 0;
     margin-bottom: 60px;
   }
   .p-contents__single__block-button__wrapper {
@@ -3881,7 +3869,7 @@ a.page.larger {
 }
 
 .myClass.wp-post-image,
-.attachment-.wp-post-image {
+.attachment-.size-.wp-post-image {
   /*サムネイル*/
   width: 100%;
   height: 100%;
@@ -3984,7 +3972,7 @@ a.page.larger {
   }
 
   .myClass.wp-post-image,
-.attachment-.wp-post-image {
+.attachment-.size-.wp-post-image {
     /*サムネイル*/
     width: 100%;
     height: 100%;
@@ -4122,7 +4110,7 @@ a.page.larger {
   }
 
   .myClass.wp-post-image,
-.attachment-.wp-post-image {
+.attachment-.size-.wp-post-image {
     /*サムネイル*/
     width: 100% !important;
     min-height: 50% !important;
@@ -4178,21 +4166,22 @@ a.page.larger {
     line-height: 2.06;
   }
 }
-/* pageでも流用*/
 /* single c-card関連 component*/
+/* pageでも流用*/
 /* スマホ */
-/* wrapper --*/
 /* pcのみ表示するcard*/
 .c-wrapper--card--single--pc-only {
   display: none;
   /* 表示しない */
 }
 
+/* wrapper --*/
 /* 1,2,3番目のcard------------------*/
 .c-wrapper--card--single {
   max-width: 100%;
   /* 外枠 */
   margin-bottom: 30px;
+  /*cardの下の余白 */
 }
 
 /* 4番目card------------------------*/
@@ -4207,6 +4196,7 @@ a.page.larger {
   max-width: 100%;
   /* card外枠 */
   margin-bottom: 20px;
+  /* cardの下の余白 */
 }
 
 /* 連続するカードの全体の並べ方*/
@@ -4394,7 +4384,7 @@ a.page.larger {
 
   /*1番目のcard--------------------------*/
   .c-wrapper--card--single.hp_mb60 {
-    margin-bottom: 60px;
+    margin-bottom: 60 px;
   }
 
   /*2番目のcard--------------------------*/

@@ -1,44 +1,44 @@
 /* スマホ */
 .p-sidebar{
-  position:fixed;/*scrollさせる*/
-  z-index: 200;/*一番上に表示*/
-  top:0;
-  right:-250vw;/*ボタンが押されていない時は右側に隠す*/
-  padding-top: 7.62%;/*背景色が切れて足りない部分を埋める*/
-  padding-bottom: 51.69%;/*背景色が切れて足りない部分を埋める*/
-  width:87.46%;
-  height: 100vh;
-  margin: 0;
-  background-color: $color--base-li-dark-OR;
-  font-family: $font-family--M-plus;
-  transition: all 0.3s;
-  overflow-y: scroll;
+  position:  fixed ;/*scrollさせる*/
+  z-index:  200 ;/*一番上に表示*/
+  top:  0 ;
+  right:  -250vw ;/*ボタンが押されていない時は右側に隠す*/
+  padding-top:  7.62% ;/*背景色が切れて足りない部分を埋める*/
+  padding-bottom:  51.69% ;/*背景色が切れて足りない部分を埋める*/
+  width:  87.46% ;
+  height:  100vh ;
+  margin:  0 ;
+  background-color:  $color--base-li-dark-OR ;
+  font-family:  $font-family--M-plus ;
+  transition:  all 0.3s ;
+  overflow-y:  scroll ;
 
 &__nav{/*サイドバーのMenuから下の部分*/
-  position: relative;
-  min-width:80.18% ;
-  height: auto;
-  margin-top: 164px;
-  margin-left: 14.63%;
-  padding-left: 0;
+  position:  relative ;
+  min-width:  80.18% ;
+  height:  auto ;
+  margin-top:  164px ;
+  margin-left:  14.63% ;
+  padding-left:  0 ;
 }
 }
 
 
 .p-sidebar__nav{
 &__label{ /*サイドバーの Menu*/
-  display: none;/*スマホ・タブレットの時は非表示*/
+  display:  none ;/*スマホ・タブレットの時は非表示*/
 }
 }
 
 
 .p-sidebar__nav{
 &__title{/*バーガー・サイド・ドリンクの標題*/
-  display: block;
-  margin-bottom: 40px;
-  font-size: 24px;
-  font-weight: 500;
-  color:$color--char-GY;
+  display:  block ;
+  margin-bottom:  40px ;
+  font-size:  24px ;
+  font-weight:  500 ;
+  color:  $color--char-GY ;
 }
 }
 
@@ -48,83 +48,83 @@
 #menu-item_2,
 #menu-item_3
 {/*__titleを除いた各（バーガー・サイド・ドリンク）メーニュー群の箱*/
-  width: 65.39%;
-  margin-bottom: 40px !important;
-  padding-left: 8%;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-  color:$color--char-GY;
-  white-space: nowrap;
+  width:  65.39% ;
+  margin-bottom:  40px !important ;
+  padding-left:  8% ;
+  font-size:  20px ;
+  font-weight:  400 ;
+  line-height:  1.5 ;
+  color:  $color--char-GY ;
+  white-space:  nowrap ;
 }
 
 
 /* WordPressが自動でつけたクラス */
 .menu-item{/*各リストアイテムの詳細*/
-  margin-bottom: 22px;
+  margin-bottom:  22px ;
 
 &:last-child{/*各リストアイテムの一番最後*/
-  margin-bottom: 34px;
+  margin-bottom:  34px ;
 }
 }
 
 
 .p-sidebar__nav{
 &> .c-item__title{/*各リストアイテムの詳細のリンクの部分*/
-  list-style: none;
-  text-decoration: none;
-  color: $color--char-GY;
+  list-style:  none ;
+  text-decoration:  none ;
+  color:  $color--char-GY ;
 }
 }
 
 
 .p-sidebar__menu__close-btn.is-show,
 .fal.is-show{ /*✕ボタン*/
-  display: block;
-  position: absolute;
-  top:25px !important;
-  right:17px !important;
-  width:32px !important;
-  height: auto !important;
-  color:$color--char-GY !important;
-  font-weight: normal !important;
+  display:  block ;
+  position:  absolute ;
+  top:  25px !important ;
+  right:  17px !important ;
+  width:  32px !important ;
+  height:  auto !important ;
+  color:  $color--char-GY !important ;
+  font-weight:  normal !important ;
 }
 
 
 /*js-クラスのスタイル詳細*/
 .p-sidebar.is-show{/*クラスis-showがついたら*/
-  top:0;/*位置を0に*/
-  right:0;/*画面の右側を起点に表示*/
+  top:  0 ;/*位置を0に*/
+  right:  0 ;/*画面の右側を起点に表示*/
 }
 
 
 /* タブレット */
 @media screen and (min-width: 600px){
 .p-sidebar{
-  width:44%;
+  width:  44% ;
 }
 
 
 .p-sidebar.is-show{/*sidebarが現れた時*/
-  max-width:44%;
-  top:0;/*位置を0に*/
-  right:0;
+  max-width:  44%;
+  top:  0 ;/*位置を0に*/
+  right:  0 ;
 }
 
 
 .p-sidebar__nav{/*サイドバーのMenuの下の字の部分*/
-  position: relative;
-  min-width:70.29% ;
-  height: auto;
-  margin-top:calc(212 - 7.62%)px;
-  margin-left: 12.53%;
+  position:  relative ;
+  min-width:  70.29% ;
+  height:  auto ;
+  margin-top:  calc(212 - 7.62%)px ;
+  margin-left:  12.53% ;
 
 &__title{/*バーガー・サイド・ドリンク*/
-  display: block !important;
-  font-size: 20px !important;
-  font-weight: 500;
-  color:$color--char-GY;
-  line-height: 1.5;
+  display:  block !important ;
+  font-size:  20px !important ;
+  font-weight:  500 ;
+  color:  $color--char-GY ;
+  line-height:  1.5 ;
 }
 }
 
@@ -133,22 +133,22 @@
 #menu-item_1,
 #menu-item_2,
 #menu-item_3{/*__titleを除いた各（バーガー・サイド・ドリンク）メーニュー群の箱*/
-  margin-bottom: 40px !important;
-  padding-left: 9px !important;/*title（バーガー・サイド・ドリンク）とのインデント*/
-  width:92.3% !important;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.5;
-  color:$color--char-GY;
+  margin-bottom:  40px !important ;
+  padding-left:  9px !important ;/*title（バーガー・サイド・ドリンク）とのインデント*/
+  width:  92.3% !important ;
+  font-weight:  400 ;
+  font-size:  20px ;
+  line-height:  1.5 ;
+  color:  $color--char-GY ;
 }
 
 
 /* WordPressが自動でつけたクラス */
 .menu-item{/*各リストアイテムの詳細*/
-  margin-bottom: 22px;
+  margin-bottom:  22px ;
 
 &:last-child{/*各リストアイテムの詳細*/
-    margin-bottom: 38px;
+    margin-bottom:  38px ;
 }
 }
 }
@@ -157,44 +157,44 @@
 /* PC */
 @media screen and (min-width: 1250px){
 .p-sidebar{
-  display: block !important;
-  position: relative;
-  top:0 !important;
-  right: 0 !important;
-  width:100% !important;
-  height: 100%;/*100%で指定してないと高さが切れる*/
-  min-height: 100%;
-  padding-top: 0;
-  overflow-y: hidden;
+  display:  block !important ;
+  position:  relative ;
+  top:  0 !important ;
+  right:  0 !important ;
+  width:  100% !important ;
+  height:  100%;/*100%で指定してないと高さが切れる*/
+  min-height:  100% ;
+  padding-top:  0 ;
+  overflow-y:  hidden ;
 
 &__nav{/*サイドバーのMenuから下の部分*/
-  display: inline-block;
-  position: relative;
-  min-width: 69.75%;
-  max-height: 42%;
-  z-index: 100;
-  height: 0;
-  padding-bottom: 422%;
-  margin-left: 6.25%;
-  margin-left:13.62%;
+  display:  inline-block ;
+  position:  relative ;
+  min-width:  69.75% ;
+  max-height:  42% ;
+  z-index:  100 ;
+  height:  0 ;
+  padding-bottom:  422% ;
+  margin-left:  6.25% ;
+  margin-left:13.62% ;
 }
 }
 
 
 .p-sidebar__nav__label{/*サイドバーのMenu*/
-  display: block !important;
-  margin-bottom: 85px;
-  font-size: 1.77vw !important;
-  font-weight: bold;
-  color: $color--char-GY;
-  line-height:  1.32;
+  display: block !important ;
+  margin-bottom:  85px ;
+  font-size:  1.77vw !important ;
+  font-weight:   bold ;
+  color:  $color--char-GY ;
+  line-height:  1.32 ;
 }
 
 
 .p-sidebar__nav{
 &__title{/*バーガー・サイド・ドリンク*/
-  font-size: 1.25vw;
-  font-weight: 700;
+  font-size:  1.25vw ;
+  font-weight:  700 ;
 }
 }
 
@@ -203,28 +203,28 @@
 #menu-item_1,
 #menu-item_2,
 #menu-item_3{
-  margin-bottom: 40px !important;
-  padding-left: 4.26%;
-  width: 80%;
-  font-weight: 500;
-  font-size: 1.04vw;
-  color:$color--char-GY;
-  word-break:break-all;
-  line-height: 1.5;
+  margin-bottom:  40px !important ;
+  padding-left:  4.26% ;
+  width:  80% ;
+  font-weight:  500 ;
+  font-size:  1.04vw ;
+  color:  $color--char-GY ;
+  word-break:  break-all ;
+  line-height:  1.5 ;
 }
 
 
 /* WordPressが自動でつけたクラス */
 .menu-item{/*各リストアイテムの詳細*/
-  margin-bottom: 22px;
+  margin-bottom:  22px ;
 
 &:last-child{/*各リストアイテムの詳細*/
-  margin-bottom: 40px;
+  margin-bottom:  40px ;
 }
 }
 
 
 .p-sidebar__menu__close-btn{  /*サイドバーの✕ボタン*/
-display: none !important;/*PCの時は隠す*/
+display:  none !important ;/*PCの時は隠す*/
 }
 }

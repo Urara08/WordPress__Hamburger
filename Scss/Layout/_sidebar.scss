@@ -1,14 +1,14 @@
 /*スマホ--タブレット--パソコン画面1249pxまで--*/
 .l-sidebar{
-  grid-template-columns: none;/*ボタンが押される迄は表示はしない*/
-  grid-template-rows: none;
+  grid-template-columns:  none ;/*ボタンが押される迄は表示はしない*/
+  grid-template-rows: none ;
 }
 
 /*パソコン画面1250px以上--*/
 @media screen and (min-width: 1250px){
   .l-sidebar{
-    grid-column: 2 / -1 ;/*右列に元々表示*/
-    grid-row   : 1/  -2 ;
-    overflow-y: hidden;/*必須：縦にはみ出さないように*/
+    grid-column:  2 / -1 ;/*右列に元々表示*/
+    grid-row   :  1/  -2 ;
+    overflow-y:  hidden ;/*必須：縦にはみ出さないように*/
 }
 }

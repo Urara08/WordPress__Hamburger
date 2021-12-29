@@ -1,72 +1,76 @@
 /* スマホ */
 .p-footer{
-  position: relative;
-  z-index: 140;/*上の地図のテキストと同じ高さ*/
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  min-width:67%;
-  height: auto;
-  object-fit: cover;/*要素全体を画像で覆う*/
-  overflow-y: hidden;
+  position:  relative ;
+  z-index:  140 ;/*上の地図のテキストと同じ高さ*/
+  bottom:  0 ;
+  left:  0 ;
+  max-width:  100% ;
+  min-width:  67% ;
+  height:  auto ;
+  object-fit:  cover ;/*要素全体を画像で覆う*/
+  overflow-y:  hidden ;
 
   &__wrapper{/*縦に潰れないように*/
-    padding-top: 39px;/*px以外長さが合わない*/
-    padding-bottom: 31px;/*px以外長さが合わない*/
+    padding-top:  39px ;/*px以外長さが合わない*/
+    padding-bottom:  31px ;/*px以外長さが合わない*/
 }
 }
 
 
 .p-footer__menu{
-  display: flex;
-  flex-direction: column;/*aboutとcopyrightを縦に並べる*/
-  justify-items: center;
-  text-align: center;
-  font-weight: bold;
-  line-height: 1.5;
-  color:$color--char-WH;
+  display:  flex ;
+  flex-direction:  column ;/*aboutとcopyrightを縦に並べる*/
+  justify-items:  center ;
+  text-align:  center ;
+  font-weight:  bold ;
+  line-height:  1.5 ;
+  color:  $color--char-WH ;
 
   &__info{
-  display:inline-block;
-  margin-top: 0px;
+  display:  inline-block ;
+  margin-top:  0px ;
 
 }
 
   &___copy{
-  display:inline-block;
-  margin-top: 34px;
-  margin-bottom: 0;/*px以外長さがおかしい為px*/
-  line-height: 1.42;
-  font-size: 14px;
-  font-weight: normal;
+  display:  inline-block ;
+  margin-top:  34px ;
+  margin-bottom:  0 ;/*px以外長さがおかしい為px*/
+  line-height:  1.42 ;
+  font-size:  14px ;
+  font-weight:  normal ;
 }
 }
+
 
 /*WordPressのID・クラス　ここから*/
 #menu-footer_1 {/*カスタムメニュー全体*/
-  display: flex !important;
-  justify-content: center;
-  font-weight: normal;
-  line-height: 1.5;
+  display:  flex !important ;
+  justify-content:  center ;
+  font-weight:  normal ;
+  line-height:  1.5 ;
 }
 
+
 .menu-item-421::after{/*ショップ情報の後ろ*/
-  content:"|";
-  margin-right: 15px;
-  margin-left: 15px;
-  color: $color--char-WH !important;;
+  content:  "|" ;
+  margin-right:  15px ;
+  margin-left:  15px ;
+  color:  $color--char-WH !important ;
 }
+
+
 .menu-item-420,
 .menu-item-421{/*ショップ情報とヒストリー*/
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.5;
+  font-size:  20px ;
+  font-weight:  normal ;
+  line-height:  1.5 ;
 }
 
 
 .menu-item-420 a,
 .menu-item-421 a{
-color:$color--char-WH !important;
+color:  $color--char-WH !important;
 }
 /*WordPressのID・クラス　ここまで*/
 
@@ -75,28 +79,30 @@ color:$color--char-WH !important;
 /* タブレット */
 @media screen and (min-width: 600px){
 .p-footer{
-  height: 150px;
-  overflow-y: hidden !important;
+  height:  150px ;
+  overflow-y:  hidden !important ;
 
 &__wrapper{/*縦に潰れないように*/
-  padding-top: 39px;/*px以外長さがおかしい為px*/
-  padding-bottom: 29px;/*px以外長さがおかしい為px*/
+  padding-top:  39px ;/*px以外長さがおかしい為px*/
+  padding-bottom:  29px ;/*px以外長さがおかしい為px*/
 }
 }
+
+
 .p-footer__menu{
 &__info{
-  display:inline-block;
-  margin-top:0;
-  margin-bottom:0;
+  display: inline-block  ;
+  margin-top: 0  ;
+  margin-bottom: 0  ;
 }
 
 &__copy{
   display:inline-block;
-  margin-top:34px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42;
+  margin-top: 34px ;
+  margin-bottom:  0 ;
+  font-size:  14px ;
+  font-weight:  normal ;
+  line-height:  1.42 ;
 }
 }
 
@@ -104,9 +110,9 @@ color:$color--char-WH !important;
 /*WordPressのクラス　ここから*/
 .menu-item-420,
 .menu-item-421{
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.5;
+  font-size:  20px ;
+  font-weight:  normal ;
+  line-height:  1.5 ;
 }/*WordPressのクラス　ここまで*/
 }
 
@@ -114,16 +120,16 @@ color:$color--char-WH !important;
 /* PC */
 @media screen and (min-width: 1250px){
 .p-footer{
-  position: relative;
-  bottom: 0;
-  left: 0;
-  z-index: 140;
-  height: 150px;
-  overflow-y: hidden;
+  position:  relative ;
+  bottom:  0 ;
+  left:  0 ;
+  z-index:  140 ;
+  height:  150px ;
+  overflow-y:  hidden ;
 
 &__wrapper{/*可変で縦が潰れないように設定*/
-  padding-top: 39px;/*px以外長さが合わない*/
-  padding-bottom: 30px;/*px以外長さが合わない*/
+  padding-top:  39px ;/*px以外長さが合わない*/
+  padding-bottom:  30px ;/*px以外長さが合わない*/
 }
 }
 
@@ -131,25 +137,26 @@ color:$color--char-WH !important;
 .p-footer__menu{
 &__info{
   display:inline-block;
-  margin-top:0;
-  margin-bottom:0;
-
+  margin-top:  0 ;
+  margin-bottom:  0 ;
 }
+
 &__copy{
   display:inline-block;
-  margin-top:34px;
-  margin-bottom:0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42;
+  margin-top:  34px ;
+  margin-bottom:  0 ;
+  font-size:  14px ;
+  font-weight:  normal ;
+  line-height:  1.42 ;
 }
 }
+
 
 /*WordPressのクラス　ここから*/
 .menu-item-420,
 .menu-item-421{
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1.5;
+  font-size:  20px ;
+  font-weight:  normal ;
+  line-height:  1.5 ;
 }/*WordPressのクラス　ここまで*/
 }

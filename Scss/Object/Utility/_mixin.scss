@@ -2,99 +2,99 @@
 /*ロゴ-----------------*/
 /*Hamburgerの文字・MENUボタン*/
 @mixin c-logo($display:block, $height:auto, $font-family:$font-family--Roboto, $font-weight: bold, $color:$color--char-GY) {
-  display: block;
-  height: auto;
-  font-family:$font-family--Roboto;
-  font-weight: bold;
-  color:$color--char-GY;
+  display:  block ;
+  height:  auto ;
+  font-family:  $font-family--Roboto ;
+  font-weight:  bold ;
+  color:  $color--char-GY ;
 }
 
 /*ボタン-----------------*/
 @mixin c-button($display: block, $height: auto, $cursor: pointer,$box-sizing: border-box, $transition: transform .3s opacity .3s) {
-  display: block;
-  height: auto;
-  cursor: pointer;
-  box-sizing: border-box;
-  transition: transform .3s opacity .3s;
+  display:  block ;
+  height:   auto ;
+  cursor:   pointer ;
+  box-sizing:  border-box ;
+  transition:  transform .3s opacity .3s ;
 }
 
 /*フィルター-----------------*/
 /*c-overlay*/
 @mixin c-overlay($display: none, $position:fixed, $z-index: 150, $top:0px, $left:0px, $width:100%, $height:100%, $background-color:$color--mask-op-100, $transition: transform .100s, $opacity:0.5) {
-  display: none;
-  position:fixed;
-  z-index: 150;
-  top:0px;
-  left:0px;
-  width:100%;
-  height:100%;
-  background-color:$color--mask-op-100;
-  transition: transform .100s,;
-  opacity:0.5;
+  display:  none ;
+  position:  fixed ;
+  z-index:  150 ;
+  top:  0px ;
+  left:  0px ;
+  width:  100% ;
+  height:  100% ;
+  background-color:  $color--mask-op-100 ;
+  transition:  transform .100s, ;
+  opacity:  0.5 ;
 }
 
 /*カード---------------------------------------*/
 /*c-card-----------------*/
 @mixin c-card($width: 100%,$box-sizing: border-box,$overflow: hidden) {
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
+  width:  100% ;
+  box-sizing:  border-box ;
+  overflow:  hidden ;
 }
 
 /*c-wrapper--card-----------------*/
 @mixin c-wrapper--card($width: 100%,$box-sizing: border-box) {
-  width: 100%;
-  box-sizing: border-box;
+  width:  100% ;
+  box-sizing:  border-box ;
 }
 
 /*c-photo-----------------*/
 @mixin c-photo($max-width:100%, $height:100%, $padding-bottom:56.25%, $background-position:center, $background-size: cover, $background-repeat:no-repeat, $ertical-align:bottom) {
-  max-width:100%;
-  height:100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
-  vertical-align:bottom;
+  max-width:  100% ;
+  height:  100% ;
+  background-position:  center ;
+  background-size:  cover ;
+  background-repeat:  no-repeat ;
+  vertical-align:  bottom ;
 }
 /*buttonのwrapper-----------------*/
 @mixin c-btn-wrapper--card($position: relative, $display: flex, $justify-content: center, $align-items: center) {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position:  relative ;
+  display:  flex ;
+  justify-content:  center ;
+  align-items:  center ;
 }
 
 /*buttonの上の字-----------------*/
 @mixin c-btn-label($display: inline-block, $position: absolute, $top: 50%,$left: 50%,$transform: translate(-50%, -50%),$-webkit-transform: translate(-50%, -50%),$-ms-transform: translate(-50%, -50%),$color:$color--char-GY,$font-weight: bold) {
-  display: inline-block;
-  position: absolute;
-  top: 50%;/*真ん中に配置*/
-  left: 50%;
-  transform: translate(-50%, -50%);/*真ん中に配置*/
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  color:$color--char-GY;
-  font-weight: bold;
+  display:  inline-block ;
+  position:  absolute ;
+  top:  50% ;/*真ん中に配置*/
+  left:  50% ;
+  transform:  translate(-50%, -50%) ;/*真ん中に配置*/
+  -webkit-transform:  translate(-50%, -50%) ;
+  -ms-transform:  translate(-50%, -50%) ;
+  color:  $color--char-GY ;
+  font-weight:  bold ;
 }
 
 /*文章の一番外側の枠-----------------*/
 @mixin c-caption-group--card($background-color: $color--item-BK-tea, $color:$color--char-WH, $box-sizing: border-box) {
-  background-color: $color--item-BK-tea;
-  color:$color--char-WH;
-  box-sizing: border-box;
+  background-color:  $color--item-BK-tea ;
+  color:  $color--char-WH ;
+  box-sizing:  border-box ;
 }
 
 /*説明の詳細（長文の部分）-----------------*/
   @mixin c-detail--card ($display: block,$font-family:$font-family--M-plus,$word-wrap:break-word,$box-sizing: border-box){
-  display: block;
-  font-family:$font-family--M-plus;
-  word-wrap:break-word;
-  box-sizing: border-box;
+  display:  block ;
+  font-family:  $font-family--M-plus ;
+  word-wrap:  break-word ;
+  box-sizing:  border-box ;
 }
 /*single/pageの写真の枠-----------------*/
   @mixin c-photo-frame--card--single($border: solid 1px #707070, $display: block){
-  border: solid 1px #707070;
-  display: block;
+  border:  solid 1px #707070 ;
+  display:  block ;
 }
 
 /*--------------------------------カードここまで*/

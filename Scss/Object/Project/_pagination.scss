@@ -1,233 +1,254 @@
 /* pagination */
 /* スマホ */
 .wp-pagenavi{/* ページネーション全体 */
-  display: flex !important;/*横並びに配置*/
-  flex-direction: row !important;/*ページの真ん中へ*/
-  justify-content: space-between;/*両端に*/
-  max-width: 100%;
-  height: 22px;
-  margin: 0 20.3px 31px 20.3px;
-  font-size: 16px;
-  color:$color--char-GY;
-  font-family: $font-family--Roboto;
-  font-weight: normal;
-  line-height: 1.43;
+  display:  flex !important ;/*横並びに配置*/
+  flex-direction:  row !important ;/*ページの真ん中へ*/
+  justify-content:  space-between ;/*両端に*/
+  max-width:  100% ;
+  height:  22px ;
+  margin:  0 20.3px 31px 20.3px ;
+  font-size:  16px ;
+  color:  $color--char-GY ;
+  font-family:  $font-family--Roboto ;
+  font-weight:  normal ;
+  line-height:  1.43 ;
 }
+
 
 /* 隠す ここから-----------*/
 span.current,/*ページ数　”１”*/
 a.page.larger,/*ページ数　”２”*/
 a.page.smaller{/*ページ数　”２”*/
-  display: none !important;
+  display:  none !important ;
 }
+
+
 .last,
 .extend{
-  display: none;
+  display:  none ;
 }
 .pages{/*page+〇/〇の部分*/
-  display: none !important;
+  display:  none !important ;
 }
 /* ここまで-----------*/
+
 
 /* 表示する スタイリング--------- */
 .nextpostslink,/* ＞＞ */
 .previouspostslink{/* ＜＜ */
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
 }
 
 .previouspostslink:after{/* 前へ */
-  content:"前へ";
-  margin-left: 8.2px !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
-}
-.nextpostslink:before{/*次へ*/
-  content:"次へ";
-  margin-left: 8.2px !important;
-  padding-right: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
+  content:  "前へ" ;
+  margin-left:  8.2px !important ;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
 }
 
+
+.nextpostslink:before{/*次へ*/
+  content:"次へ";
+  margin-left:  8.2px !important ;
+  padding-right:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
+}
 
 
 /* タブレット */
 @media screen and  (min-width: 600px){
-/* 隠す */
+/* 隠す -------*/
 .previouspostslink:after{/* 前へ */
-  display:none !important;
+  display:  none !important ;
 }
 .nextpostslink:before{/*次へ*/
-  display:none !important;
+  display:  none !important ;
 }
 /* 隠すここまで */
+
 
 /* 表示する スタイリング--------- */
 /* ページネーション全体 */
 .wp-pagenavi{
-  display: inline-flex;
-  justify-content: center;/*両端に配置する*/
-  max-width: 100%;
-  min-width: 71.8%;
-  height: 35px;
-  margin-bottom: 30px;
-  font-family: $font-family--Roboto;
-  font-weight: bold !important;
+  display:  inline-flex ;
+  justify-content:  center ;/*両端に配置する*/
+  max-width:  100% ;
+  min-width:  71.8% ;
+  height:  35px ;
+  margin-bottom:  30px ;
+  font-family:  $font-family--Roboto ;
+  font-weight:  bold !important ;
 }
 
+
 span>.pages{/*page+〇/〇の部分*/
-  display: inline-block !important;
-  width: 73px;
-  margin-right: 19.3px;
+  display:  inline-block !important ;
+  width:  73px ;
+  margin-right:  19.3px ;
 }
 
 /*ページ数の部分*/
 span.current,/*ページ数　”１”*/
 a.page.larger{/*ページ数　”２”*/
-  display: inline-block !important;
-  width: 35px;
-  height: 35px;
-  padding: 7px 11px!important;
-  margin-left: 15px !important;
-  color:$color--char-GY;
-  background-color: $color--item-WH-op-100;
-  border: 1px solid $color--char-GY;
-  box-sizing: border-box;
+  display:  inline-block !important ;
+  width:  35px ;
+  height:  35px ;
+  padding:  7px 11px!important ;
+  margin-left:  15px !important ;
+  color: $color--char-GY ;
+  background-color:  $color--item-WH-op-100 ;
+  border:  1px solid $color--char-GY ;
+  box-sizing:  border-box ;
 }
 
 
 .page.larger:hover {/* hoverしたら色を変える */
-  background-color: $color--item-BK-tea !important;
-  color:$color--char-WH;
+  background-color:  $color--item-BK-tea !important ;
+  color:  $color--char-WH ;
 }
+
 
 /* ページ数以外 */
 .pages:before{/* page */
-  display: inline-block !important;
-  content:"page";
-  margin-right: 5px;
-  color:$color--char-GY;
-  font-family: $font-family--Roboto;
-  font-weight: bold;
-  border:none !important;
+  display:  inline-block !important ;
+  content:  "page" ;
+  margin-right:  5px ;
+  color:  $color--char-GY ;
+  font-family:  $font-family--Roboto ;
+  font-weight:  bold ;
+  border:  none !important ;
 }
+
 
 .pages{/* 〇/〇 */
-  display: inline-block !important;
-  margin-left:0;
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  color:$color--char-GY;
-  border:none !important;
+  display:  inline-block !important ;
+  margin-left:  0 ;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  color:  $color--char-GY ;
+  border:  none !important ;
 }
+
+
 a .page.smaller{
-  margin-left: 0;
+  margin-left:  0 ;
 }
+
 
 a .previouspostslink{/* ＜＜ */
-  margin-right: 17.2px !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
+  margin-right:  17.2px !important ;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
 }
+
 
 a .nextpostslink{/* ＞＞ */
-  margin-left: 17.2px !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
+  margin-left:  17.2px !important ;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
+}
 }
 
-
-}
 
 /*PＣ*/
 @media screen and  (min-width: 1250px){
-/* 隠す */
+/* 隠す --------*/
 .previouspostslink:after{/* 前へ */
-  display:none !important;
+  display:  none !important ;
 }
+
+
 .nextpostslink:before{/*次へ*/
-  display:none !important;
+  display:  none !important ;
 }
 /* 隠すここまで */
+
 
 /* 表示する スタイリング--------- */
 /* ページネーション全体 */
 .wp-pagenavi{
-  display: flex !important;/*横並びに配置*/
-  flex-direction: row !important;
-  justify-content: center;/*ページの真ん中へ*/
-  width: 100%;
-  min-width:38.55%;
-  height: 36px;
-  margin-bottom: 60px;
-  font-size: 16px;
-  vertical-align: middle;/*無いと中央に配置されない*/
+  display:  flex !important ;/*横並びに配置*/
+  flex-direction:  row !important ;
+  justify-content:  center ;/*ページの真ん中へ*/
+  width:  100% ;
+  min-width: 38.55% ;
+  height:  36px ;
+  margin-bottom:  60px ;
+  font-size:  16px ;
+  vertical-align:  middle ;/*無いと中央に配置されない*/
 }
 
+
 span>.pages{/*page+〇/〇の部分*/
-  display: inline-block !important;
-  width: 73px;
+  display:  inline-block !important ;
+  width:  73px ;
 }
+
 
 /*ページ数の部分*/
 span.current,/*ページ数　”１”*/
 a.page.larger{/*ページ数　”２”*/
-  display: inline-block !important;
-  width: 35px;
-  height: 35px;
-  padding: 7px 11px!important;
-  margin-left: 15px !important;
-  background-color: $color--item-WH-op-100;
-  border: 1px solid $color--char-GY;
-  box-sizing: border-box;
+  display: inline-block !important ;
+  width:  35px ;
+  height:  35px ;
+  padding:  7px 11px!important ;
+  margin-left:  15px !important ;
+  background-color:  $color--item-WH-op-100 ;
+  border:  1px solid $color--char-GY ;
+  box-sizing:  border-box ;
 }
+
+
 a .page.smaller{
-  margin-left: 0;
+  margin-left:  0 ;
 }
 
 
 .page.larger:hover {/* hoverしたら色を変える */
-  background-color: $color--item-BK-tea !important;
-  color:$color--char-WH;
+  background-color:  $color--item-BK-tea !important ;
+  color:  $color--char-WH ;
 }
+
 
 /* ページ数以外 */
 .pages{/* 〇/〇 */
-  display: inline-block !important;
-  margin-left:0;
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
+  display:  inline-block !important ;
+  margin-left:  0 ;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
 }
+
 
 .pages:before{/* page */
-  display: inline-block !important;
-  content:"page";
-  margin-right: 5px;
-  color:$color--char-GY;
-  font-family: $font-family--Roboto;
-  font-weight: bold;
-  border:none !important;
+  display:  inline-block !important ;
+  content:  "page" ;
+  margin-right:  5px ;
+  color:  $color--char-GY ;
+  font-family:  $font-family--Roboto ;
+  font-weight:  bold ;
+  border:  none !important ;
 }
+
 
 a .previouspostslink{/* ＜＜ */
-  margin-right: 17.2px !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
+  margin-right:  17.2px !important ;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
 }
+
 
 a .nextpostslink{/* ＞＞ */
-  margin-left: 17.2px !important;
-  padding-top: 7px !important;
-  padding-bottom: 7px;
-  border:none !important;
+  margin-left:  17.2px !important ;
+  padding-top:  7px !important ;
+  padding-bottom:  7px ;
+  border:  none !important ;
 }
-
-
 }

@@ -1,4 +1,5 @@
 <!-- 'photo-album'　フラッシュ画像 -->
+
 <div class="c-wrapper--card--single--continuous-area">
               <div class="c-wrapper--card--single--continuous no_one">
                 <figure class="c-photo-frame--card--single--type_continuous">
