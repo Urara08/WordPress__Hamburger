@@ -3871,7 +3871,6 @@ a.page.larger {
   top: 2.5px;
   display: block;
   width: 100%;
-  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top center;
@@ -3881,10 +3880,11 @@ a.page.larger {
   overflow: hidden;
 }
 
-.myClass.wp-post-image {
+.myClass.wp-post-image,
+.attachment-.wp-post-image {
   /*サムネイル*/
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top center;
@@ -3983,7 +3983,8 @@ a.page.larger {
     box-sizing: border-box;
   }
 
-  .myClass.wp-post-image {
+  .myClass.wp-post-image,
+.attachment-.wp-post-image {
     /*サムネイル*/
     width: 100%;
     height: 100%;
@@ -4049,6 +4050,8 @@ a.page.larger {
     width: 100%;
     box-sizing: border-box;
     width: 100% !important;
+    min-height: 78.34%;
+    height: 100%;
     margin-left: 0;
     margin-bottom: 30px;
     /*下の余白*/
@@ -4066,7 +4069,9 @@ a.page.larger {
     box-sizing: border-box;
     position: relative;
     top: 0;
-    width: 50% !important;
+    width: 100% !important;
+    height: auto;
+    min-height: 78.34%;
     padding: 0;
     padding-top: 53px;
     padding-bottom: 60px;
@@ -4109,19 +4114,20 @@ a.page.larger {
     position: relative;
     top: 0px;
     display: block !important;
-    width: 50% !important;
-    height: auto;
+    width: auto !important;
+    min-width: 50%;
+    height: auto !important;
     vertical-align: bottom;
     box-sizing: border-box;
-    overflow: hidden;
   }
 
-  .myClass.wp-post-image {
+  .myClass.wp-post-image,
+.attachment- .wp-post-image {
     /*サムネイル*/
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    width: 100% !important;
+    min-height: 50% !important;
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
     -o-object-position: top center;
        object-position: top center;
   }
@@ -4140,11 +4146,6 @@ a.page.larger {
     border-radius: 38px;
   }
 
-  .c-btn-wrapper--card--archive {
-    @includec-btn-wrapper--card;
-    margin-top: 60px;
-  }
-
   .c-btn-label--card {
     display: inline-block;
     position: absolute;
@@ -4161,15 +4162,20 @@ a.page.larger {
     line-height: 2.06;
   }
 
-  .myClass.wp-post-image {
-    /*サムネイル*/
-    width: 100% !important;
-    height: 100%;
-  }
-
-  .p-contents__archive__cards .c-wrapper--card--archive:last-child > .myClass {
-    width: 100% !important;
-    height: 100%;
+  .c-btn-label--card {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    /*真ん中に配置*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*真ん中に配置*/
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: #707070;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 2.06;
   }
 }
 /* pageでも流用*/
