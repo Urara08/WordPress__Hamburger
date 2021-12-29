@@ -3868,7 +3868,7 @@ a.page.larger {
 .thumbnail {
   /*cardの写真の外枠*/
   position: relative;
-  top: 2.5px;
+  top: 3px;
   display: block;
   width: 100%;
   -o-object-fit: cover;
@@ -4122,7 +4122,7 @@ a.page.larger {
   }
 
   .myClass.wp-post-image,
-.attachment- .wp-post-image {
+.attachment-.wp-post-image {
     /*サムネイル*/
     width: 100% !important;
     min-height: 50% !important;
