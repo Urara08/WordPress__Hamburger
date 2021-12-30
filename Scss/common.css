@@ -2397,7 +2397,7 @@ a {
 /* search.phpのマージン*/
 .p-contents__archive__inner--top.search {
   /* 外枠 */
-  margin: 30px 5.33% 19px 5.33% !important;
+  margin: 30px 5.33% 39px 5.33% !important;
 }
 
 .p-contents__archive__inner--middle {
@@ -2510,6 +2510,7 @@ a {
     margin: 60px 6.43% 70px 6.43% !important;
     width: 87.12%;
     box-sizing: border-box;
+    background-color: red;
   }
 
   /* card の集まり*/
