@@ -52,6 +52,11 @@
         <?php endif; ?>
       </ul>
     </div>
+
+    <div class="p-contents__archive__inner--bottom">
+      <!-- ページネーション 読み込み-->
+      <?php wp_pagenavi(); ?>
+    </div><!-- inner--bottomここまで -->
   </article>
 </main>
 
