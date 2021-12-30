@@ -9,17 +9,7 @@
 </section>
 
 <article class="p-contents__archive">
-
-<section class="p-contents__archive__introduction"><!-- 導入記事　ここから -->
-  <div class="p-contents__archive__introduction__inner">
-
-    <h2 class="p-contents__archive__introduction__title"><?php single_cat_title(); ?></h2><!-- カテゴリー名を表示 -->
-    <div class="p-contents__archive__introduction__text">
-    <?php echo category_description( $category_id ); ?><!-- カテゴリーの概要を表示 -->
-    </div>
-
-  </div><!-- introduction__innerここまで -->
-</section><!-- 導入記事ここまで -->
+<div class="p-contents__archive__inner--top search"></div>
 
 <div class="p-contents__archive__inner--middle">
   <ul <?php post_class('p-contents__archive__cards'); ?>>
@@ -29,6 +19,7 @@
 
 
   <div class="c-wrapper--card--archive">
+          <li class="c-card--archive">
       <li class="c-card--archive">
         <div class="thumbnail">
           <?php
