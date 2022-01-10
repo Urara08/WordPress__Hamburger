@@ -1,4 +1,7 @@
-RaisetechのWordPress副業コースの課題でハンバーガーサイトの模写を作成しました。
-・FLOCSS
-・レスポンシブ対応
-でコーディングをした後に、WordPressのテーマ製作をいたしました。
+WordPressのテーマ製作中です。
+
+カンプデーターからコーディングしました
+CSS設計はFLOCSSです
+HTML/CSS/SCSS/jQuery
+
+
