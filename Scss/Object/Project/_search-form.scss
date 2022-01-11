@@ -4,6 +4,7 @@
   width:  85.33% ;
   min-height:  46px ;
   margin-top:  0 ;
+  font-family:  $font-family--M-plus ;
   box-sizing:  border-box ;
 
 &__keyword{
@@ -14,8 +15,10 @@
   height:  46px ;
   padding:  10px 10px 10px 11.6%  ;/*padding-left入力した文字のインデント*/
   border:  solid $color--char-GY 1px  ;
+  color:  $color--char-GY ; /* logo・Menu tableの罫線*/;
+  font-size: 16px;
 	font-family:  $font-family--icon ;
-  font-weight:  lighter ;
+  font-weight:  bold ;
   border-radius:  10px ;
   box-sizing:  border-box ;
 }

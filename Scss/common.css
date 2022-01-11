@@ -377,6 +377,7 @@ a {
   width: 85.33%;
   min-height: 46px;
   margin-top: 0;
+  font-family: "M PLUS 1p", sans-serif;
   box-sizing: border-box;
 }
 .p-search-form__keyword {
@@ -388,8 +389,11 @@ a {
   padding: 10px 10px 10px 11.6%;
   /*padding-left入力した文字のインデント*/
   border: solid #707070 1px;
+  color: #707070;
+  /* logo・Menu tableの罫線*/
+  font-size: 16px;
   font-family: FontAwesome;
-  font-weight: lighter;
+  font-weight: bold;
   border-radius: 10px;
   box-sizing: border-box;
 }
