@@ -12,7 +12,7 @@
   left:  0 ;
   width:  72.52% ;
   height:  46px ;
-  padding:  10px ;
+  padding:  10px 10px 10px 11.6%  ;/*padding-left入力した文字のインデント*/
   border:  solid $color--char-GY 1px  ;
 	font-family:  $font-family--icon ;
   font-weight:  lighter ;
@@ -78,7 +78,7 @@
 
 &__keyword{
   width:  72.52% ;
-  padding:  10px ;
+  padding:  10px 10px 10px 8.42%;/*padding-left入力した文字のインデント*/
 }
 
 &__button{
@@ -124,6 +124,7 @@
 
 &__keyword{
     width:  72.66% ;
+    padding-left: 8.42% ;/*入力した文字のインデント*/
     line-height:  100% ;
 }
 
