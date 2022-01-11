@@ -120,8 +120,8 @@
 
     //プラグインcfsが有効なら読み込む関数
     function is_active_cfs(){
-    include_once( ABSPATH . 'wp-content/plugins/custom-fieldsuite/cfs.php');
-    if( is_plugin_active( 'custom-fieldsuite/cfs.php')) {
+    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+    if( is_plugin_active( 'custom-field-suite/cfs.php')) {
         return true;//プラグインが有効の場合
     } else {
         return false;//プラグインが無効の場合

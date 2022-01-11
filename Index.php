@@ -11,11 +11,11 @@
         <div class="p-contents__wrapper">
         <article class="p-contents">
 
-        <?php if( !function_exists('is_active_cfs') ):?><!-- 無いと「Fatal error: Call to undefined」のエラーが出る-->
-          <?php if( is_active_cfs());?><!-- //plugin custom-fieldsuiteが有効ならtrueを返す関数>
-          <?php include_once( 'custom-fieldsuite/cfs.php');?>
+        <?php if( !function_exists('is_active_cfs()') ): ?><!-- 無いと「Fatal error: Call to undefined」のエラーが出る -->
+          <?php if( is_active_cfs()): ?><!-- plugin custom-field-suiteが有効ならtrueを返す関数 -->
 
-          <!-- //plugin custom-fieldsuiteが有効なら-->
+
+          <!-- plugin custom-field-suiteが有効なら -->
           <ul class="p-contents__inner">
             <li class="p-contents__branch-menu take-out"  style="background-image: url(<?php echo CFS()->get('Take-Out--photo') ?>)"><!-- カスタム投稿の写真を表示-->
               <ul class="p-contents__branch-menu__inner">
@@ -83,3 +83,4 @@
 
   <?php get_footer(); ?>
   <?php get_sidebar(); ?>
+  <?php endif;?>
