@@ -11,13 +11,14 @@
         <div class="p-contents__wrapper">
         <article class="p-contents">
 
-        <?php if( !function_exists('is_active_cfs()') ): ?><!-- 無いと「Fatal error: Call to undefined」のエラーが出る -->
+
+        <?php if( !function_exists('is_active_cfs()') ): ?><!-- 無いと「Fatal error: Call to undefined」のエラーが出る為記載 -->
           <?php if( is_active_cfs()): ?><!-- plugin custom-field-suiteが有効ならtrueを返す関数 -->
 
 
-          <!-- plugin custom-field-suiteが有効なら -->
-          <ul class="p-contents__inner">
-            <li class="p-contents__branch-menu take-out"  style="background-image: url(<?php echo CFS()->get('Take-Out--photo') ?>)"><!-- カスタム投稿の写真を表示-->
+            <!-- plugin custom-field-suiteが有効な場合 -->
+            <ul class="p-contents__inner">
+              <li class="p-contents__branch-menu take-out"  style="background-image: url(<?php echo CFS()->get('Take-Out--photo') ?>)"><!-- カスタム投稿の写真を表示-->
               <ul class="p-contents__branch-menu__inner">
               <li><h2 class="p-contents__branch-menu__label"><?php wp_nav_menu( array('theme_location' => 'take-out',) ); ?></h2></li>
               <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Take Out</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Take-Out--top'); ?></dd></ｄl></li><!-- カスタム投稿のテキストを表示-->
@@ -44,8 +45,9 @@
           <p class="p-access-map__text-group__body"><?php echo CFS()->get('map_text'); ?></p><!-- カスタム投稿のテキストを表示-->
         </div>
 
+
         <?php else:?>
-          <!-- //プラグインcfsが無効の場合は-->
+          <!-- //プラグインcfsが無効の場合-->
           <ul class="p-contents__inner">
             <li class="p-contents__branch-menu take-out">
               <ul class="p-contents__branch-menu__inner">
@@ -55,14 +57,14 @@
             </ul>
           </li>
           <li class="p-contents__branch-menu eat-in">
-              <ul class="p-contents__branch-menu__inner">
+            <ul class="p-contents__branch-menu__inner">
               <li><h2 class="p-contents__branch-menu__label">Eat In</h2>
               <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text">商品を掲載しています。商品を掲載しています。</dd></dl></li>
               <li><dl class="p-contents__branch-menu__box--bottom"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text">商品を掲載しています。商品を掲載しています。</dd></dl></li>
             </ul>
-            </li>
-          </ul>
-        </article>
+          </li>
+        </ul>
+      </article>
       </div>
       <div class="p-access-map__wrapper">
         <section class="p-access-map">
