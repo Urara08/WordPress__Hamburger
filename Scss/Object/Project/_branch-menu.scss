@@ -23,6 +23,7 @@
 
 
 .p-contents__branch-menu{/*2メニュー共通 */
+  display: block;
   position:  relative ;
   min-width:  80% ;/*字が飛び出ないように*/
   height:  auto;
@@ -174,12 +175,19 @@
 
 
 .p-contents__branch-menu{/*take-out・eat-in共通 */
+  position:  relative ;
+  display:  flex ;/*片方のBOXが大きくなったら下に揃える*/
+  justify-content: space-between ;
   max-width:  100% ;
   min-width:  47.28% !important ;
   height:  auto ;
   padding:  46.4% 2% 1.61% 2% !important ;
-}
 
+&__inner{/*白い2つのBOXを囲う*/
+  display:  flex ;/*片方のBOXが大きくなったら下に揃える*/
+  justify-content:  flex-end ;
+}
+}
 
 /*take-out*/
 .take-out{/*マルチクラス */
@@ -323,6 +331,22 @@
   min-height:  30.84% ;/*字が飛び出ないように*/
   padding:  67.14% 3.2% 1.67% 3.2% ;
   object-fit:  contain ;
+
+&__inner{/*白い2つのBOXを囲う*/
+  display:  flex ;/*片方のBOXが大きくなったら下に揃える*/
+  justify-content:  flex-end ;
+  width:  100% ;/*画面の縮小で幅が縮まない様に*/
+}
+}
+
+
+.p-contents__branch-menu{/*take-out・eat-in共通 */
+  display:  flex ;
+  justify-content: space-between ;
+  max-width:  100% ;
+  min-width:  47.28% !important ;
+  height:  auto ;
+  padding:  46.4% 2% 1.61% 2% !important ;
 }
 
 

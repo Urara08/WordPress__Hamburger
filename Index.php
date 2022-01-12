@@ -8,7 +8,7 @@
             <h2 class="p-hero__label"><?php bloginfo( 'description' ); ?></h2><!-- サイトの説明の部分を表示-->
           </section>
         </div>
-        <div class="p-contents__wrapper">
+      <div class="p-contents__wrapper">
         <article class="p-contents">
 
 
@@ -17,21 +17,23 @@
 
 
             <!-- plugin custom-field-suiteが有効な場合 -->
-            <ul class="p-contents__inner">
+          <ul class="p-contents__inner">
+
               <li class="p-contents__branch-menu take-out"  style="background-image: url(<?php echo CFS()->get('Take-Out--photo') ?>)"><!-- カスタム投稿の写真を表示-->
-              <ul class="p-contents__branch-menu__inner">
-              <li><h2 class="p-contents__branch-menu__label"><?php wp_nav_menu( array('theme_location' => 'take-out',) ); ?></h2></li>
-              <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Take Out</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Take-Out--top'); ?></dd></ｄl></li><!-- カスタム投稿のテキストを表示-->
-              <li><dl class="p-contents__branch-menu__box--bottom"><dt class="p-contents__branch-menu__box__title">Take Out</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Take-Out--bottom'); ?></dd></dl></li><!-- カスタム投稿のテキストを表示-->
-            </ul>
-          </li>
-          <li class="p-contents__branch-menu eat-in" style="background-image: url(<?php echo CFS()->get('Eat-In--photo') ?>)"><!-- カスタム投稿の写真を表示-->
-              <ul class="p-contents__branch-menu__inner">
-              <li><h2 class="p-contents__branch-menu__label"><?php wp_nav_menu( array('theme_location' => 'eat-in',) ); ?></h2></li>
-              <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Eat-In--top'); ?></dd></ｄl></li><!-- カスタム投稿のテキストを表示-->
-              <li><dl class="p-contents__branch-menu__box--bottom"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Eat-In--bottom'); ?></dd></dl></li><!-- カスタム投稿のテキストを表示-->
-              </ul>
-            </li>
+                <ul class="p-contents__branch-menu__inner">
+                  <li><h2 class="p-contents__branch-menu__label"><?php wp_nav_menu( array('theme_location' => 'take-out',) ); ?></h2></li>
+                  <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Take Out</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Take-Out--top'); ?></dd></ｄl></li><!-- カスタム投稿のテキストを表示-->
+                  <li><dl class="p-contents__branch-menu__box--bottom"><dt class="p-contents__branch-menu__box__title">Take Out</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Take-Out--bottom'); ?></dd></dl></li><!-- カスタム投稿のテキストを表示-->
+                </ul>
+              </li>
+
+              <li class="p-contents__branch-menu eat-in" style="background-image: url(<?php echo CFS()->get('Eat-In--photo') ?>)"><!-- カスタム投稿の写真を表示-->
+                <ul class="p-contents__branch-menu__inner">
+                  <li><h2 class="p-contents__branch-menu__label"><?php wp_nav_menu( array('theme_location' => 'eat-in',) ); ?></h2></li>
+                  <li><dl class="p-contents__branch-menu__box--top"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Eat-In--top'); ?></dd></ｄl></li><!-- カスタム投稿のテキストを表示-->
+                  <li><dl class="p-contents__branch-menu__box--bottom"><dt class="p-contents__branch-menu__box__title">Eat In</dt><dd class="p-contents__branch-menu__box__text"><?php echo CFS()->get('Eat-In--bottom'); ?></dd></dl></li><!-- カスタム投稿のテキストを表示-->
+                </ul>
+              </li>
           </ul>
         </article>
       </div>
