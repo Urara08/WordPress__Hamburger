@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": ";AAAA,cAAc;AACd,yBAAyB;AACzB,+BAA+B;AAS/B,2BAA2B;AAS3B,+BAA+B;AAC/B,aAAa;AAcb,iDAAiD;AACjD,2BAA2B;AAO3B,oCAAoC;AAMpC,4BAA4B;AAS5B,oCAAoC;AAQpC,mCAAmC;AAanC,uCAAuC;AAOvC,6CAA6C;AAO7C,0CAA0C;AAM1C,kDAAkD",
-    "sources": [
-        "mixin.scss"
-    ],
-    "names": [],
-    "file": "mixin.css"
-}
+{"version":3,"sources":["mixin.scss"],"names":[],"mappings":"AAAA,gBAAgB;AAAhB,QAAA;AACA,sBAAA;AACA,uBAAA;AASA,uBAAA;AASA,yBAAA;AACA,YAAA;AAcA,6CAAA;AACA,0BAAA;AAOA,mCAAA;AAMA,2BAAA;AASA,kCAAA;AAQA,8BAAA;AAaA,6BAAA;AAOA,gCAAA;AAOA,oCAAA;AAMA,0CAAA","file":"mixin.css"}
