@@ -1,7 +1,7 @@
 <aside class="l-sidebar">
     <div class="p-sidebar js-sidebar">
-      <a class=" p-sidebar__menu__close-btn">
-        <i class=" fal fa-times fa-3x js-sidebar__menu__close-btn"></i>
+      <a class="p-sidebar__menu__close-btn">
+        <i tabindex="0" class=" fal fa-times fa-3x js-sidebar__menu__close-btn clickable__close"></i>
       </a>
       <ul class="p-sidebar__nav"><a class="p-sidebar__nav__label">Menu</a>
       <li><strong class="p-sidebar__nav__title"><?php wp_nav_menu( array('theme_location' => 'title_burger',) ); ?></strong>

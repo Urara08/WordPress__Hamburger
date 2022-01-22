@@ -1,10 +1,12 @@
 $(function(){
+
+
   window.onload = function(){
-      $('.c-btn--menu').on('click', function () {//MENUボタンをクリックすると
+      $('.c-btn--menu, .clickable').on('click keypress', function () {//MENUボタンをクリック・エンターすると
       $('.c-btn--menu, .js-sidebar, .js-sidebar__menu__close-btn , .js-overlay, .js-body').toggleClass('is-show',)//サイドバーが出る
     });
 
-  $('.js-sidebar__menu__close-btn').on('click', function () {//✕ボタンをクリックすると
+      $('.js-sidebar__menu__close-btn, clickable__close').on('click keypress', function () {//✕ボタンをクリック・エンターすると
       $('.js-sidebar, .js-overlay, .js-sidebar__menu__close-btn, .js-body').removeClass('is-show')//サイドバーが閉じる
     });
 
