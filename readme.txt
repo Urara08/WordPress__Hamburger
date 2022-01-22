@@ -1,5 +1,5 @@
 WordPressのテーマ制作をしました。
-Custom Field Suite のプラグインの使用を想定（使わなくても可）
+Custom Field Suite のプラグインの使用を想定（使わなくても可です）
 
 カンプデーターからコーディングしました
 HTML/CSS/SCSS/jQuery
