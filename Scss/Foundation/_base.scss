@@ -7,7 +7,7 @@ html{
 body {
   min-width:  320px ;
   min-height:  100vh ;/*ブラウザの高さいっぱいに要素を広げる*/
-  max-width:  100% ;/*最大幅*/
+  max-width:  1920px ;/*最大幅 100%から変更*/
   font-family:  $font-family--M-plus ;
   box-sizing:  border-box ;
 }
